@@ -46,17 +46,17 @@ const SalePoints = () => {
         <>
             <div className="dark-green p-20 flex flex-row">
                 <div className='basis-4/5'>
-                    <b className='text-white text-3xl'>
+                    <b className='text-3xl'>
                         Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
                     </b>
-                    <p className='text-md text-white'>
+                    <p className='text-md'>
                         Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
                     </p>
                     <ul className='text-sm mt-10'>
                         {iconListItems.map(item => (
                             <li key={item.title}>
                                 <div className='flex-row flex py-4'>
-                                    <Image 
+                                    <Image
                                         width={45}
                                         src={item.image}
                                         alt={item.alt}
@@ -85,18 +85,18 @@ const SalePoints = () => {
                         alt="Laptop"
                     />
                 </div>
-                <div className='basis-3/5'>
-                    <b className='text-white text-3xl'>
-                        Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
+                <div className='basis-3/5 px-20'>
+                    <b className='text-3xl'>
+                        Vi generer unike klimarapporter for din eiendom
                     </b>
-                    <p className='text-md text-white'>
+                    <p className='text-md'>
                         Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
                     </p>
                     <ul className='text-sm mt-10'>
                         {checkmarkedItems.map((item, i) => (
                             <li key={i}>
                                 <div className='flex-row flex py-4'>
-                                    <Image 
+                                    <Image
                                         width={45}
                                         src={check}
                                         alt='checkmark'
