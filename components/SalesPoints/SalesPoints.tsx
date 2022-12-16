@@ -96,11 +96,12 @@ const SalePoints = () => {
                         {checkmarkedItems.map((item, i) => (
                             <li key={i}>
                                 <div className='flex-row flex py-4'>
-                                    <Image
-                                        src={check}
-                                        alt='checkmark'
-                                        className='flex-none'
-                                    />
+                                    <div className='aspect-square flex-none'>
+                                        <Image
+                                            src={check}
+                                            alt='Checkmark'
+                                        />
+                                    </div>
                                     <div className='ml-10'>
                                         <p>{item.description}</p>
                                     </div>
