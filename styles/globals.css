@@ -13,10 +13,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004244",endColorstr="#22c68a",GradientType=1);
 }
 
-.dark-green {
-    background-color: #004244;
-}
-
 .fit {
     object-fit: contain;
 }

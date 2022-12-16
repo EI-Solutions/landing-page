@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import ageraLogo from '/assets/customer-logos/agera-logo.png'
-import asplanViakLogo from '/assets/customer-logos/asplanviak-logo.png'
-import dnvLogo from '/assets/customer-logos/dnv-logo.png'
-import mollerEiendomLogo from '/assets/customer-logos/mollereiendom-logo.png'
-import baneNorLogo from '/assets/customer-logos/banenor-logo.png'
+import ageraLogo from '/static/customer-logos/agera-logo.png'
+import asplanViakLogo from '/static/customer-logos/asplanviak-logo.png'
+import dnvLogo from '/static/customer-logos/dnv-logo.png'
+import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png'
+import baneNorLogo from '/static/customer-logos/banenor-logo.png'
 
 
 const Customers = () => {

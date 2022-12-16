@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import desktopPage from '/assets/salepoints/desktop-page.png'
-import laptopPages from '/assets/salepoints/laptop-pages.png'
+import desktopPage from '/static/salepoints/desktop-page.png'
+import laptopPages from '/static/salepoints/laptop-pages.png'
 
-import automate from '/assets/icons/automate.svg'
-import fileCabinet from '/assets/icons/file-cabinet.svg'
-import fileTree from '/assets/icons/file-tree.svg'
-import check from '/assets/icons/check.png'
+import automate from '/static/icons/automate.svg'
+import fileCabinet from '/static/icons/file-cabinet.svg'
+import fileTree from '/static/icons/file-tree.svg'
+import check from '/static/icons/check.png'
 
 const SalePoints = () => {
 
@@ -44,7 +44,7 @@ const SalePoints = () => {
 
     return (
         <>
-            <div className="dark-green p-20 flex flex-row">
+            <div className="bg-ei-dark-green p-20 flex flex-row">
                 <div className='basis-4/5'>
                     <b className='text-3xl'>
                         Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
@@ -57,7 +57,7 @@ const SalePoints = () => {
                             <li key={item.title}>
                                 <div className='flex-row flex py-4'>
                                     <Image
-                                        width={45}
+                                        
                                         src={item.image}
                                         alt={item.alt}
                                         className='flex-none'
@@ -89,7 +89,7 @@ const SalePoints = () => {
                     <b className='text-3xl'>
                         Vi generer unike klimarapporter for din eiendom
                     </b>
-                    <p className='text-md'>
+                    <p className='text-md mt-10'>
                         Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
                     </p>
                     <ul className='text-sm mt-10'>
@@ -97,7 +97,6 @@ const SalePoints = () => {
                             <li key={i}>
                                 <div className='flex-row flex py-4'>
                                     <Image
-                                        width={45}
                                         src={check}
                                         alt='checkmark'
                                         className='flex-none'
