@@ -31,7 +31,7 @@ const Customers = () => {
     ]
 
     return (
-        <div className='ei-gradient py-20'>
+        <div className='ei-gradient-to-right py-20'>
             <div className='align-middle grid grid-cols-3'>
                 {customers.map(customer => (
                     <div
