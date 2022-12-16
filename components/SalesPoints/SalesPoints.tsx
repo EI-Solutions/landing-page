@@ -78,7 +78,10 @@ const SalePoints = () => {
                     />
                 </div>
             </div>
-            <div className="ei-gradient-radial p-20 flex flex-row">
+            <div className="
+                bg-gradient-radial from-ei-green to-ei-dark-green
+                p-20 flex flex-row
+            ">
                 <div>
                     <Image
                         src={desktopPage}
