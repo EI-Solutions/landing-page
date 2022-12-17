@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import desktopPage from '/static/salepoints/desktop-page.png'
-import laptopPages from '/static/salepoints/laptop-pages.png'
+import desktopPage from '/static/salespoints/desktop-page.png'
+import laptopPages from '/static/salespoints/laptop-pages.png'
 
 import automate from '/static/icons/automate.svg'
 import fileCabinet from '/static/icons/file-cabinet.svg'
 import fileTree from '/static/icons/file-tree.svg'
 import check from '/static/icons/check.png'
 
-const SalePoints = () => {
+const SalesPoints = () => {
 
     const iconListItems = [
         {
@@ -118,4 +118,4 @@ const SalePoints = () => {
     )
 }
 
-export default SalePoints
+export default SalesPoints
