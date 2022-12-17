@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from 'react'
 import brochure from '/static/salespoints/brochure.png'
 
@@ -44,7 +45,7 @@ const ApplicationSteps = () => {
 
     return (
         <div className='bg-ei-dark-green text-center p-20'>
-            <p className='text-4xl'>Våre steg</p>
+            <p className='text-4xl mb-5'>Våre steg</p>
             <div className='flex flex-row justify-center'>
                 {steps.map((step, i) => (
                     <button
@@ -62,8 +63,22 @@ const ApplicationSteps = () => {
                         key={i}
                         className={currentTab === i ? '' : 'hidden'}
                     >
-                        <div>
-                            {step.title}
+                        <div className='flex flex-row relative'>
+                            <div className='basis-1/2 px-20'>
+                                <Image 
+                                    src={step.image}
+                                    alt={step.alt}
+                                    className=''
+                                />
+                            </div>
+                            <div className='basis-1/2 text-start'>
+                                <p className='absolute top-0 mt-10 text-2xl font-bold'>
+                                    {step.title}
+                                </p>
+                                <div>
+                                    {step.description}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
