@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.ei-gradient-to-right {
-    background: linear-gradient(to right, #004244, #22C68A);
-}
-
-.ei-gradient-radial {
-    background: -moz-radial-gradient(bottom left, #004244 20%, #22C68A 100%);
-    background: -webkit-radial-gradient(bottom left, #004244 20%, #22C68A 100%);
-    background: radial-gradient(bottom left, #004244 20%, #22C68A 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004244",endColorstr="#22c68a",GradientType=1);
-}
-
 .fit {
     object-fit: contain;
 }
