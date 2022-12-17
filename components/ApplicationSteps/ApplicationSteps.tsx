@@ -1,17 +1,18 @@
+import { useState } from 'react'
 import brochure from '/static/salespoints/brochure.png'
 
 const ApplicationSteps = () => {
     const steps = [
         {
-            tabName: 'Gjør ferdig kartleggingen',
-            title: 'Kartlegging',
+            tabName: 'Initiell info',
+            title: 'Initiell info',
             image: brochure,
             alt: 'Brochure',
             description: ''
         },
         {
-            tabName: 'Initiell info',
-            title: 'Initiell info',
+            tabName: 'Gjør ferdig kartleggingen',
+            title: 'Kartlegging',
             image: brochure,
             alt: 'Brochure',
             description: ''
@@ -39,15 +40,26 @@ const ApplicationSteps = () => {
         },
     ]
 
+    const [currentTab, setCurrentTab] = useState(0)
+    const changeTab = () => {
+
+    }
+
     return (
         <div className='bg-ei-dark-green text-center p-20'>
             <p className='text-4xl'>Våre steg</p>
-            <div>
+            <div className='flex flex-row justify-center'>
+                {steps.map((step, i) => (
+                    <button
+                        key={i}
+                        onClick={() => { setCurrentTab(i); changeTab() }}
+                        className={`text-sm m-4  ${currentTab === i ? 'border-b-2 border-ei-green' : ''}`}
+                    >
+                        {step.tabName}
+                    </button>
+                ))}
                 <div>
 
-                </div>
-                <div>
-                    
                 </div>
             </div>
         </div>
