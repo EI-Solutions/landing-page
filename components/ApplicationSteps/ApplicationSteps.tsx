@@ -51,7 +51,7 @@ const ApplicationSteps = () => {
                     <button
                         key={i}
                         onClick={() => { setCurrentTab(i) }}
-                        className={`text-sm m-4 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : ''}`}
+                        className={`text-sm m-7 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : 'text-subtitle-gray'}`}
                     >
                         {i + 1}. {step.tabName}
                     </button>
@@ -77,7 +77,7 @@ const ApplicationSteps = () => {
                                 <p className='my-10 text-2xl font-bold'>
                                     {step.title}
                                 </p>
-                                <div className=''>
+                                <div className='text-subtitle-gray'>
                                     {step.description}
                                 </div>
                             </div>
