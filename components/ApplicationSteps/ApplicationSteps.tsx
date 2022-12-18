@@ -9,7 +9,7 @@ const ApplicationSteps = () => {
             title: 'Initiell info',
             image: brochure,
             alt: 'Brochure',
-            description: ''
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
             tabName: 'Gjør ferdig kartleggingen',
@@ -44,44 +44,46 @@ const ApplicationSteps = () => {
     const [currentTab, setCurrentTab] = useState(0)
 
     return (
-        <div className='bg-ei-dark-green text-center p-20'>
+        <div className='bg-ei-darker-green text-center p-20'>
             <p className='text-4xl mb-5'>Våre steg</p>
             <div className='flex flex-row justify-center'>
                 {steps.map((step, i) => (
                     <button
                         key={i}
                         onClick={() => { setCurrentTab(i) }}
-                        className={`text-sm m-4  ${currentTab === i ? 'border-b-2 border-ei-green' : ''}`}
+                        className={`text-sm m-4 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : ''}`}
                     >
                         {i + 1}. {step.tabName}
                     </button>
                 ))}
             </div>
-            <div>
-                {steps.map((step, i) => (
-                    <div
-                        key={i}
-                        className={currentTab === i ? '' : 'hidden'}
-                    >
-                        <div className='flex flex-row relative'>
-                            <div className='basis-1/2 px-20'>
-                                <Image 
-                                    src={step.image}
-                                    alt={step.alt}
-                                    className=''
-                                />
-                            </div>
-                            <div className='basis-1/2 text-start'>
-                                <p className='absolute top-0 mt-10 text-2xl font-bold'>
-                                    {step.title}
-                                </p>
-                                <div>
-                                    {step.description}
+            <div className='block overflow-hidden'>
+                <div className=''>
+                    {steps.map((step, i) => (
+                        <div
+                            key={i}
+                            className={`transition-transform duration-500 ${currentTab === i ? '' : 'absolute opacity-0 translate-y-full'}`}
+                        >
+                            <div className='flex flex-row relative'>
+                                <div className='basis-1/2 px-20'>
+                                    <Image
+                                        src={step.image}
+                                        alt={step.alt}
+                                        className=''
+                                    />
+                                </div>
+                                <div className='basis-1/2 text-start'>
+                                    <p className='my-10 text-2xl font-bold'>
+                                        {step.title}
+                                    </p>
+                                    <div className=''>
+                                        {step.description}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )

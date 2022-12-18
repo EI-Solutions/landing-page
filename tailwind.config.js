@@ -10,6 +10,7 @@ module.exports = {
         'ei-dark-green': '#004244',
         'ei-green': '#22C68A',
         'ei-light-green': '#BEE3D3',
+        'ei-darker-green': '#00383A',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
