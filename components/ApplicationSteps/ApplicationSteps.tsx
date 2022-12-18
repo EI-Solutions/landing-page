@@ -46,7 +46,7 @@ const ApplicationSteps = () => {
     return (
         <div className='bg-ei-darker-green text-center p-20'>
             <p className='text-4xl mb-5'>Våre steg</p>
-            <div className='flex flex-row justify-center'>
+            <div className='flex flex-col md:flex-row justify-center'>
                 {steps.map((step, i) => (
                     <button
                         key={i}
@@ -57,33 +57,33 @@ const ApplicationSteps = () => {
                     </button>
                 ))}
             </div>
-            <div className='block overflow-hidden'>
-                <div className=''>
-                    {steps.map((step, i) => (
-                        <div
-                            key={i}
-                            className={`transition-transform duration-500 ${currentTab === i ? '' : 'absolute opacity-0 translate-y-full'}`}
-                        >
-                            <div className='flex flex-row relative'>
-                                <div className='basis-1/2 px-20'>
-                                    <Image
-                                        src={step.image}
-                                        alt={step.alt}
-                                        className=''
-                                    />
-                                </div>
-                                <div className='basis-1/2 text-start'>
-                                    <p className='my-10 text-2xl font-bold'>
-                                        {step.title}
-                                    </p>
-                                    <div className=''>
-                                        {step.description}
-                                    </div>
+            <div className='overflow-hidden relative'>
+                {steps.map((step, i) => (
+                    <div
+                        key={i}
+                        className={
+                            `transition-transform duration-500 
+                                ${currentTab === i ? '' : 'absolute opacity-0 translate-y-full'}`
+                        }
+                    >
+                        <div className='flex flex-wrap'>
+                            <div className='md:basis-3/5 px-20'>
+                                <Image
+                                    src={step.image}
+                                    alt={step.alt}
+                                />
+                            </div>
+                            <div className='md:basis-2/5 flex- text-start'>
+                                <p className='my-10 text-2xl font-bold'>
+                                    {step.title}
+                                </p>
+                                <div className=''>
+                                    {step.description}
                                 </div>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </div>
     )
