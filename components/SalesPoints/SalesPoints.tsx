@@ -60,7 +60,7 @@ const SalePoints = () => {
                                         
                                         src={item.image}
                                         alt={item.alt}
-                                        className='flex-none'
+                                        className='flex-none w-12'
                                     />
                                     <div className='ml-10 mr-40'>
                                         <b>{item.title}</b>
