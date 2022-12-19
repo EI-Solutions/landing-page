@@ -18,7 +18,7 @@ const MainLanding = () => {
                         Til applikasjonen
                     </a>
                     <a 
-                        href="mailto:gustav@eisolutions.no"
+                        href="mailto:contact@eisolutions.no"
                         className="bg-ei-green p-4 m-5"
                     >
                         Forespør demo

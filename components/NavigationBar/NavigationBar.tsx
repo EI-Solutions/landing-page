@@ -15,10 +15,10 @@ const NavigationBar = () => {
                     Om oss
                 </a>
                 <a href="/contact" className='text-xl px-5 mx-4'>
-                    Kontakt
+                    contact
                 </a>
                 <a 
-                    href="mailto:gustav@eisolutions.no" 
+                    href="mailto:contact@eisolutions.no" 
                     className='bg-ei-green p-3 px-5 mx-10 rounded-md text-black text-1xl font-bold'
                 >
                     Forespør demo

@@ -3,6 +3,7 @@ import Customers from '../components/Customers/Customers'
 import SalePoints from '../components/SalesPoints/SalesPoints'
 import MainLanding from '../components/MainLanding/MainLanding'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
+import Footer from '../components/Footer/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <MainLanding />
       <SalePoints />
       <Customers />
+      <Footer />
     </>
   )
 }
