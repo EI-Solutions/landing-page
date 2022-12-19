@@ -19,11 +19,11 @@ const NavigationBar = (props: NavProps) => {
                     Om oss
                 </a>
                 <a href="/contact" className='text-xl px-5 mx-4'>
-                    contact
+                    Kontakt
                 </a>
                 <a
                     href="mailto:contact@eisolutions.no"
-                    className='bg-ei-green p-3 px-5 mx-10 rounded-md text-black text-1xl font-bold'
+                    className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
                 >
                     Forespør demo
                 </a>
