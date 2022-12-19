@@ -2,7 +2,7 @@ import eisolutionsLogo from '/static/eisolutions-logo.svg'
 import Image from 'next/image'
 import mapMarker from '/static/icons/map-marker-outline.svg'
 import email from '/static/icons/email-outline.svg'
-import phone from '/static/icons/phone-outline.svg'
+import phone from '/static/icons/phone.svg'
 import linkedin from '/static/icons/linkedin.svg'
 
 const Footer = () => {
@@ -55,11 +55,11 @@ const Footer = () => {
             <div className='justify-between flex lg:flex-row flex-col'>
                 <div>
                     {contactInfo.map(item => (
-                        <div className='flex justify-items-center'>
+                        <div className='flex'>
                             <Image
                                 src={item.icon}
                                 alt={item.alt}
-                                className='m-2 mx-5 w-10'
+                                className='m-2 mx-5 w-7 object-fill'
                             />
                             {item.value}
                         </div>
@@ -73,11 +73,11 @@ const Footer = () => {
                             className='m-3 w-10'
                         />
                     </a>
-                    <div className='flex flex-col text-ei-green font-bold p-5'>
-                        <a href="/about" className='py-1'>Om oss</a>
-                        <a href="/contact" className='py-1'>Kontakt</a>
-                        <a href="/cookies" className='py-1'>Cookie preferanser</a>
-                        <a href="/terms-and-conditions" className='py-1'>Vilkår for bruk</a>
+                    <div className='text-ei-green font-bold p-5'>
+                        <p><a href="/about" className='py-1'>Om oss</a></p>
+                        <p><a href="/contact" className='py-1'>Kontakt</a></p>
+                        <p><a href="/cookies" className='py-1'>Cookie preferanser</a></p>
+                        <p><a href="/terms-and-conditions" className='py-1'>Vilkår for bruk</a></p>
                     </div>
                 </div>
             </div>
