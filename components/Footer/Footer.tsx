@@ -74,10 +74,10 @@ const Footer = () => {
                         />
                     </a>
                     <div className='text-ei-green font-bold p-5'>
-                        <p><a href="/about" className='py-1'>Om oss</a></p>
-                        <p><a href="/contact" className='py-1'>Kontakt</a></p>
-                        <p><a href="/cookies" className='py-1'>Cookie preferanser</a></p>
-                        <p><a href="/terms-and-conditions" className='py-1'>Vilkår for bruk</a></p>
+                        <p className='my-2'><a href="/about">Om oss</a></p>
+                        <p className='my-2'><a href="/contact">Kontakt</a></p>
+                        <p className='my-2'><a href="/cookies">Cookie preferanser</a></p>
+                        <p className='my-2'><a href="/terms-and-conditions">Vilkår for bruk</a></p>
                     </div>
                 </div>
             </div>
