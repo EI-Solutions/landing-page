@@ -55,7 +55,7 @@ const Footer = () => {
             <div className='justify-between flex lg:flex-row flex-col'>
                 <div>
                     {contactInfo.map(item => (
-                        <div className='flex'>
+                        <div className='flex' key={item.alt}>
                             <Image
                                 src={item.icon}
                                 alt={item.alt}
