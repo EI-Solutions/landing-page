@@ -43,11 +43,11 @@ const Team = () => {
                 {team.map(member => (
                     <div key={member.name} className='text-center p-5 justify-center flex'>
                         <a href={member.linkedIn}>
-                            <div className='w-min-content'>
+                            <div className='w-min-content h-80 w-80'>
                                 <Image
                                     src={member.image}
                                     alt={member.name}
-                                    className='rounded-full object-cover p-5 h-80 w-80'
+                                    className='rounded-full object-cover aspect-square p-5 h-80 w-80'
                                 />
                             </div>
                             <b>{member.name}</b>
