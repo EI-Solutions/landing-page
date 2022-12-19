@@ -4,12 +4,10 @@ import eisolutionsLogo from '/static/eisolutions-logo.svg'
 
 const MainLanding = () => {
     return (
-        <div
-            className="bg-ei-dark-green/30"
-        >
+        <div>
             <div 
                 style={{backgroundImage: 'url("/static/videos/houses-topdown.png")'}} 
-                className="bg-cover min-h-screen bg-ei-dark-green/70 bg-blend-darken"
+                className="bg-cover min-h-screen bg-ei-dark-green/80 bg-blend-darken"
             >
                 <NavigationBar isTransparent={true} icon={eisolutionsLogo} />
                 <div className="w-1/2 p-20">
@@ -22,13 +20,13 @@ const MainLanding = () => {
                     <div className="flex-row flex text-xl">
                         <a
                             href="https://app.eisolutions.no"
-                            className="bg-ei-dark-green p-4 m-5"
+                            className="bg-ei-dark-green p-5 px-8 m-5"
                         >
                             Til applikasjonen
                         </a>
                         <a
                             href="mailto:contact@eisolutions.no"
-                            className="bg-ei-green p-4 m-5"
+                            className="bg-ei-green p-5 px-8 m-5"
                         >
                             Forespør demo
                         </a>
