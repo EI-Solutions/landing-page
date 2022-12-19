@@ -4,11 +4,13 @@ import SalePoints from '../components/SalesPoints/SalesPoints'
 import MainLanding from '../components/MainLanding/MainLanding'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
 import Footer from '../components/Footer/Footer'
+import eisolutionsLogo from '/static/eisolutions-logo.svg'
+
 
 const Home: NextPage = () => {
   return (
     <>
-      <NavigationBar />
+      <NavigationBar isTransparent={true} icon={eisolutionsLogo} />
       <MainLanding />
       <SalePoints />
       <Customers />

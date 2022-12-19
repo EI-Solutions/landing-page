@@ -1,9 +1,20 @@
+import Image from "next/image"
+import houses from "/static/videos/houses-topdown.png"
+
+
 const MainLanding = () => {
     return (
         <div
             className="p-20"
         >
-            <div className="text-black w-1/2">
+            <div className="absolute top-0 left-0 -z-10 bg-ei-dark-green bg-cover">
+                <Image
+                    src={houses}
+                    alt="Houses"
+                    className="opacity-30"
+                />
+            </div>
+            <div className="w-1/2">
                 <p className="text-5xl m-5">
                     Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
                 </p>
@@ -11,7 +22,7 @@ const MainLanding = () => {
                     Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
                 </p>
                 <div className="flex-row flex text-xl">
-                    <a 
+                    <a
                         href="https://app.eisolutions.no"
                         className="bg-ei-dark-green p-4 m-5"
                     >

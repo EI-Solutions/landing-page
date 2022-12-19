@@ -1,16 +1,20 @@
-import eisolutionsLogo from '/static/eisolutions-logo.svg'
 import Image from 'next/image'
 
-const NavigationBar = () => {
+interface NavProps {
+    isTransparent: boolean,
+    icon: any,
+}
+
+const NavigationBar = (props: NavProps) => {
     return (
-        <div className="flex flex-row bg-ei-dark-green justify-between">
+        <div className={`flex flex-row justify-between ${props.isTransparent ? 'bg-transparent' : 'bg-white'}`}>
             <div>
-                <Image 
-                    src={eisolutionsLogo}
+                <Image
+                    src={props.icon}
                     alt="Ei Solutions logo"
                 />
             </div>
-            <div className='items-baseline'>
+            <div className={props.isTransparent ? '' : 'text-ei-green'}>
                 <a href="/about" className='text-xl px-5 mx-4'>
                     Om oss
                 </a>
