@@ -1,4 +1,4 @@
-import eisolutionsLogo from '/static/eisolutions-logo.svg'
+import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 import Image from 'next/image'
 import mapMarker from '/static/icons/map-marker-outline.svg'
 import email from '/static/icons/email-outline.svg'

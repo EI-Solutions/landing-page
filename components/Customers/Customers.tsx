@@ -6,47 +6,58 @@ import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png'
 import baneNorLogo from '/static/customer-logos/banenor-logo.png'
 
 
-const Customers = () => {
+interface CustomerProps {
+    backgroundColor: string
+}
+
+const Customers = (props: CustomerProps) => {
     const customers = [
         {
             image: ageraLogo,
-            alt: 'Agera Eiendom'
+            alt: 'Agera Eiendom',
+            link: 'https://www.ageraeiendom.no/'
         },
         {
             image: asplanViakLogo,
-            alt: 'Asplan Viak'
+            alt: 'Asplan Viak',
+            link: 'https://www.asplanviak.no/'
         },
         {
             image: dnvLogo,
-            alt: 'DNV'
+            alt: 'DNV',
+            link: 'https://www.dnv.no/'
         },
         {
             image: mollerEiendomLogo,
-            alt: 'Møller Eiendom'
+            alt: 'Møller Eiendom',
+            link: 'https://mollereiendom.no/'
         },
         {
             image: baneNorLogo,
-            alt: 'Bane Nor Eiendom'
+            alt: 'Bane Nor Eiendom',
+            link: 'https://www.banenor.no/'
         },
     ]
 
     return (
-        <div className='bg-gradient-to-r from-ei-dark-green to-ei-green py-20'>
+        <div className={props.backgroundColor}>
             <div className='align-middle grid grid-cols-3'>
                 {customers.map(customer => (
                     <div
                         key={customer.alt}
-                        className='h-40 flex justify-center'>
-
-                        <Image
-                            className='p-5 object-contain h-40'
-                            src={customer.image}
-                            alt={customer.alt}
-                        />
+                        className='flex justify-center'
+                    >
+                        <a href={customer.link}>
+                            <Image
+                                className='p-5 object-contain h-40'
+                                src={customer.image}
+                                alt={customer.alt}
+                            />
+                        </a>
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     )
 }
 export default Customers;
