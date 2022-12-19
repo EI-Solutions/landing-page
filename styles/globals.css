@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.fit {
-    object-fit: contain;
-}
-
 div {
     color: white;
     align-items: center;
