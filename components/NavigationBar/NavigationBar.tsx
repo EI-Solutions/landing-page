@@ -7,11 +7,12 @@ interface NavProps {
 
 const NavigationBar = (props: NavProps) => {
     return (
-        <div className={`flex flex-row justify-between ${props.isTransparent ? 'bg-transparent' : 'bg-white'}`}>
+        <div className={`flex flex-row justify-between p-5 ${props.isTransparent ? 'bg-transparent' : 'bg-white'}`}>
             <a href='/'>
                 <Image
                     src={props.icon}
                     alt="Ei Solutions logo"
+
                 />
             </a>
             <div className={props.isTransparent ? '' : 'text-ei-green'}>

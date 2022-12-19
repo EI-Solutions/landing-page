@@ -1,12 +1,12 @@
 import NavigationBar from "../NavigationBar/NavigationBar"
-import eisolutionsLogo from '/static/eisolutions-logo.svg'
+import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 
 const MainLanding = () => {
     return (
         <div>
-            <div 
-                style={{backgroundImage: 'url("/static/videos/houses-topdown.png")'}} 
+            <div
+                style={{ backgroundImage: 'url("/static/videos/houses-topdown.png")' }}
                 className="bg-cover min-h-screen bg-ei-dark-green/80 bg-blend-darken"
             >
                 <NavigationBar isTransparent={true} icon={eisolutionsLogo} />
