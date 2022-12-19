@@ -13,7 +13,10 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      }
+      },
+    },
+    fontFamily: {
+      'display': ['Poppins', 'system-ui']
     },
   },
   plugins: [
