@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className='text-center pb-5'>
+            <p className='text-center p-5'>
                 Opphavsrett © 2022, Ei Solutions AS. Alle rettigheter bevart.
             </p>
         </footer>
