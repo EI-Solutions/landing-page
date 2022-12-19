@@ -39,7 +39,7 @@ const Customers = () => {
                         className='h-40 flex justify-center'>
 
                         <Image
-                            className='p-5 fit h-40'
+                            className='p-5 object-contain h-40'
                             src={customer.image}
                             alt={customer.alt}
                         />
