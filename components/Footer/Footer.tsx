@@ -29,16 +29,21 @@ const Footer = () => {
         {
             icon: phone,
             alt: 'Phone icon',
-            value: <p>+47 416 23 507</p>
+            value: <a
+                href="tel:+4741623507"
+                className='underline'
+            >
+                +47 416 23 507
+            </a>
         },
     ]
 
     return (
         <footer
             className='
-            px-20
-            pt-10
-            bg-gradient-to-r from-[#012424] to-ei-dark-green
+                px-20
+                pt-10
+                bg-gradient-to-r from-[#012424] to-ei-dark-green
             '
         >
             <div className='pb-10'>
@@ -47,14 +52,14 @@ const Footer = () => {
                     alt="Ei Solutions logo"
                 />
             </div>
-            <div className='justify-between flex flex-row'>
+            <div className='justify-between flex lg:flex-row flex-col'>
                 <div>
                     {contactInfo.map(item => (
                         <div className='flex justify-items-center'>
                             <Image
                                 src={item.icon}
                                 alt={item.alt}
-                                className='m-3 w-10'
+                                className='m-2 mx-5 w-10'
                             />
                             {item.value}
                         </div>
@@ -71,11 +76,13 @@ const Footer = () => {
                     <div className='flex flex-col text-ei-green font-bold p-5'>
                         <a href="/about" className='py-1'>Om oss</a>
                         <a href="/contact" className='py-1'>Kontakt</a>
+                        <a href="/cookies" className='py-1'>Cookie preferanser</a>
+                        <a href="/terms-and-conditions" className='py-1'>Vilkår for bruk</a>
                     </div>
                 </div>
             </div>
             <p className='text-center pb-5'>
-                Opphavsrett © 2022, Ei Solutions. Alle rettigheter bevart.
+                Opphavsrett © 2022, Ei Solutions AS. Alle rettigheter bevart.
             </p>
         </footer>
     )
