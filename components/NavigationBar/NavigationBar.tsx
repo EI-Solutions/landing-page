@@ -35,9 +35,14 @@ const NavigationBar = (props: NavProps) => {
                 <Link href="/about" className='text-xl px-5 mx-4'>
                     Om oss
                 </Link>
-                <Link href="/contact" className='text-xl px-5 mx-4'>
+                <button
+                    onClick={() => (
+                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+                    )}
+                    className='text-xl px-5 mx-4'
+                >
                     Kontakt
-                </Link>
+                </button>
                 <a
                     href="mailto:contact@eisolutions.no"
                     className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'

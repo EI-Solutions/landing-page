@@ -33,7 +33,6 @@ const Footer = () => (
                 </a>
                 <div className='text-ei-green font-bold p-5'>
                     <p className='my-2'><Link href="/about">Om oss</Link></p>
-                    <p className='my-2'><Link href="/contact">Kontakt</Link></p>
                     <p className='my-2'><Link href="/cookies">Cookie preferanser</Link></p>
                     <p className='my-2'><Link href="/terms-and-conditions">Vilkår for bruk</Link></p>
                 </div>
