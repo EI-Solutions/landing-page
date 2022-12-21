@@ -1,14 +1,40 @@
+import { BaseSyntheticEvent } from "react";
 import NavigationBar from "../NavigationBar/NavigationBar"
 import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 
 const MainLanding = () => {
+
+    const opacity = "10"
+    const duration = 500
+
+    const fadeToStart = (e: BaseSyntheticEvent) => {
+        const element = e.target
+        element.play();
+        element.classList.remove(`opacity-[${opacity}]`);
+        setTimeout(() => {
+            element.classList.add(`opacity-[${opacity}]`);
+        }, (element.duration / element.playbackRate - duration / 1000) * 1000)
+    }
+
     return (
         <div>
-            <div
-                style={{ backgroundImage: 'url("/static/videos/houses-topdown.png")' }}
-                className="bg-cover min-h-screen bg-ei-dark-green/80 bg-blend-darken"
+            <video
+                src="/static/videos/houses.mp4"
+                autoPlay
+                playsInline
+                loop
+                muted
+                onEnded={fadeToStart}
+                onCanPlay={fadeToStart}
+                onPlay={fadeToStart}
+                className="fixed -z-10 min-h-screen object-cover transition-opacity duration-500 blur-none"
             >
+            </video>
+            <div
+                className="bg-cover min-h-screen bg-[#054040]/70"
+            >
+
                 <NavigationBar isTransparent={true} icon={eisolutionsLogo} />
                 <div className="w-1/2 p-20">
                     <p className="text-5xl m-5">
@@ -34,7 +60,7 @@ const MainLanding = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
