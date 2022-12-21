@@ -2,6 +2,7 @@ import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 import Image from 'next/image'
 import linkedin from '/static/icons/linkedin.svg'
 import ContactInfo from './ContactInformation'
+import Link from 'next/link'
 
 
 const Footer = () => (
@@ -29,10 +30,10 @@ const Footer = () => (
                     />
                 </a>
                 <div className='text-ei-green font-bold p-5'>
-                    <p className='my-2'><a href="/about">Om oss</a></p>
-                    <p className='my-2'><a href="/contact">Kontakt</a></p>
-                    <p className='my-2'><a href="/cookies">Cookie preferanser</a></p>
-                    <p className='my-2'><a href="/terms-and-conditions">Vilkår for bruk</a></p>
+                    <p className='my-2'><Link href="/about">Om oss</Link></p>
+                    <p className='my-2'><Link href="/contact">Kontakt</Link></p>
+                    <p className='my-2'><Link href="/cookies">Cookie preferanser</Link></p>
+                    <p className='my-2'><Link href="/terms-and-conditions">Vilkår for bruk</Link></p>
                 </div>
             </div>
         </div>
