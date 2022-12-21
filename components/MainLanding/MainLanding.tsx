@@ -5,15 +5,15 @@ import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 const MainLanding = () => {
 
-    const opacity = "10"
+    const opacity = "opacity-10"
     const duration = 500
 
     const fadeToStart = (e: BaseSyntheticEvent) => {
         const element = e.target
         element.play();
-        element.classList.remove(`opacity-[${opacity}]`);
+        element.classList.remove(opacity);
         setTimeout(() => {
-            element.classList.add(`opacity-[${opacity}]`);
+            element.classList.add(opacity);
         }, (element.duration / element.playbackRate - duration / 1000) * 1000)
     }
 
@@ -28,11 +28,13 @@ const MainLanding = () => {
                 onEnded={fadeToStart}
                 onCanPlay={fadeToStart}
                 onPlay={fadeToStart}
-                className="fixed -z-10 min-h-screen object-cover transition-opacity duration-500 blur-none"
+                className={
+                    `fixed -z-10 min-h-screen object-cover transition-opacity duration-[${duration}ms] blur-none`
+                }
             >
             </video>
             <div
-                className="bg-cover min-h-screen bg-[#054040]/70"
+                className="bg-cover min-h-screen  bg-ei-darker-green/75"
             >
 
                 <NavigationBar isTransparent={true} icon={eisolutionsLogo} />

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Footer from '../components/Footer/Footer'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
-import eisolutionsLogo from '/static/eisolutions-logo.svg'
+import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
 import ContactInfo from '../components/Footer/ContactInformation'
 
 const Contact: NextPage = () => (
