@@ -41,7 +41,7 @@ const Customers = (props: CustomerProps) => {
 
     return (
         <div className={props.backgroundColor}>
-            <div className='align-middle grid grid-cols-3'>
+            <div className='align-middle grid grid-cols-2 md:grid-cols-5 px-20'>
                 {customers.map(customer => (
                     <div
                         key={customer.alt}
@@ -49,7 +49,7 @@ const Customers = (props: CustomerProps) => {
                     >
                         <a href={customer.link}>
                             <Image
-                                className='p-5 object-contain h-40'
+                                className='p-3 object-contain h-40'
                                 src={customer.image}
                                 alt={customer.alt}
                             />

@@ -18,3 +18,8 @@ div {
         font-family: Poppins, system-ui;
     }
 }
+
+button:hover, a:hover {
+    transition: color 150ms;
+    filter: brightness(80%);
+}
