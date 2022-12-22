@@ -37,8 +37,12 @@ const MainLanding = () => {
                 className="bg-cover min-h-screen  bg-ei-darker-green/75"
             >
 
-                <NavigationBar isTransparent={true} icon={eisolutionsLogo} />
-                <div className="lg:w-1/2 p-20">
+                <NavigationBar
+                    backgroundClasses='bg-transparent'
+                    textClasses='text-white'
+                    icon={eisolutionsLogo}
+                />
+                <div className="lg:w-1/2 p-20 py-32">
                     <p className="text-5xl m-5">
                         Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
                     </p>
