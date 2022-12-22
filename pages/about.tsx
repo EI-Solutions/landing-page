@@ -4,15 +4,18 @@ import Customers from '../components/Customers/Customers'
 import Footer from '../components/Footer/Footer'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
 import Team from '../components/Team/Team'
-import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
+import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 const About: NextPage = () => {
   return (
     <>
-      <NavigationBar isTransparent={false} icon={eisolutionsLogo}/>
+      <NavigationBar
+        backgroundClasses='bg-gradient-to-r from-ei-black-green to-ei-dark-green'
+        textClasses='text-white'
+        icon={eisolutionsLogo}
+      />
       <AboutInfo />
       <Team />
-      <Customers backgroundColor='bg-ei-green'/>
       <Footer />
     </>
   )

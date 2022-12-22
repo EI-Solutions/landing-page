@@ -2,13 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 interface NavProps {
-    isTransparent: boolean,
+    backgroundClasses: string,
+    textClasses: string,
     icon: any,
 }
 
 const NavigationBar = (props: NavProps) => {
     return (
-        <div className={`flex flex-row justify-between p-5 ${props.isTransparent ? 'bg-transparent' : 'bg-white'}`}>
+        <div className={`flex flex-row justify-between p-5 ${props.backgroundClasses}`}>
             <Link href='/'>
                 <Image
                     src={props.icon}
@@ -16,7 +17,7 @@ const NavigationBar = (props: NavProps) => {
 
                 />
             </Link>
-            <div className={props.isTransparent ? '' : 'text-ei-green font-bold'}>
+            <div className={`${props.textClasses} font-bold`}>
                 <Link href="/about" className='text-xl px-5 mx-4'>
                     Om oss
                 </Link>

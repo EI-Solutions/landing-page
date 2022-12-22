@@ -10,7 +10,7 @@ const Footer = () => (
         className='
                 px-20
                 pt-10
-                bg-gradient-to-r from-[#012424] to-ei-dark-green
+                bg-gradient-to-r from-ei-black-green to-ei-dark-green
             '
     >
         <div className='pb-10'>
