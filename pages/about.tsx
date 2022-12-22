@@ -16,7 +16,6 @@ const About: NextPage = () => {
       />
       <AboutInfo />
       <Team />
-      <Customers backgroundColor='bg-ei-green' />
       <Footer />
     </>
   )
