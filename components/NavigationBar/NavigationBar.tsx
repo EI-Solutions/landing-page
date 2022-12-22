@@ -13,14 +13,8 @@ const NavigationBar = (props: NavProps) => {
 
     const [atTop, setAtTop] = useState(true)
     useEffect(() => {
-        console.log("Running the useEffect");
-
         const addScrollListener = () => {
-            console.log("Running the listener");
-            if (window.scrollY > 0)
-                setAtTop(false)
-            else
-                setAtTop(true)
+            setAtTop(window.scrollY <= 0)
         }
         window.addEventListener("scroll", addScrollListener)
         return () => window.removeEventListener("scroll", addScrollListener)
