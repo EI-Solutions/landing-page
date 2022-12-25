@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
 
 interface NavProps {
     backgroundClasses: string,
@@ -8,16 +10,28 @@ interface NavProps {
 }
 
 const NavigationBar = (props: NavProps) => {
+
+    const [atTop, setAtTop] = useState(true)
+    useEffect(() => {
+        const addScrollListener = () => {
+            setAtTop(window.scrollY <= 0)
+        }
+        window.addEventListener("scroll", addScrollListener)
+        return () => window.removeEventListener("scroll", addScrollListener)
+    }, [atTop])
+
     return (
-        <div className={`flex flex-row justify-between p-5 ${props.backgroundClasses}`}>
+        <div className={
+            `transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? props.backgroundClasses : 'bg-white'}`
+        }>
             <Link href='/'>
                 <Image
-                    src={props.icon}
+                    src={atTop ? props.icon : eisolutionsLogo}
                     alt="Ei Solutions logo"
 
                 />
             </Link>
-            <div className={`${props.textClasses} font-bold`}>
+            <div className={`${props.textClasses} font-bold ${atTop ? '' : 'text-ei-green'}`}>
                 <Link href="/about" className='text-xl px-5 mx-4'>
                     Om oss
                 </Link>
