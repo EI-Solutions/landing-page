@@ -49,16 +49,16 @@ const MainLanding = () => {
                     <p className="m-5">
                         Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
                     </p>
-                    <div className="lg:flex-row flex-col flex text-xl">
+                    <div className="lg:flex-row flex-col flex text-xl text-center">
                         <a
                             href="https://app.eisolutions.no"
-                            className="bg-ei-dark-green p-5 px-8 m-5"
+                            className="bg-ei-dark-green p-5 w-full m-5"
                         >
                             Til applikasjonen
                         </a>
                         <a
                             href="mailto:contact@eisolutions.no"
-                            className="bg-ei-green p-5 px-8 m-5"
+                            className="bg-ei-green p-5 w-full m-5"
                         >
                             Forespør demo
                         </a>
