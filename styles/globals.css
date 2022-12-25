@@ -19,7 +19,13 @@ div {
     }
 }
 
-button:hover, a:hover {
-    transition: color 150ms;
+button,
+a {
+    transition: filter 300ms;
+}
+
+button:hover,
+a:hover {
+    transition: filter 300ms;
     filter: brightness(80%);
 }
