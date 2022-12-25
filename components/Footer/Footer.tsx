@@ -14,10 +14,12 @@ const Footer = () => (
             '
     >
         <div className='pb-10'>
-            <Image
-                src={eisolutionsLogo}
-                alt="Ei Solutions logo"
-            />
+            <Link href='/'>
+                <Image
+                    src={eisolutionsLogo}
+                    alt="Ei Solutions logo"
+                />
+            </Link>
         </div>
         <div className='justify-between flex lg:flex-row flex-col'>
             <ContactInfo />
