@@ -9,7 +9,7 @@ const About: NextPage = () => {
   return (
     <>
       <NavigationBar
-        backgroundClasses='bg-gradient-to-r from-ei-black-green to-ei-dark-green'
+        backgroundClasses='bg-transparent'
         textClasses='text-white'
         icon={eisolutionsLogo}
       />
