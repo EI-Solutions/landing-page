@@ -43,7 +43,7 @@ const MainLanding = () => {
                     icon={eisolutionsLogo}
                 />
                 <div className="lg:w-1/2 p-20 py-32">
-                    <p className="text-5xl m-5">
+                    <p className="text-3xl lg:text-5xl m-5">
                         Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
                     </p>
                     <p className="m-5">
