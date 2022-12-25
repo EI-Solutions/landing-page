@@ -13,7 +13,7 @@ const Footer = () => (
                 bg-gradient-to-r from-ei-black-green to-ei-dark-green
             '
     >
-        <div className='pb-10 flex justify-center'>
+        <div className='pb-10 flex justify-center lg:justify-start'>
             <Link href='/'>
                 <Image
                     src={eisolutionsLogo}
