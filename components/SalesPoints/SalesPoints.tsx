@@ -7,6 +7,8 @@ import fileCabinet from '/static/icons/file-cabinet.svg'
 import fileTree from '/static/icons/file-tree.svg'
 import check from '/static/icons/check.png'
 
+import grain from '/static/figures/grain.svg'
+
 const SalesPoints = () => {
 
     const iconListItems = [
@@ -57,7 +59,6 @@ const SalesPoints = () => {
                             <li key={item.title}>
                                 <div className='flex-row flex py-4'>
                                     <Image
-                                        
                                         src={item.image}
                                         alt={item.alt}
                                         className='flex-none w-12'
@@ -79,39 +80,42 @@ const SalesPoints = () => {
                 </div>
             </div>
             <div className="
-                bg-gradient-radial from-ei-green to-ei-dark-green
-                p-20 flex flex-row
+                bg-gradient-radial from-ei-dark-green to-ei-green 
             ">
-                <div>
-                    <Image
-                        src={desktopPage}
-                        alt="Laptop"
-                    />
-                </div>
-                <div className='basis-3/5 px-20'>
-                    <b className='text-3xl'>
-                        Vi generer unike klimarapporter for din eiendom
-                    </b>
-                    <p className='text-md mt-10'>
-                        Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
-                    </p>
-                    <ul className='text-sm mt-10'>
-                        {checkmarkedItems.map((item, i) => (
-                            <li key={i}>
-                                <div className='flex-row flex py-4'>
-                                    <div className='aspect-square flex-none'>
-                                        <Image
-                                            src={check}
-                                            alt='Checkmark'
-                                        />
+                <div style={{ backgroundImage: 'url(/static/figures/grain.svg)' }}
+                    className='w-full h-full flex flex-row p-20'
+                >
+                    <div>
+                        <Image
+                            src={desktopPage}
+                            alt="Laptop"
+                        />
+                    </div>
+                    <div className='basis-3/5 px-20'>
+                        <b className='text-3xl'>
+                            Vi generer unike klimarapporter for din eiendom
+                        </b>
+                        <p className='text-md mt-10'>
+                            Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
+                        </p>
+                        <ul className='text-sm mt-10'>
+                            {checkmarkedItems.map((item, i) => (
+                                <li key={i}>
+                                    <div className='flex-row flex py-4'>
+                                        <div className='aspect-square flex-none'>
+                                            <Image
+                                                src={check}
+                                                alt='Checkmark'
+                                            />
+                                        </div>
+                                        <div className='ml-10'>
+                                            <p>{item.description}</p>
+                                        </div>
                                     </div>
-                                    <div className='ml-10'>
-                                        <p>{item.description}</p>
-                                    </div>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
