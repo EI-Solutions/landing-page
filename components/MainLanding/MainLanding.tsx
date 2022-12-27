@@ -33,16 +33,16 @@ const MainLanding = () => {
                 }
             >
             </video>
-            <div
-                className="bg-cover min-h-screen  bg-ei-darker-green/75"
-            >
 
-                <NavigationBar
-                    backgroundClasses='bg-transparent'
-                    textClasses='text-white'
-                    icon={eisolutionsLogo}
-                />
-                <div className="lg:w-1/2 p-20 py-32">
+            <NavigationBar
+                backgroundClasses='bg-transparent'
+                textClasses='text-white'
+                icon={eisolutionsLogo}
+            />
+            <div
+                className="bg-cover min-h-screen  bg-ei-darker-green/75 flex align-middle"
+            >
+                <div className="lg:w-1/2 p-5 lg:p-20">
                     <p className="text-3xl lg:text-5xl m-5">
                         Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
                     </p>
@@ -65,7 +65,6 @@ const MainLanding = () => {
                     </div>
                 </div>
             </div>
-
         </div >
     )
 }
