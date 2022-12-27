@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react'
 import NavigationDrawer from './NavigationDrawer'
 import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
 
+import menuIcon from '/static/icons/menu_icon.svg'
+import crossIcon from '/static/icons/cross.svg'
+
 interface NavProps {
     backgroundClasses: string,
     textClasses: string,
@@ -25,11 +28,23 @@ const NavigationBar = (props: NavProps) => {
 
     return (
         <>
-            <button className='lg:hidden fixed z-20 p-5' onClick={() => (changeDrawerPosition(!drawerOpen))}>
-                Button
+            <button className='lg:hidden fixed z-20 m-2 p-3' onClick={() => (changeDrawerPosition(!drawerOpen))}
+
+            >
+                {(drawerOpen ?
+                    <Image
+                        alt='Cross icon'
+                        src={crossIcon}
+                    />
+                    :
+                    <Image
+                        alt='Menu icon'
+                        src={menuIcon}
+                    />
+                )}
             </button>
             <div className={`z-10 lg:hidden fixed transition-all duration-300 ${drawerOpen ? 'w-full' : 'w-0 scale-0'}`}>
-                <NavigationDrawer />
+                <NavigationDrawer drawerOpen={drawerOpen} setDrawerOpen={changeDrawerPosition} />
             </div>
             <div className={
                 `max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? props.backgroundClasses : 'bg-white'}`

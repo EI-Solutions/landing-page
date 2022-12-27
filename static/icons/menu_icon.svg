@@ -1,0 +1,5 @@
+<svg width="20" height="21" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" rx="2" ry="2" width="20" height="5" stroke='#BEE3D3' stroke-width='0.3'/>
+  <rect x="0" y="8" rx="2" ry="2" width="20" height="5" stroke='#BEE3D3' stroke-width='0.3'/>
+  <rect x="0" y="16" rx="2" ry="2" width="20" height="5" stroke='#BEE3D3' stroke-width='0.3'/>
+</svg>
