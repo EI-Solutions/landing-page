@@ -10,7 +10,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Ei Solutions - Om oss</title>
+        <title>Ei Solutions – Om oss</title>
       </Head>
       <NavigationBar
         backgroundClasses='bg-transparent'

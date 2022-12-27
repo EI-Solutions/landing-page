@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Ei Solutions - Hjem</title>
+        <title>Ei Solutions – Hjem</title>
       </Head>
       <MainLanding />
       <SalesPoints />
