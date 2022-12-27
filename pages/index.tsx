@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <MainLanding />
       <SalesPoints />
       <ApplicationSteps />
-      <Customers backgroundColor='bg-gradient-to-r from-ei-dark-green to-ei-green py-20' />
+      <Customers />
       <Footer />
     </>
   )

@@ -6,11 +6,8 @@ import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png'
 import baneNorLogo from '/static/customer-logos/banenor-logo.png'
 
 
-interface CustomerProps {
-    backgroundColor: string
-}
 
-const Customers = (props: CustomerProps) => {
+const Customers = () => {
     const customers = [
         {
             image: ageraLogo,
@@ -40,8 +37,10 @@ const Customers = (props: CustomerProps) => {
     ]
 
     return (
-        <div className={props.backgroundColor}>
-            <div className='align-middle grid grid-cols-2 md:grid-cols-5 px-20'>
+        <div className='bg-gradient-to-r from-ei-dark-green to-ei-green'>
+            <div className='align-middle grid grid-cols-2 md:grid-cols-5 p-20 h-full w-full'
+                style={{ backgroundImage: 'url(/static/figures/grain.svg)' }}
+            >
                 {customers.map(customer => (
                     <div
                         key={customer.alt}
