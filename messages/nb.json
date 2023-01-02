@@ -77,7 +77,7 @@
         }
     },
     "Team": {
-        "title": "Møt vårt kreative og kompetente team!",
+        "title": "Møt vårt <green>kreative</green> og <green>kompetente</green> team!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
     }
 }
