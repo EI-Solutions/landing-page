@@ -31,6 +31,9 @@
             "description": ""
         }
     },
+    "ContactInformation": {
+        "country": "Norge"
+    },
     "Footer": {
         "about": "Om oss",
         "cookies": "Cookie preferanser",

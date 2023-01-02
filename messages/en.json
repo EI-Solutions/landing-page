@@ -31,9 +31,12 @@
             "description": ""
         }
     },
+    "ContactInformation": {
+        "country": "Norway"
+    },
     "Footer": {
-        "about": "About us",
-        "cookies": "Cookie preferances",
+        "about": "About Us",
+        "cookies": "Cookie Preferences",
         "terms": "Terms and Conditions",
         "rights1": "Copyright",
         "rights2": "All rights reserved."

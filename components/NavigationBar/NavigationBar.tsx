@@ -7,6 +7,8 @@ import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
 import menuIcon from '/static/icons/menu_icon.svg'
 import crossIcon from '/static/icons/cross.svg'
 import { useTranslations } from 'next-intl'
+import LocaleSelector from '../LocaleSelector/LocaleSelector'
+
 
 interface NavProps {
     backgroundClasses: string,
@@ -65,24 +67,25 @@ const NavigationBar = (props: NavProps) => {
 
                     />
                 </Link>
-                <div className={`${props.textClasses} font-bold ${atTop ? '' : 'text-ei-green'}`}>
-                    <Link href="/about" className='text-xl px-5 mx-4'>
+                <div className={`${props.textClasses} text-xl font-bold ${atTop ? '' : 'text-ei-green'}`}>
+                    <Link href="/about" className='px-5 mx-4'>
                         {t('about')}
                     </Link>
                     <button
                         onClick={() => (
                             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
                         )}
-                        className='text-xl px-5 mx-4'
+                        className='px-5 mx-4'
                     >
                         {t('contact')}
                     </button>
-                    <a
+                    <Link
                         href="mailto:contact@eisolutions.no"
-                        className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
+                        className='bg-ei-green text-base p-3 px-8 mx-10 rounded-md text-black font-bold'
                     >
                         {t('demo')}
-                    </a>
+                    </Link>
+                    <LocaleSelector setDrawerOpen={changeDrawerPosition} />
                 </div>
             </div>
         </>

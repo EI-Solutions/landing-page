@@ -1,7 +1,7 @@
 import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 import Image from 'next/image'
 import linkedin from '/static/icons/linkedin.svg'
-import ContactInfo from './ContactInformation'
+import ContactInformation from './ContactInformation'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
@@ -26,7 +26,7 @@ const Footer = () => {
                 </Link>
             </div>
             <div className='justify-between flex lg:flex-row flex-col'>
-                <ContactInfo />
+                <ContactInformation />
                 <div className='flex'>
                     <a href='https://www.linkedin.com/company/ei-solutions-as/'>
                         <Image
