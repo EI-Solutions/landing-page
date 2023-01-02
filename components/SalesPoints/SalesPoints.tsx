@@ -92,7 +92,7 @@ const SalesPoints = () => {
                                             />
                                         </div>
                                         <div className='ml-10'>
-                                            <p>{t1(`${i}.description`)}</p>
+                                            <p>{t1(`${i}`)}</p>
                                         </div>
                                     </div>
                                 </li>

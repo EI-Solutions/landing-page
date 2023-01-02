@@ -45,39 +45,37 @@
     "MainLanding": {
         "title": "Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien",
         "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
-        "application": "Til application",
+        "application": "Til applikasjon",
         "demo": "Forespør demo"
     },
     "NavigationBar": {
-        "about": "About us",
-        "contact": "Contact",
+        "about": "Om oss",
+        "contact": "Kontakt",
         "demo": "Forespør demo"
     },
     "SalesPoints": {
-        "1": {
+        "0": {
             "title": "Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien",
             "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
-            "points": {
-                "1": {
-                    "title": "Automatisering",
-                    "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
-                },
-                "2": {
-                    "title": "Systematisering",
-                    "description": "A standardized and fast process to give you thorough report for all your plots."
-                },
-                "3": {
-                    "title": "Organisering",
-                    "description": "Easy to understand application and easy to understand reports with all the information needed."
-                }
+            "0": {
+                "title": "Automatisering",
+                "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
+            },
+            "1": {
+                "title": "Systematisering",
+                "description": "A standardized and fast process to give you thorough report for all your plots."
+            },
+            "2": {
+                "title": "Organisering",
+                "description": "Easy to understand application and easy to understand reports with all the information needed."
             }
         },
-        "2": {
+        "1": {
             "title": "Vi generer unike klimarapporter for din eiendom",
             "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
+            "0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
             "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
         }
     },
     "Team": {

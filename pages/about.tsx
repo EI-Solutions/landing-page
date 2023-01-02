@@ -27,3 +27,17 @@ const About: NextPage = () => {
 }
 
 export default About
+
+interface Props {
+  locale: string
+}
+
+export function getStaticProps({ locale }: Props) {
+  return {
+    props: {
+      messages: {
+        ...require(`../messages/${locale}.json`),
+      },
+    },
+  }
+}

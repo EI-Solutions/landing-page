@@ -24,3 +24,17 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+interface Props {
+  locale: string
+}
+
+export function getStaticProps({ locale }: Props) {
+  return {
+    props: {
+      messages: {
+        ...require(`../messages/${locale}.json`),
+      },
+    },
+  }
+}
