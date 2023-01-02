@@ -1,7 +1,5 @@
 import { useTranslations } from "next-intl";
 import { BaseSyntheticEvent } from "react";
-import NavigationBar from "../NavigationBar/NavigationBar"
-import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 
 const MainLanding = () => {
@@ -35,12 +33,6 @@ const MainLanding = () => {
                 }
             >
             </video>
-
-            <NavigationBar
-                backgroundClasses='bg-transparent'
-                textClasses='text-white'
-                icon={eisolutionsLogo}
-            />
             <div
                 className="bg-cover min-h-screen  bg-ei-darker-green/75 flex align-middle"
             >
