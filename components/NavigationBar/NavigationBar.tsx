@@ -26,6 +26,13 @@ const NavigationBar = (props: NavProps) => {
 
     const [drawerOpen, changeDrawerPosition] = useState(false)
 
+    useEffect(() => {
+        changeDrawerPosition(drawerOpen)
+        document.body.style.height = drawerOpen ? '100%' : ''
+        document.body.style.overflow = drawerOpen ? 'hidden' : ''
+        return
+    }, [drawerOpen])
+
     return (
         <>
             <button className='lg:hidden fixed z-20 m-2 p-3' onClick={() => (changeDrawerPosition(!drawerOpen))}
@@ -44,7 +51,7 @@ const NavigationBar = (props: NavProps) => {
                 )}
             </button>
             <div className={`z-10 lg:hidden fixed transition-all duration-300 ${drawerOpen ? 'w-full' : 'w-0 scale-0'}`}>
-                <NavigationDrawer drawerOpen={drawerOpen} setDrawerOpen={changeDrawerPosition} />
+                <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
             </div>
             <div className={
                 `max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? props.backgroundClasses : 'bg-white'}`
