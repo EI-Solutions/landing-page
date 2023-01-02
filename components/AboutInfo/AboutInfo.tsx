@@ -1,14 +1,11 @@
-import Image from 'next/image'
-import gradientWave from '/static/figures/gradient-wave.svg'
-
 const AboutInfo = () => {
     return (
         <>
             <div className='
-                bg-gradient-to-r from-ei-black-green to-ei-dark-green p-20 flex place-content-center
+                bg-gradient-to-r from-ei-black-green to-ei-dark-green p-5 pt-20 flex place-content-center
                 '
             >
-                <div className='text-center w-3/5'>
+                <div className='text-center w-4/5 lg:w-2/5'>
                     <b className='text-5xl text-ei-green'>Hvem er vi?</b>
                     <p className='mt-8'>Ei Solutions is a technology company dedicated to enabling the green transformation of the real estate industry. Our analysis engine generates the sustainability insights the industry needs to comply with the EU-taxonomy’s screening requirements with just a click. This provides an overview of potential red flags instantly for real estate owners in order to target the sustainability issues that really matters in the portfolio.</p>
                 </div>

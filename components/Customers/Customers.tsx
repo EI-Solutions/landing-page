@@ -38,7 +38,7 @@ const Customers = () => {
 
     return (
         <div className='bg-gradient-to-r from-ei-dark-green to-ei-green'>
-            <div className='align-middle grid grid-cols-2 md:grid-cols-5 p-20 h-full w-full'
+            <div className='align-middle grid grid-cols-2 md:grid-cols-5 p-10 lg:p-20 h-full w-full'
                 style={{ backgroundImage: 'url(/static/figures/grain.svg)' }}
             >
                 {customers.map(customer => (

@@ -41,15 +41,15 @@ const Team = () => {
     ]
 
     return (
-        <div className='p-20'>
-            <div className='w-2/5'>
+        <div className='p-10 md:p-20'>
+            <div className='md:w-2/5'>
                 <span className='font-bold text-4xl text-ei-dark-green'>Møt vårt
                     <span className='text-ei-green'> kreative</span> og
                     <span className='text-ei-green'> kompetente</span> team!
                 </span>
             </div>
-            <p className='text-ei-dark-green py-5 w-3/5'><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</i></p>
-            <div className='align-middle grid lg:grid-cols-3 grid-cols-1'>
+            <p className='text-ei-dark-green py-5 md:w-3/5'><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</i></p>
+            <div className='place-items-start grid md:grid-cols-3 grid-cols-1'>
                 {team.map(member => (
                     <div key={member.name} className='p-4 justify-center flex'>
                         <a href={member.linkedIn}>
@@ -57,7 +57,7 @@ const Team = () => {
                                 <Image
                                     src={member.image || defaultImage}
                                     alt={member.name}
-                                    className={`rounded-lg object-cover aspect-square bg-ei-dark-green`}
+                                    className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
                                 />
                             </div>
                             <div className='p-1 text-ei-dark-green'>

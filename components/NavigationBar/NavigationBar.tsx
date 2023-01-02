@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import NavigationDrawer from './NavigationDrawer'
 import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
+
+import menuIcon from '/static/icons/menu_icon.svg'
+import crossIcon from '/static/icons/cross.svg'
 
 interface NavProps {
     backgroundClasses: string,
@@ -20,37 +24,66 @@ const NavigationBar = (props: NavProps) => {
         return () => window.removeEventListener("scroll", addScrollListener)
     }, [atTop])
 
-    return (
-        <div className={
-            `transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? props.backgroundClasses : 'bg-white'}`
-        }>
-            <Link href='/'>
-                <Image
-                    src={atTop ? props.icon : eisolutionsLogo}
-                    alt="Ei Solutions logo"
+    const [drawerOpen, changeDrawerPosition] = useState(false)
 
-                />
-            </Link>
-            <div className={`${props.textClasses} font-bold ${atTop ? '' : 'text-ei-green'}`}>
-                <Link href="/about" className='text-xl px-5 mx-4'>
-                    Om oss
-                </Link>
-                <button
-                    onClick={() => (
-                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-                    )}
-                    className='text-xl px-5 mx-4'
-                >
-                    Kontakt
-                </button>
-                <a
-                    href="mailto:contact@eisolutions.no"
-                    className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
-                >
-                    Forespør demo
-                </a>
+    useEffect(() => {
+        changeDrawerPosition(drawerOpen)
+        document.body.style.height = drawerOpen ? '100%' : ''
+        document.body.style.overflow = drawerOpen ? 'hidden' : ''
+        return
+    }, [drawerOpen])
+
+    return (
+        <>
+            <button className='lg:hidden fixed z-20 m-2 p-3' onClick={() => (changeDrawerPosition(!drawerOpen))}
+
+            >
+                {(drawerOpen ?
+                    <Image
+                        alt='Cross icon'
+                        src={crossIcon}
+                    />
+                    :
+                    <Image
+                        alt='Menu icon'
+                        src={menuIcon}
+                    />
+                )}
+            </button>
+            <div className={`z-10 lg:hidden fixed transition-all duration-300 ${drawerOpen ? 'w-full' : 'w-0 scale-0'}`}>
+                <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
             </div>
-        </div>
+            <div className={
+                `max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? props.backgroundClasses : 'bg-white'}`
+            }>
+                <Link href='/'>
+                    <Image
+                        src={atTop ? props.icon : eisolutionsLogo}
+                        alt="Ei Solutions logo"
+
+                    />
+                </Link>
+                <div className={`${props.textClasses} font-bold ${atTop ? '' : 'text-ei-green'}`}>
+                    <Link href="/about" className='text-xl px-5 mx-4'>
+                        Om oss
+                    </Link>
+                    <button
+                        onClick={() => (
+                            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+                        )}
+                        className='text-xl px-5 mx-4'
+                    >
+                        Kontakt
+                    </button>
+                    <a
+                        href="mailto:contact@eisolutions.no"
+                        className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
+                    >
+                        Forespør demo
+                    </a>
+                </div>
+            </div>
+        </>
     )
 }
 
