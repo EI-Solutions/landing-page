@@ -5,27 +5,27 @@
     },
     "ApplicationSteps": {
         "title": "Our steps",
-        "1": {
+        "0": {
             "tabName": "Initial info",
             "title": "Initial info",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
-        "2": {
+        "1": {
             "tabName": "Gjør ferdig kartleggingen",
             "title": "Kartlegging",
             "description": ""
         },
-        "3": {
+        "2": {
             "tabName": "Ferdigstill klimatilpassningsplan",
             "title": "Klimatilpassningsplan",
             "description": ""
         },
-        "4": {
+        "3": {
             "tabName": "Implementer tiltak",
             "title": "Implementer tiltak",
             "description": ""
         },
-        "5": {
+        "4": {
             "tabName": "Hent ut endelig rapport",
             "title": "Endelig rapport",
             "description": ""
@@ -36,7 +36,11 @@
         "cookies": "Cookie preferances",
         "terms": "Terms and Conditions",
         "rights1": "Copyright",
-        "rights2": "All rights reserved"
+        "rights2": "All rights reserved."
+    },
+    "Head": {
+        "home": "Home",
+        "about": "About Us"
     },
     "MainLanding": {
         "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
@@ -50,25 +54,23 @@
         "demo": "Request demo"
     },
     "SalesPoints": {
-        "1": {
+        "0": {
             "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
             "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-            "points": {
-                "1": {
-                    "title": "Automization",
-                    "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
-                },
-                "2": {
-                    "title": "Systematization",
-                    "description": "A standardized and fast process to give you thorough report for all your plots."
-                },
-                "3": {
-                    "title": "Organization",
-                    "description": "Easy to understand application and easy to understand reports with all the information needed."
-                }
+            "0": {
+                "title": "Automization",
+                "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
+            },
+            "1": {
+                "title": "Systematization",
+                "description": "A standardized and fast process to give you thorough report for all your plots."
+            },
+            "2": {
+                "title": "Organization",
+                "description": "Easy to understand application and easy to understand reports with all the information needed."
             }
         },
-        "2": {
+        "1": {
             "title": "We generate unique climate reports for your property",
             "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
             "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",

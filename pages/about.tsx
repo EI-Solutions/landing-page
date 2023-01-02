@@ -5,12 +5,14 @@ import NavigationBar from '../components/NavigationBar/NavigationBar'
 import Team from '../components/Team/Team'
 import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 import Head from 'next/head'
+import { useTranslations } from 'next-intl'
 
 const About: NextPage = () => {
+  const t = useTranslations('Head')
   return (
     <>
       <Head>
-        <title>Ei Solutions – Om oss</title>
+        <title>Ei Solutions – {t('about')}</title>
       </Head>
       <NavigationBar
         backgroundClasses='bg-transparent'

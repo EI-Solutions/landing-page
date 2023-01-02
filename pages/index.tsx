@@ -5,12 +5,14 @@ import MainLanding from '../components/MainLanding/MainLanding'
 import Footer from '../components/Footer/Footer'
 import ApplicationSteps from '../components/ApplicationSteps/ApplicationSteps'
 import Head from 'next/head'
+import { useTranslations } from 'next-intl'
 
 const Home: NextPage = () => {
+  const t = useTranslations('Head')
   return (
     <>
       <Head>
-        <title>Ei Solutions – Hjem</title>
+        <title>Ei Solutions – {t('home')}</title>
       </Head>
       <MainLanding />
       <SalesPoints />

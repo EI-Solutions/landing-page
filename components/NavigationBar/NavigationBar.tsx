@@ -6,6 +6,7 @@ import eisolutionsLogo from '/static/eisolutions-logo-green.svg'
 
 import menuIcon from '/static/icons/menu_icon.svg'
 import crossIcon from '/static/icons/cross.svg'
+import { useTranslations } from 'next-intl'
 
 interface NavProps {
     backgroundClasses: string,
@@ -14,6 +15,7 @@ interface NavProps {
 }
 
 const NavigationBar = (props: NavProps) => {
+    const t = useTranslations('NavigationBar')
 
     const [atTop, setAtTop] = useState(true)
     useEffect(() => {
@@ -65,7 +67,7 @@ const NavigationBar = (props: NavProps) => {
                 </Link>
                 <div className={`${props.textClasses} font-bold ${atTop ? '' : 'text-ei-green'}`}>
                     <Link href="/about" className='text-xl px-5 mx-4'>
-                        Om oss
+                        {t('about')}
                     </Link>
                     <button
                         onClick={() => (
@@ -73,13 +75,13 @@ const NavigationBar = (props: NavProps) => {
                         )}
                         className='text-xl px-5 mx-4'
                     >
-                        Kontakt
+                        {t('contact')}
                     </button>
                     <a
                         href="mailto:contact@eisolutions.no"
                         className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
                     >
-                        Forespør demo
+                        {t('demo')}
                     </a>
                 </div>
             </div>

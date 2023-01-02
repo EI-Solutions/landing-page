@@ -2,12 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 import { Dispatch, SetStateAction } from "react"
+import { useTranslations } from "next-intl"
 
 interface DrawerProps {
     setDrawerOpen: Dispatch<SetStateAction<boolean>>
 }
 
 const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
+    const t = useTranslations('NavigationBar')
     return (
         <div className='bg-ei-dark-green pt-20 h-screen'>
             <div className='flex flex-col h-64 justify-between'>
@@ -19,7 +21,7 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
                     />
                 </Link>
                 <Link href='/about' className='text-xl px-5 mx-4' onClick={() => setDrawerOpen(false)}>
-                    Om oss
+                    {t('about')}
                 </Link>
                 <button
                     onClick={() => {
@@ -28,13 +30,13 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
                     }}
                     className='text-xl px-5 mx-4'
                 >
-                    Kontakt
+                    {t('contact')}
                 </button>
                 <a
                     href="mailto:contact@eisolutions.no"
                     className='bg-ei-green p-3 px-8 mx-10 rounded-md text-black text-1xl font-bold'
                 >
-                    Forespør demo
+                    {t('demo')}
                 </a>
             </div>
         </div>

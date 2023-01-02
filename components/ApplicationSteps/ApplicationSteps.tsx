@@ -1,43 +1,31 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useState } from 'react'
 import brochure from '/static/salespoints/brochure.png'
 
 const ApplicationSteps = () => {
+    const t = useTranslations('ApplicationSteps')
+
     const steps = [
         {
-            tabName: 'Initiell info',
-            title: 'Initiell info',
             image: brochure,
             alt: 'Brochure',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
-            tabName: 'Gjør ferdig kartleggingen',
-            title: 'Kartlegging',
             image: brochure,
             alt: 'Brochure',
-            description: ''
         },
         {
-            tabName: 'Ferdigstill klimatilpassningsplan',
-            title: 'Klimatilpassningsplan',
             image: brochure,
             alt: 'Brochure',
-            description: ''
         },
         {
-            tabName: 'Implementer tiltak',
-            title: 'Implementer tiltak',
             image: brochure,
             alt: 'Brochure',
-            description: ''
         },
         {
-            tabName: 'Hent ut endelig rapport',
-            title: 'Endelig rapport',
             image: brochure,
             alt: 'Brochure',
-            description: ''
         },
     ]
 
@@ -45,7 +33,7 @@ const ApplicationSteps = () => {
 
     return (
         <div className='bg-ei-darker-green text-center p-10 lg:p-20'>
-            <p className='text-4xl mb-5'>Våre steg</p>
+            <p className='text-4xl mb-5'>{t('title')}</p>
             <div className='flex flex-col lg:flex-row justify-center'>
                 {steps.map((step, i) => (
                     <button
@@ -53,7 +41,7 @@ const ApplicationSteps = () => {
                         onClick={() => { setCurrentTab(i) }}
                         className={`text-sm m-3 w-max lg:m-7 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : 'text-subtitle-gray'}`}
                     >
-                        {i + 1}. {step.tabName}
+                        {i + 1}. {t(`${i}.tabName`)}
                     </button>
                 ))}
             </div>
@@ -75,10 +63,10 @@ const ApplicationSteps = () => {
                             </div>
                             <div className='lg:basis-2/5 flex- text-start'>
                                 <p className='my-10 text-2xl font-bold'>
-                                    {step.title}
+                                    {t(`${i}.title`)}
                                 </p>
                                 <div className='text-subtitle-gray'>
-                                    {step.description}
+                                    {t(`${i}.description`)}
                                 </div>
                             </div>
                         </div>

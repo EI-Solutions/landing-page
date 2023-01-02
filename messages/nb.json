@@ -5,27 +5,27 @@
     },
     "ApplicationSteps": {
         "title": "Our steps",
-        "1": {
+        "0": {
             "tabName": "Initial info",
             "title": "Initial info",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
-        "2": {
+        "1": {
             "tabName": "Gjør ferdig kartleggingen",
             "title": "Kartlegging",
             "description": ""
         },
-        "3": {
+        "2": {
             "tabName": "Ferdigstill klimatilpassningsplan",
             "title": "Klimatilpassningsplan",
             "description": ""
         },
-        "4": {
+        "3": {
             "tabName": "Implementer tiltak",
             "title": "Implementer tiltak",
             "description": ""
         },
-        "5": {
+        "4": {
             "tabName": "Hent ut endelig rapport",
             "title": "Endelig rapport",
             "description": ""
@@ -36,7 +36,11 @@
         "cookies": "Cookie preferanser",
         "terms": "Vilkår for bruk",
         "rights1": "Opphavsrett",
-        "rights2": "Alle rettigheter reservert"
+        "rights2": "Alle rettigheter reservert."
+    },
+    "Head": {
+        "home": "Hjem",
+        "about": "Om oss"
     },
     "MainLanding": {
         "title": "Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien",
