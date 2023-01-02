@@ -51,7 +51,7 @@ const ApplicationSteps = () => {
                     <button
                         key={i}
                         onClick={() => { setCurrentTab(i) }}
-                        className={`text-sm m-7 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : 'text-subtitle-gray'}`}
+                        className={`text-sm m-3 w-max lg:m-7 translate-all duration-150 ${currentTab === i ? 'border-b-2 border-ei-green' : 'text-subtitle-gray'}`}
                     >
                         {i + 1}. {step.tabName}
                     </button>
