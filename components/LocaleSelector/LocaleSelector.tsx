@@ -20,7 +20,7 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
             className='bg-transparent uppercase p-2 cursor-pointer text-xl'
         >
             {locales?.map(locale => (
-                <option key={locale} value={locale} className='bg-black'>
+                <option key={locale} value={locale} className='bg-ei-dark-green'>
                     {locale}
                 </option>
             ))}
