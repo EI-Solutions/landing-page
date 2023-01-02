@@ -1,0 +1,83 @@
+{
+    "AboutInfo": {
+        "title": "Hvem er vi?",
+        "description": "Ei Solutions is a technology company dedicated to enabling the green transformation of the real estate industry. Our analysis engine generates the sustainability insights the industry needs to comply with the EU-taxonomy’s screening requirements with just a click. This provides an overview of potential red flags instantly for real estate owners in order to target the sustainability issues that really matters in the portfolio."
+    },
+    "ApplicationSteps": {
+        "title": "Our steps",
+        "1": {
+            "tabName": "Initial info",
+            "title": "Initial info",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        "2": {
+            "tabName": "Gjør ferdig kartleggingen",
+            "title": "Kartlegging",
+            "description": ""
+        },
+        "3": {
+            "tabName": "Ferdigstill klimatilpassningsplan",
+            "title": "Klimatilpassningsplan",
+            "description": ""
+        },
+        "4": {
+            "tabName": "Implementer tiltak",
+            "title": "Implementer tiltak",
+            "description": ""
+        },
+        "5": {
+            "tabName": "Hent ut endelig rapport",
+            "title": "Endelig rapport",
+            "description": ""
+        }
+    },
+    "Footer": {
+        "about": "Om oss",
+        "cookies": "Cookie preferanser",
+        "terms": "Vilkår for bruk",
+        "rights1": "Opphavsrett",
+        "rights2": "Alle rettigheter reservert"
+    },
+    "MainLanding": {
+        "title": "Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien",
+        "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
+        "application": "Til application",
+        "demo": "Forespør demo"
+    },
+    "NavigationBar": {
+        "about": "About us",
+        "contact": "Contact",
+        "demo": "Forespør demo"
+    },
+    "SalesPoints": {
+        "1": {
+            "title": "Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien",
+            "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
+            "points": {
+                "1": {
+                    "title": "Automatisering",
+                    "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
+                },
+                "2": {
+                    "title": "Systematisering",
+                    "description": "A standardized and fast process to give you thorough report for all your plots."
+                },
+                "3": {
+                    "title": "Organisering",
+                    "description": "Easy to understand application and easy to understand reports with all the information needed."
+                }
+            }
+        },
+        "2": {
+            "title": "Vi generer unike klimarapporter for din eiendom",
+            "description": "Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien",
+            "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        }
+    },
+    "Team": {
+        "title": "Møt vårt kreative og kompetente team!",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    }
+}
