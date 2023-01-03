@@ -4,8 +4,10 @@ import carl from '/static/team/carl.jpg'
 import alba from '/static/team/alba.jpg'
 import defaultImage from '/static/team/default-member-image.svg'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const Team = () => {
+    const t = useTranslations('Team')
 
     const team = [
         {
@@ -43,12 +45,13 @@ const Team = () => {
     return (
         <div className='p-10 md:p-20'>
             <div className='md:w-2/5'>
-                <span className='font-bold text-4xl text-ei-dark-green'>Møt vårt
-                    <span className='text-ei-green'> kreative</span> og
-                    <span className='text-ei-green'> kompetente</span> team!
+                <span className='font-bold text-4xl text-ei-dark-green'>
+                    {t.rich('title', {
+                        green: (text) => <span className='text-ei-green'>{text}</span>
+                    })}
                 </span>
             </div>
-            <p className='text-ei-dark-green py-5 md:w-3/5'><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</i></p>
+            <p className='text-ei-dark-green py-5 md:w-3/5'><i>{t('description')}</i></p>
             <div className='place-items-start grid md:grid-cols-3 grid-cols-1'>
                 {team.map(member => (
                     <div key={member.name} className='p-4 justify-center flex'>

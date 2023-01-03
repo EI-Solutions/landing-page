@@ -2,15 +2,17 @@ import mapMarker from '/static/icons/map-marker-outline.svg'
 import email from '/static/icons/email-outline.svg'
 import phone from '/static/icons/phone.svg'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
-const ContactInfo = () => {
+const ContactInformation = () => {
+    const t = useTranslations('ContactInformation')
     const contactInfo = [
         {
             icon: mapMarker,
             alt: 'Map marker icon',
             value: <div>
                 <p>Sem Sælands vei 1</p>
-                <p>7034 Trondheim, Norway</p>
+                <p>7034 Trondheim, {t('country')}</p>
             </div>
         },
         {
@@ -51,4 +53,4 @@ const ContactInfo = () => {
     )
 }
 
-export default ContactInfo
+export default ContactInformation

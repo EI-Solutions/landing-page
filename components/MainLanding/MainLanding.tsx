@@ -1,9 +1,9 @@
+import { useTranslations } from "next-intl";
 import { BaseSyntheticEvent } from "react";
-import NavigationBar from "../NavigationBar/NavigationBar"
-import eisolutionsLogo from '/static/eisolutions-logo-white.svg'
 
 
 const MainLanding = () => {
+    const t = useTranslations('MainLanding')
 
     const opacity = "opacity-10"
     const duration = 500
@@ -33,34 +33,28 @@ const MainLanding = () => {
                 }
             >
             </video>
-
-            <NavigationBar
-                backgroundClasses='bg-transparent'
-                textClasses='text-white'
-                icon={eisolutionsLogo}
-            />
             <div
                 className="bg-cover min-h-screen  bg-ei-darker-green/75 flex align-middle"
             >
-                <div className="lg:w-1/2 p-5 lg:p-20">
-                    <p className="text-3xl lg:text-5xl m-5">
-                        Den første og mest automatiserte løsningen for analyse av eiendommer i henhold til EU-taksonomien
+                <div className="lg:w-1/2 py-5 lg:p-20">
+                    <p className="text-2xl lg:text-5xl m-5">
+                        {t('title')}
                     </p>
                     <p className="m-5">
-                        Vi benytter oss av romlig analyse av data for å generere automatisk dokumentasjon for å avgjøre om prosjekter er innenfor miljøkravene i EU-taksonomien
+                        {t('description')}
                     </p>
-                    <div className="lg:flex-row flex-col flex text-xl text-center">
+                    <div className="lg:flex-row flex-col flex text-lg text-center px-3">
                         <a
                             href="https://app.eisolutions.no"
                             className="bg-ei-dark-green p-5 w-full m-5"
                         >
-                            Til applikasjonen
+                            {t('application')}
                         </a>
                         <a
                             href="mailto:contact@eisolutions.no"
                             className="bg-ei-green p-5 w-full m-5"
                         >
-                            Forespør demo
+                            {t('demo')}
                         </a>
                     </div>
                 </div>
