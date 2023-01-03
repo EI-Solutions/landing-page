@@ -13,7 +13,7 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
     const t = useTranslations('NavigationBar')
     return (
         <div className='bg-ei-dark-green h-screen'>
-            <div className='flex flex-col h-2/3 justify-around'>
+            <div className='flex flex-col h-2/3 justify-around pt-10'>
                 <Link href='/' onClick={() => setDrawerOpen(false)}>
                     <Image
                         src={eisolutionsLogo}

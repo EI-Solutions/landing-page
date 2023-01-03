@@ -36,14 +36,14 @@ const MainLanding = () => {
             <div
                 className="bg-cover min-h-screen  bg-ei-darker-green/75 flex align-middle"
             >
-                <div className="lg:w-1/2 p-5 lg:p-20">
-                    <p className="text-3xl lg:text-5xl m-5">
+                <div className="lg:w-1/2 py-5 lg:p-20">
+                    <p className="text-2xl lg:text-5xl m-5">
                         {t('title')}
                     </p>
                     <p className="m-5">
                         {t('description')}
                     </p>
-                    <div className="lg:flex-row flex-col flex text-xl text-center">
+                    <div className="lg:flex-row flex-col flex text-lg text-center px-3">
                         <a
                             href="https://app.eisolutions.no"
                             className="bg-ei-dark-green p-5 w-full m-5"

@@ -46,7 +46,7 @@ const SalesPoints = () => {
                                         alt={item.alt}
                                         className='flex-none w-12'
                                     />
-                                    <div className='ml-10 lg:mr-40'>
+                                    <div className='ml-5 lg:ml-10 lg:mr-40'>
                                         <b>{t0(`${i}.title`)}</b>
                                         <p>{t0(`${i}.description`)}</p>
                                     </div>
@@ -91,7 +91,7 @@ const SalesPoints = () => {
                                                 alt='Checkmark'
                                             />
                                         </div>
-                                        <div className='ml-10'>
+                                        <div className='ml-5 lg:ml-10'>
                                             <p>{t1(`${i}`)}</p>
                                         </div>
                                     </div>
