@@ -32,6 +32,10 @@
       "description": ""
     }
   },
+  "Cookies": {
+    "title": "Cookie preferanser",
+    "content": "Vi bruker bare nødvendige"
+  },
   "ContactInformation": {
     "country": "Norge"
   },
@@ -88,6 +92,10 @@
       "1": "Leverandører, leietakere og myndigheter får press om å kjøpe, eller by på bærekraftige tjenester. Det betyr prisøkning for aktører som ikke tilbyr bærekraftig eiendommer, eller prosjekter.",
       "2": "BREEAM-NOR manualene tilpasses EU-taksonomien. Data-drevne analyser frigjør ressurser til å virkelig øke miljøgevinsten i prosjekter."
     }
+  },
+  "Terms": {
+    "title": "Vilkår for bruk",
+    "content": "Vi bryr oss om din sikkerhet"
   },
   "Team": {
     "title": "Møt vårt <green>tverrfaglige</green> og <green>kompetente</green> team!",

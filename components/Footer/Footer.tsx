@@ -42,8 +42,8 @@ const Footer = () => {
       <p className='text-center p-5'>
         {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
       </p>
-      <Modal title='Cookie Preferences' setShowing={setShowingCookies} modalCardClasses='translate-y-0 opacity-100' showing={showingCookies} />
-      <Modal title='Terms and Conditions' setShowing={setShowingTerms} modalCardClasses='translate-y-0 opacity-100' showing={showingTerms} />
+      <Modal content='Cookies' setShowing={setShowingCookies} modalCardClasses='translate-y-0 opacity-100' showing={showingCookies} />
+      <Modal content='Terms' setShowing={setShowingTerms} modalCardClasses='translate-y-0 opacity-100' showing={showingTerms} />
     </footer>
   );
 };
