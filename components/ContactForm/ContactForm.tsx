@@ -2,6 +2,10 @@ import { useTranslations } from "next-intl"
 import { ChangeEvent, ChangeEventHandler, FocusEvent, FormEvent, useEffect, useState } from "react";
 import FormInput from "./FormInput"
 
+interface StringData {
+    [key: string]: string
+}
+
 const ContactForm = () => {
     const t = useTranslations('ContactForm')
     const [formData, setFormData] = useState({
@@ -9,14 +13,14 @@ const ContactForm = () => {
         lastName: '',
         email: '',
         message: '',
-    });
+    } as StringData);
 
     const [errorData, setErrorData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         message: '',
-    })
+    } as StringData);
 
     const handleChange = (event: ChangeEvent<HTMLTextAreaElement> & ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -27,29 +31,29 @@ const ContactForm = () => {
 
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault();
-        if (formData.firstName || formData.lastName || formData.email || formData.message) {
-            console.log(formData);
+        for (const key in formData) {
+            if (currentError(key, formData[key])) {
+                return
+            }
         }
+        console.log(formData)
     }
 
     const handleBlur = (event: FocusEvent<HTMLInputElement> & FocusEvent<HTMLTextAreaElement>) => {
         const input = event.target
-        if (!input.value) {
-            setErrorData({
-                ...errorData,
-                [input.name]: t('requiredError')
-            })
-        } else if (input.name == 'email' && !input.value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
-            setErrorData({
-                ...errorData,
-                [input.name]: t('emailError')
-            })
-        } else {
-            setErrorData({
-                ...errorData,
-                [input.name]: ''
-            })
+        setErrorData({
+            ...errorData,
+            [input.name]: currentError(input.name, input.value)
+        })
+    }
+
+    const currentError = (name: string, value: string): string => {
+        if (!value) {
+            return t('requiredError')
+        } else if (name == 'email' && value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+            return t('emailError')
         }
+        return ''
     }
 
 
