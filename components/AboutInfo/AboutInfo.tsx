@@ -12,7 +12,8 @@ const AboutInfo = () => {
       >
         <div className='text-center w-4/5 lg:w-2/5'>
           <b className='text-5xl text-ei-green'>{t('title')}</b>
-          <p className='mt-8'>{t('description')}</p>
+          <p className='mt-8'>{t('description1')}</p>
+          <p className='mt-8'>{t('description2')}</p>
         </div>
       </div>
       <AboutColorWave />
