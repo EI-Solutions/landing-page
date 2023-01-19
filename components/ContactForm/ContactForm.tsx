@@ -2,25 +2,28 @@ import { useTranslations } from "next-intl"
 import { ChangeEvent, ChangeEventHandler, FocusEvent, FormEvent, useEffect, useState } from "react";
 import FormInput from "./FormInput"
 
-interface StringData {
-    [key: string]: string
+interface FieldData {
+    [key: string]: string;
 }
 
 const ContactForm = () => {
     const t = useTranslations('ContactForm')
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         message: '',
-    } as StringData);
+    } as FieldData);
 
     const [errorData, setErrorData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         message: '',
-    } as StringData);
+    } as FieldData);
+
+    const [submitError, setSubmitError] = useState(false)
 
     const handleChange = (event: ChangeEvent<HTMLTextAreaElement> & ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -31,12 +34,23 @@ const ContactForm = () => {
 
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault();
+
+        setErrorData({})
         for (const key in formData) {
-            if (currentError(key, formData[key])) {
-                return
+            const error = currentError(key, formData[key])
+            if (error) {
+                setErrorData(prevErrorData => {
+                    return {
+                        ...prevErrorData,
+                        [key]: error
+                    }
+                })
+                setSubmitError(true)
+                setTimeout(() => {
+                    setSubmitError(false)
+                }, 300)
             }
         }
-        console.log(formData)
     }
 
     const handleBlur = (event: FocusEvent<HTMLInputElement> & FocusEvent<HTMLTextAreaElement>) => {
@@ -47,10 +61,10 @@ const ContactForm = () => {
         })
     }
 
-    const currentError = (name: string, value: string): string => {
+    const currentError = (field: string, value: string): string => {
         if (!value) {
             return t('requiredError')
-        } else if (name == 'email' && value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+        } else if (field == 'email' && !value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
             return t('emailError')
         }
         return ''
@@ -74,7 +88,7 @@ const ContactForm = () => {
                         </span>
                         <FormInput label={t('email')} error={errorData.email} name="email" handleChange={handleChange} handleBlur={handleBlur} />
                         <FormInput label={t('message')} error={errorData.message} name="message" isMultiline className="h-64" handleChange={handleChange} handleBlur={handleBlur} />
-                        <button type="submit" className="bg-ei-green text-white p-2 m-2 rounded-lg">{t('submit')}</button>
+                        <button type="submit" className={`bg-ei-green text-white p-2 m-2 rounded-lg ${submitError ? 'animate-wiggle bg-red-400' : ''}`}>{t('submit')}</button>
                     </form>
                 </div>
             </div>

@@ -18,6 +18,17 @@ module.exports = {
         'gradient-radial':
           'radial-gradient(farthest-corner at 300px 400px, var(--tw-gradient-stops))',
       },
+      animation: {
+        wiggle: 'wiggle 0.3s',
+      },
+      keyframes: {
+        wiggle: {
+          '20%': { transform: 'translateX(-5%)' },
+          '40%': { transform: 'translateX(5%)' },
+          '60%': { transform: 'translateX(-2.5%)' },
+          '80%': { transform: 'translateX(2.5%)' },
+        }
+      },
     },
   },
   plugins: [
