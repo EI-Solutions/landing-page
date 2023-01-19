@@ -76,11 +76,12 @@ const ContactForm = () => {
             <div className="flex flex-col lg:flex-row p-10">
                 <div className="lg:basis-1/2 text-black p-5">
                     <p className="text-6xl font-bold text-ei-green">{t('title')}</p>
-                    <p className="text-2xl">{t('description')}</p>
-                    <p className="text-2xl font-bold">{t('description-bold')}</p>
+                    <div className="text-black text-2xl">{t.rich('description', {
+                        bold: (chunk) => <p><b>{chunk}</b></p>,
+                    })}</div>
                 </div>
                 <div className="p-10 lg:basis-1/2 bg-ei-dark-green">
-                    <div className="text-xl font-bold p-5">{t('send-request')}</div>
+                    <div className="text-xl font-bold p-5">{t('request')}</div>
                     <form onSubmit={handleSubmit}>
                         <span className="flex flex-row">
                             <FormInput label={t('first')} error={errorData.firstName} name="firstName" handleChange={handleChange} handleBlur={handleBlur} />
@@ -88,7 +89,7 @@ const ContactForm = () => {
                         </span>
                         <FormInput label={t('email')} error={errorData.email} name="email" handleChange={handleChange} handleBlur={handleBlur} />
                         <FormInput label={t('message')} error={errorData.message} name="message" isMultiline className="h-64" handleChange={handleChange} handleBlur={handleBlur} />
-                        <button type="submit" className={`bg-ei-green text-white p-2 m-2 rounded-lg ${submitError ? 'animate-wiggle bg-red-400' : ''}`}>{t('submit')}</button>
+                        <button type="submit" className={`bg-ei-green text-white px-5 p-2 m-2 rounded-lg ${submitError ? 'animate-wiggle bg-red-400' : ''}`}>{t('submit')}</button>
                     </form>
                 </div>
             </div>

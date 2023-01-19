@@ -36,6 +36,18 @@
     "title": "Cookie Preferences",
     "content": ""
   },
+  "ContactForm": {
+    "title": "Contact us",
+    "description": "Contact us for a demo or to learn more about Ei Solutions. <bold>We will get back to you as soon as possible!</bold>",
+    "request": "Send us a request!",
+    "first": "First name",
+    "last": "Last name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send",
+    "requiredError": "This field is required",
+    "emailError": "Please enter a valid email address"
+  },
   "ContactInformation": {
     "country": "Norway"
   },

@@ -36,6 +36,18 @@
     "title": "Preferanser for informasjonskapsler",
     "content": "Vi bruker bare nødvendige"
   },
+  "ContactForm": {
+    "title": "Kontakt oss",
+    "description": "Kontakt oss for en demo eller for høre mer om Ei Solutions. <bold>Vi svarer så fort som mulig!</bold>",
+    "request": "Send oss en forespørsel!",
+    "first": "Fornavn",
+    "last": "Etternavn",
+    "email": "E-post",
+    "message": "Melding",
+    "submit": "Send",
+    "requiredError": "Feltet er påkrevd",
+    "emailError": "Denne e-posten er ikke gyldig"
+  },
   "ContactInformation": {
     "country": "Norge"
   },
