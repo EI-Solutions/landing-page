@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"
-import { ChangeEvent, ChangeEventHandler, FocusEvent, FormEvent, useEffect, useState } from "react";
+import { ChangeEvent, FocusEvent, FormEvent, useState } from "react";
 import FormInput from "./FormInput"
 
 interface FieldData {
@@ -26,9 +26,11 @@ const ContactForm = () => {
     const [submitError, setSubmitError] = useState(false)
 
     const handleChange = (event: ChangeEvent<HTMLTextAreaElement> & ChangeEvent<HTMLInputElement>) => {
-        setFormData({
-            ...formData,
-            [event.target.name]: event.target.value
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [event.target.name]: event.target.value
+            }
         });
     }
 
@@ -45,12 +47,17 @@ const ContactForm = () => {
                         [key]: error
                     }
                 })
-                setSubmitError(true)
-                setTimeout(() => {
-                    setSubmitError(false)
-                }, 300)
             }
         }
+        if (errorData.firstName || errorData.lastName || errorData.email || errorData.message) {
+            setSubmitError(true)
+            setTimeout(() => {
+                setSubmitError(false)
+            }, 300)
+            return;
+        }
+
+        // TODO: Send mail to ei solutions and sender and clear form
     }
 
     const handleBlur = (event: FocusEvent<HTMLInputElement> & FocusEvent<HTMLTextAreaElement>) => {
