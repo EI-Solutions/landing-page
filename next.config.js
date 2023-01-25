@@ -1,4 +1,4 @@
-const withVideos = require('next-videos')
+const withVideos = require('next-videos');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,6 +11,9 @@ const nextConfig = {
 
 /** @type {import('next').NextConfig} */
 module.exports = (_phase, { defaultConfig }) => {
-  const plugins = [withVideos]
-  return  plugins.reduce((acc, plugin) => plugin(acc), { ...defaultConfig, ...nextConfig })
-}
+  const plugins = [withVideos];
+  return plugins.reduce((acc, plugin) => plugin(acc), {
+    ...defaultConfig,
+    ...nextConfig,
+  });
+};

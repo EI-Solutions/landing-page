@@ -1,7 +1,8 @@
 {
   "AboutInfo": {
     "title": "Who are we?",
-    "description": "Ei Solutions is a technology company dedicated to enabling the green transformation of the real estate industry. Our analysis engine generates the sustainability insights the industry needs to comply with the EU-taxonomy’s screening requirements with just a click. This provides an overview of potential red flags instantly for real estate owners in order to target the sustainability issues that really matters in the portfolio."
+    "description1": "Ei Solutions er et teknologiselelskap som tilbyr EU-taksonomi tjenester til eiendomssektoren. Selskapet er startet i Trondheim 2021 basert på forskningsprosjekter ved NTNUs Institutt for bygg- og miljøteknikk. ",
+    "description2": "Målet er å hjelpe eiendomsbransjen til å bli mer bærekraftig og høste de økonomiske gevinstene det innebærer. Teamet består av ambisiøse mennesker med lidenskap for bærekraft, teknologi og eiendom."
   },
   "ApplicationSteps": {
     "title": "Our steps",
