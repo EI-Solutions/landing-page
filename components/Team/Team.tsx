@@ -18,6 +18,12 @@ const Team = () => {
     },
     {
       image: null,
+      name: 'Jenni Skaara',
+      linkedIn: 'https://www.linkedin.com/in/jenni-susanne-skaara-027626158/',
+      role: 'Product Manager',
+    },
+    {
+      image: null,
       name: 'Eik Hvattum Røgeberg',
       linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
       role: 'Frontend Lead & Co-founder',
