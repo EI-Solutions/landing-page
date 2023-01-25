@@ -4,19 +4,6 @@ import Customers from '../Customers/Customers';
 
 const MainLanding = () => {
   const t = useTranslations('MainLanding');
-
-  const opacity = 'opacity-10';
-  const duration = 500;
-
-  const fadeToStart = (e: BaseSyntheticEvent) => {
-    const element = e.target;
-    element.play();
-    element.classList.remove(opacity);
-    setTimeout(() => {
-      element.classList.add(opacity);
-    }, (element.duration / element.playbackRate - duration / 1000) * 1000);
-  };
-
   return (
     <div className=''>
       <video
@@ -25,10 +12,7 @@ const MainLanding = () => {
         playsInline
         loop
         muted
-        onEnded={fadeToStart}
-        onCanPlay={fadeToStart}
-        onPlay={fadeToStart}
-        className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 object-cover transition-opacity duration-[${duration}ms] blur-none`}
+        className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 object-cover blur-none`}
       ></video>
       <div className="bg-cover min-h-screen  flex align-middle">
         <div className="lg:w-1/2 py-5 lg:p-20">
