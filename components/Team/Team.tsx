@@ -15,48 +15,48 @@ const Team = () => {
       image: gustav,
       name: 'Gustav Haaland',
       role: 'CEO & Co-founder',
-      email: "gustav@eisolutions.no",
-      phone: "+47 416 67 212",
+      email: 'gustav@eisolutions.no',
+      phone: '+47 416 67 212',
       linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
     },
     {
       image: null,
       name: 'Jenni Skaara',
       role: 'Product Manager',
-      email: "jenni@eisolutions.no",
-      phone: "+47 920 56 264",
+      email: 'jenni@eisolutions.no',
+      phone: '+47 920 56 264',
       linkedIn: 'https://www.linkedin.com/in/jenni-susanne-skaara-027626158/',
     },
     {
       image: null,
       name: 'Eik Hvattum Røgeberg',
       role: 'Frontend Lead & Co-founder',
-      email: "eik@eisolutions.no",
-      phone: "",
+      email: 'eik@eisolutions.no',
+      phone: '',
       linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
     },
     {
       image: carl,
       name: 'Carl Gützkow',
       role: 'Backend Developer & Co-founder',
-      email: "carl@eisolutions.no",
-      phone: "+47 416 23 507",
+      email: 'carl@eisolutions.no',
+      phone: '+47 416 23 507',
       linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
     },
     {
       image: thomas,
       name: 'Thomas Svendal',
       role: 'Backend Developer',
-      email: "thomas@eisolutions.no",
-      phone: "+47 482 36 294",
+      email: 'thomas@eisolutions.no',
+      phone: '+47 482 36 294',
       linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
     },
     {
       image: alba,
       name: 'Alba Marie Nesvik Arnesen',
       role: 'UX Designer',
-      email: "alba@eisolutions.no",
-      phone: "",
+      email: 'alba@eisolutions.no',
+      phone: '',
       linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
     },
   ];
@@ -84,11 +84,19 @@ const Team = () => {
               />
             </div>
             <div className="p-1 flex max-sm:flex-col md:flex-col lg:flex-row justify-between">
-              <div className='text-ei-dark-green'>
+              <div className="text-ei-dark-green">
                 <b>{member.name}</b>
                 <p>{member.role}</p>
-                <p><a className='underline' href={`mailto:${member.email}`}>{member.email}</a></p>
-                <p><a className='underline' href={`tlf:${member.phone}`}>{member.phone}</a></p>
+                <p>
+                  <a className="underline" href={`mailto:${member.email}`}>
+                    {member.email}
+                  </a>
+                </p>
+                <p>
+                  <a className="underline" href={`tlf:${member.phone}`}>
+                    {member.phone}
+                  </a>
+                </p>
               </div>
               <div>
                 <a href={member.linkedIn}>
