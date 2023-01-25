@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -15,11 +15,10 @@ module.exports = {
         'ei-black-green': '#012424',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(farthest-corner at 300px 400px, var(--tw-gradient-stops))',
+        'gradient-radial':
+          'radial-gradient(farthest-corner at 300px 400px, var(--tw-gradient-stops))',
       },
     },
   },
-  plugins: [
-    require('tailwindcss'),
-  ]
-}
+  plugins: [require('tailwindcss')],
+};

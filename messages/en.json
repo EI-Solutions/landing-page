@@ -1,88 +1,88 @@
 {
-    "AboutInfo": {
-        "title": "Who are we?",
-        "description": "Ei Solutions is a technology company dedicated to enabling the green transformation of the real estate industry. Our analysis engine generates the sustainability insights the industry needs to comply with the EU-taxonomy’s screening requirements with just a click. This provides an overview of potential red flags instantly for real estate owners in order to target the sustainability issues that really matters in the portfolio."
+  "AboutInfo": {
+    "title": "Who are we?",
+    "description": "Ei Solutions is a technology company dedicated to enabling the green transformation of the real estate industry. Our analysis engine generates the sustainability insights the industry needs to comply with the EU-taxonomy’s screening requirements with just a click. This provides an overview of potential red flags instantly for real estate owners in order to target the sustainability issues that really matters in the portfolio."
+  },
+  "ApplicationSteps": {
+    "title": "Our steps",
+    "0": {
+      "tabName": "Initial info",
+      "title": "Initial info",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
-    "ApplicationSteps": {
-        "title": "Our steps",
-        "0": {
-            "tabName": "Initial info",
-            "title": "Initial info",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        "1": {
-            "tabName": "Gjør ferdig kartleggingen",
-            "title": "Kartlegging",
-            "description": ""
-        },
-        "2": {
-            "tabName": "Ferdigstill klimatilpassningsplan",
-            "title": "Klimatilpassningsplan",
-            "description": ""
-        },
-        "3": {
-            "tabName": "Implementer tiltak",
-            "title": "Implementer tiltak",
-            "description": ""
-        },
-        "4": {
-            "tabName": "Hent ut endelig rapport",
-            "title": "Endelig rapport",
-            "description": ""
-        }
+    "1": {
+      "tabName": "Gjør ferdig kartleggingen",
+      "title": "Kartlegging",
+      "description": ""
     },
-    "ContactInformation": {
-        "country": "Norway"
+    "2": {
+      "tabName": "Ferdigstill klimatilpassningsplan",
+      "title": "Klimatilpassningsplan",
+      "description": ""
     },
-    "Footer": {
-        "about": "About Us",
-        "cookies": "Cookie Preferences",
-        "terms": "Terms and Conditions",
-        "rights1": "Copyright",
-        "rights2": "All rights reserved."
+    "3": {
+      "tabName": "Implementer tiltak",
+      "title": "Implementer tiltak",
+      "description": ""
     },
-    "Head": {
-        "home": "Home",
-        "about": "About Us"
-    },
-    "MainLanding": {
-        "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
-        "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-        "application": "To application",
-        "demo": "Request demo"
-    },
-    "NavigationBar": {
-        "about": "About us",
-        "contact": "Contact",
-        "demo": "Request demo"
-    },
-    "SalesPoints": {
-        "0": {
-            "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
-            "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-            "0": {
-                "title": "Automization",
-                "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
-            },
-            "1": {
-                "title": "Systematization",
-                "description": "A standardized and fast process to give you thorough report for all your plots."
-            },
-            "2": {
-                "title": "Organization",
-                "description": "Easy to understand application and easy to understand reports with all the information needed."
-            }
-        },
-        "1": {
-            "title": "We generate unique climate reports for your property",
-            "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-            "0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-        }
-    },
-    "Team": {
-        "title": "Meet our <green>creative</green> and <green>competent</green> team!",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    "4": {
+      "tabName": "Hent ut endelig rapport",
+      "title": "Endelig rapport",
+      "description": ""
     }
+  },
+  "ContactInformation": {
+    "country": "Norway"
+  },
+  "Footer": {
+    "about": "About Us",
+    "cookies": "Cookie Preferences",
+    "terms": "Terms and Conditions",
+    "rights1": "Copyright",
+    "rights2": "All rights reserved."
+  },
+  "Head": {
+    "home": "Home",
+    "about": "About Us"
+  },
+  "MainLanding": {
+    "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
+    "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
+    "application": "To application",
+    "demo": "Request demo"
+  },
+  "NavigationBar": {
+    "about": "About us",
+    "contact": "Contact",
+    "demo": "Request demo"
+  },
+  "SalesPoints": {
+    "0": {
+      "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
+      "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
+      "0": {
+        "title": "Automization",
+        "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
+      },
+      "1": {
+        "title": "Systematization",
+        "description": "A standardized and fast process to give you thorough report for all your plots."
+      },
+      "2": {
+        "title": "Organization",
+        "description": "Easy to understand application and easy to understand reports with all the information needed."
+      }
+    },
+    "1": {
+      "title": "We generate unique climate reports for your property",
+      "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
+      "0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    }
+  },
+  "Team": {
+    "title": "Meet our <green>creative</green> and <green>competent</green> team!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+  }
 }
