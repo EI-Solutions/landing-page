@@ -6,8 +6,8 @@ import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png';
 import baneNorLogo from '/static/customer-logos/banenor-logo.png';
 import LinkedImageList from '../Customers/LinkedImageList';
 
-const MainLanding = () => {
-  const t = useTranslations('MainLanding');
+const HeroBanner = () => {
+  const t = useTranslations('HeroBanner');
 
   const customers = [
     {
@@ -74,4 +74,4 @@ const MainLanding = () => {
   );
 };
 
-export default MainLanding;
+export default HeroBanner;

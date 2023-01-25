@@ -53,7 +53,7 @@
     "about": "Om oss",
     "notFound": "Ikke funnet"
   },
-  "MainLanding": {
+  "HeroBanner": {
     "title": "Automatisk bærekraftsvurdering av eiendom i henhold til EU-taksonomien",
     "description": "Med få tastetrykk hjelper vi eiendomselskaper med å sjekke, dokumentere og rapportere på samsvar med EU-taksonomien.",
     "application": "Til applikasjon",
