@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Customers from '../components/Customers/Customers';
 import SalesPoints from '../components/SalesPoints/SalesPoints';
 import MainLanding from '../components/MainLanding/MainLanding';
 import ApplicationSteps from '../components/ApplicationSteps/ApplicationSteps';
@@ -12,7 +11,6 @@ const Home: NextPage = () => {
         <MainLanding />
         <SalesPoints />
         <ApplicationSteps />
-        <Customers />
       </>
     </BasePage>
   );

@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { BaseSyntheticEvent } from 'react';
+import Customers from '../Customers/Customers';
 
 const MainLanding = () => {
   const t = useTranslations('MainLanding');
@@ -47,6 +48,9 @@ const MainLanding = () => {
               {t('demo')}
             </a>
           </div>
+        </div>
+        <div className="absolute inset-x-0 bottom-0">
+          <Customers />
         </div>
       </div>
     </div>
