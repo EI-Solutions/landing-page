@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import SalesPoints from '../components/SalesPoints/SalesPoints';
 import MainLanding from '../components/MainLanding/MainLanding';
-import ApplicationSteps from '../components/ApplicationSteps/ApplicationSteps';
 import BasePage from '../components/BasePage/BasePage';
 
 const Home: NextPage = () => {
@@ -10,7 +9,6 @@ const Home: NextPage = () => {
       <>
         <MainLanding />
         <SalesPoints />
-        <ApplicationSteps />
       </>
     </BasePage>
   );
@@ -29,5 +27,5 @@ export function getStaticProps({ locale }: Props) {
         ...require(`/messages/${locale}.json`),
       },
     },
-  };
+  }
 }
