@@ -1,8 +1,42 @@
 import { useTranslations } from 'next-intl';
-import Customers from '../Customers/Customers';
+import ageraLogo from '/static/customer-logos/agera-logo.png';
+import asplanViakLogo from '/static/customer-logos/asplanviak-logo.png';
+import dnvLogo from '/static/customer-logos/dnv-logo.png';
+import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png';
+import baneNorLogo from '/static/customer-logos/banenor-logo.png';
+import LinkedImageList from '../Customers/LinkedImageList';
 
 const MainLanding = () => {
   const t = useTranslations('MainLanding');
+
+  const customers = [
+    {
+      image: ageraLogo,
+      alt: 'Agera Eiendom',
+      link: 'https://www.ageraeiendom.no/',
+    },
+    {
+      image: asplanViakLogo,
+      alt: 'Asplan Viak',
+      link: 'https://www.asplanviak.no/',
+    },
+    {
+      image: dnvLogo,
+      alt: 'DNV',
+      link: 'https://www.dnv.no/',
+    },
+    {
+      image: mollerEiendomLogo,
+      alt: 'Møller Eiendom',
+      link: 'https://mollereiendom.no/',
+    },
+    {
+      image: baneNorLogo,
+      alt: 'Bane Nor Eiendom',
+      link: 'https://www.banenor.no/',
+    },
+  ];
+
   return (
     <div>
       <video
@@ -33,7 +67,7 @@ const MainLanding = () => {
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">
-          <Customers />
+          <LinkedImageList images={customers} />
         </div>
       </div>
     </div>
