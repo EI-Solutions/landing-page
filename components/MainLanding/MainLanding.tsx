@@ -1,13 +1,12 @@
 import { useTranslations } from 'next-intl';
-import { BaseSyntheticEvent } from 'react';
 import Customers from '../Customers/Customers';
 
 const MainLanding = () => {
   const t = useTranslations('MainLanding');
   return (
-    <div className=''>
+    <div>
       <video
-        src="/static/videos/houses.webm"
+        src={require('static/videos/houses.webm')}
         autoPlay
         playsInline
         loop
