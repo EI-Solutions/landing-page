@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 import SalesPoints from '../components/SalesPoints/SalesPoints';
-import MainLanding from '../components/MainLanding/MainLanding';
 import BasePage from '../components/BasePage/BasePage';
+import HeroBanner from '../components/HeroBanner/HeroBanner';
 
 const Home: NextPage = () => {
   return (
     <BasePage subPageName="home">
       <>
-        <MainLanding />
+        <HeroBanner />
         <SalesPoints />
       </>
     </BasePage>
