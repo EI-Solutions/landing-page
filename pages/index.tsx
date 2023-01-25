@@ -27,5 +27,5 @@ export function getStaticProps({ locale }: Props) {
         ...require(`/messages/${locale}.json`),
       },
     },
-  }
+  };
 }
