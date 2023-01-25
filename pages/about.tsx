@@ -10,7 +10,6 @@ import innovasjonNorge from '/static/partner-logos/innovasjon-norge.png';
 import ntnu from '/static/partner-logos/ntnu.png';
 
 const About: NextPage = () => {
-
   const partners = [
     {
       image: innovasjonNorge,
@@ -39,7 +38,12 @@ const About: NextPage = () => {
       <>
         <AboutInfo />
         <Team />
-        <LinkedImageList images={partners} />
+        <div
+          className="bg-ei-green py-32"
+          style={{ backgroundImage: 'url(/grain.svg)' }}
+        >
+          <LinkedImageList images={partners} />
+        </div>
       </>
     </BasePage>
   );
