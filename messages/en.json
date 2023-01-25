@@ -35,6 +35,12 @@
   "ContactInformation": {
     "country": "Norway"
   },
+  "Error": {
+    "404": {
+      "subtitle": "The page you requested was sadly not found.",
+      "linkIndex": "Go to the <link>front page</link>."
+    }
+  },
   "Footer": {
     "about": "About Us",
     "cookies": "Cookie Preferences",
@@ -44,7 +50,8 @@
   },
   "Head": {
     "home": "Home",
-    "about": "About Us"
+    "about": "About Us",
+    "notFound": "Not Found"
   },
   "MainLanding": {
     "title": "Automated sustainable assessment of real estate according to the EU-taxonomy",

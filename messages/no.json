@@ -35,6 +35,12 @@
   "ContactInformation": {
     "country": "Norge"
   },
+  "Error": {
+    "404": {
+      "subtitle": "Siden du forespurte var dessverre ikke funnet.",
+      "linkIndex": "Gå til <link>forsiden</link>."
+    }
+  },
   "Footer": {
     "about": "Om oss",
     "cookies": "Preferanser for informasjonskapsler",
@@ -44,7 +50,8 @@
   },
   "Head": {
     "home": "Hjem",
-    "about": "Om oss"
+    "about": "Om oss",
+    "notFound": "Ikke funnet"
   },
   "MainLanding": {
     "title": "Automatisk bærekraftsvurdering av eiendom i henhold til EU-taksonomien",
