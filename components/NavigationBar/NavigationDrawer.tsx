@@ -37,7 +37,7 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
           {t('contact')}
         </button>
         <a
-          href="mailto:contact@eisolutions.no"
+          href="mailto:gustav@eisolutions.no"
           className="bg-ei-green p-3 px-8 rounded-md text-black text-1xl font-bold"
         >
           {t('demo')}
