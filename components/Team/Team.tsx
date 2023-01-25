@@ -3,6 +3,7 @@ import thomas from '/static/team/thomas.jpg';
 import carl from '/static/team/carl.jpg';
 import alba from '/static/team/alba.jpg';
 import defaultImage from '/static/team/default-member-image.svg';
+import linkedin from '/static/icons/linkedin.svg';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -13,38 +14,50 @@ const Team = () => {
     {
       image: gustav,
       name: 'Gustav Haaland',
-      linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
       role: 'CEO & Co-founder',
+      email: "gustav@eisolutions.no",
+      phone: "+47 416 67 212",
+      linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
     },
     {
       image: null,
       name: 'Jenni Skaara',
-      linkedIn: 'https://www.linkedin.com/in/jenni-susanne-skaara-027626158/',
       role: 'Product Manager',
+      email: "jenni@eisolutions.no",
+      phone: "+47 920 56 264",
+      linkedIn: 'https://www.linkedin.com/in/jenni-susanne-skaara-027626158/',
     },
     {
       image: null,
       name: 'Eik Hvattum Røgeberg',
-      linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
       role: 'Frontend Lead & Co-founder',
+      email: "eik@eisolutions.no",
+      phone: "",
+      linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
     },
     {
       image: carl,
       name: 'Carl Gützkow',
-      linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
       role: 'Backend Developer & Co-founder',
+      email: "carl@eisolutions.no",
+      phone: "+47 416 23 507",
+      linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
     },
     {
       image: thomas,
       name: 'Thomas Svendal',
-      linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
       role: 'Backend Developer',
+      email: "thomas@eisolutions.no",
+      phone: "+47 482 36 294",
+      linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
     },
     {
       image: alba,
       name: 'Alba Marie Nesvik Arnesen',
-      linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
       role: 'UX Designer',
+      email: "alba@eisolutions.no",
+      phone: "",
+      linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
     },
   ];
 
@@ -60,22 +73,29 @@ const Team = () => {
       <p className="text-ei-dark-green py-5 md:w-3/5">
         <i>{t('description')}</i>
       </p>
-      <div className="place-items-start grid md:grid-cols-3 grid-cols-1">
+      <div className="place-items-stretch grid md:grid-cols-3 grid-cols-1">
         {team.map((member) => (
-          <div key={member.name} className="p-4 justify-center flex">
-            <a href={member.linkedIn}>
-              <div className="w-min-content">
-                <Image
-                  src={member.image || defaultImage}
-                  alt={member.name}
-                  className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
-                />
-              </div>
-              <div className="p-1 text-ei-dark-green">
+          <div key={member.name} className="p-4 justify-center">
+            <div className="w-min-content">
+              <Image
+                src={member.image || defaultImage}
+                alt={member.name}
+                className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
+              />
+            </div>
+            <div className="p-1 flex max-sm:flex-col md:flex-col lg:flex-row justify-between">
+              <div className='text-ei-dark-green'>
                 <b>{member.name}</b>
                 <p>{member.role}</p>
+                <p><a className='underline' href={`mailto:${member.email}`}>{member.email}</a></p>
+                <p><a className='underline' href={`tlf:${member.phone}`}>{member.phone}</a></p>
               </div>
-            </a>
+              <div>
+                <a href={member.linkedIn}>
+                  <Image src={linkedin} alt="Linked In icon" className="m-3 " />
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
