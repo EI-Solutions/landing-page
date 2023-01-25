@@ -61,7 +61,7 @@ const SalesPoints = () => {
             "
       >
         <div
-          style={{ backgroundImage: 'url(/static/figures/grain.svg)' }}
+          style={{ backgroundImage: 'url(/grain.svg)' }}
           className="w-full h-full flex flex-col lg:flex-row p-10 lg:p-20 "
         >
           <div>
