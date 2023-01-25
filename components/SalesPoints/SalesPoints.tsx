@@ -2,11 +2,11 @@ import Image from 'next/image';
 import desktopPage from '/static/salespoints/desktop-page.png';
 import laptopPages from '/static/salespoints/laptop-pages.png';
 
-import automate from '/static/icons/automate.svg';
-import fileCabinet from '/static/icons/file-cabinet.svg';
-import fileTree from '/static/icons/file-tree.svg';
-import check from '/static/icons/check.png';
-import { useTranslations } from 'next-intl';
+import automate from '/static/icons/automate.svg'
+import fileCabinet from '/static/icons/file-cabinet.svg'
+import fileTree from '/static/icons/file-tree.svg'
+import check from '/static/icons/check.svg'
+import { useTranslations } from 'next-intl'
 
 const SalesPoints = () => {
   const t0 = useTranslations('SalesPoints.0');
