@@ -13,7 +13,7 @@ const BasePage = ({ children, subPageName }: BasePageProps) => {
   return (
     <>
       <Head>
-        <title>Ei Solutions – {t(subPageName)}</title>
+        <title>{`Ei Solutions – ${t(subPageName)}`}</title>
       </Head>
       <NavigationBar />
       {children}
