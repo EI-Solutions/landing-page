@@ -1,8 +1,8 @@
 {
   "AboutInfo": {
-    "title": "Who are we?",
-    "description1": "Ei Solutions er et teknologiselelskap som tilbyr EU-taksonomi tjenester til eiendomssektoren. Selskapet er startet i Trondheim 2021 basert på forskningsprosjekter ved NTNUs Institutt for bygg- og miljøteknikk. ",
-    "description2": "Målet er å hjelpe eiendomsbransjen til å bli mer bærekraftig og høste de økonomiske gevinstene det innebærer. Teamet består av ambisiøse mennesker med lidenskap for bærekraft, teknologi og eiendom."
+    "title": "About Us",
+    "description1": "Ei Solutions is a tech company which offers EU-taxonomy services for the real estate sector. The company was founded 2021 in Trondheim out of research projects at NTNU's Department of Civil and Environmental Engineering.",
+    "description2": "The goal is to help the real estate industry to become more sustainable and to obtain the financial benefits it entails. The team consists of ambitious people with passion for sustainability, technology and real estate."
   },
   "ApplicationSteps": {
     "title": "Our steps",
@@ -47,43 +47,43 @@
     "about": "About Us"
   },
   "MainLanding": {
-    "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
-    "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-    "application": "To application",
-    "demo": "Request demo"
+    "title": "Automated sustainable assessment of real estate according to the EU-taxonomy",
+    "description": "With just a few clicks, we help real estate companies verify, document, and report on compliancy with the EU-taxonomy.",
+    "application": "To Application",
+    "demo": "Request Demo"
   },
   "NavigationBar": {
     "about": "About us",
     "contact": "Contact",
-    "demo": "Request demo"
+    "demo": "Request Demo"
   },
   "SalesPoints": {
     "0": {
-      "title": "The first and most automated solution for analysis of properties to the EU-taxonomy",
-      "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
+      "title": "Data-driven insight and automation so you can prioritize the urgent measures",
+      "description": "With spacial analysis of data and integrations with third-party services, we automate the unneccasary tasks and give you the insight and recommendations about the property.",
       "0": {
-        "title": "Automization",
-        "description": "Fast mapping and automized reports through our simple application and fast fill-out form."
+        "title": "Automatic Insight",
+        "description": "Automatic insight and documentation on compliancy with DNSH and Substantial Contribution goals."
       },
       "1": {
-        "title": "Systematization",
-        "description": "A standardized and fast process to give you thorough report for all your plots."
+        "title": "Systematic Walkthrough",
+        "description": "Standardized and systematic application makes it easy to achieve proper taxonomy reporting"
       },
       "2": {
-        "title": "Organization",
+        "title": "Recommended Measures",
         "description": "Easy to understand application and easy to understand reports with all the information needed."
       }
     },
     "1": {
-      "title": "We generate unique climate reports for your property",
-      "description": "We use spatial analysis of data to generate automated documentation to determine whether projects are withing the constrations of the EU-taxonomy",
-      "0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      "title": "Why comply with the EU-taxonomy?",
+      "description": "",
+      "0": "Financial institutions grant favorable terms for those who report on compliancy with the taxonomy.",
+      "1": "Suppliers, tenents and governments are pressured to buy or offer sustainable services. That means increased expenses for non-compliant companies and projects.",
+      "2": "BREEAM-NOR manuals are tailored to the EU-taxonomy. Data-driven analysis frees resources to increase profits from sustainable projects."
     }
   },
   "Team": {
-    "title": "Meet our <green>creative</green> and <green>competent</green> team!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    "title": "Meet our <green>interdisciplinary</green> and <green>competent</green> team!",
+    "description": ""
   }
 }
