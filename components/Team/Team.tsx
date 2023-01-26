@@ -40,7 +40,7 @@ const Team = () => {
       name: 'Carl Gützkow',
       role: 'Backend Developer & Co-founder',
       email: 'carl@eisolutions.no',
-      phone: '+47 416 23 507',
+      phone: '',
       linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
     },
     {
@@ -48,7 +48,7 @@ const Team = () => {
       name: 'Thomas Svendal',
       role: 'Backend Developer',
       email: 'thomas@eisolutions.no',
-      phone: '+47 482 36 294',
+      phone: '',
       linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
     },
     {
