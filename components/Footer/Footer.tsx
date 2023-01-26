@@ -5,13 +5,21 @@ import ContactInformation from './ContactInformation';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Modal from '../Modal/Modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const Footer = () => {
   const t = useTranslations('Footer');
   const [showingTerms, setShowingTerms] = useState(false)
   const [showingCookies, setShowingCookies] = useState(false)
+
+  useEffect(() => {
+    if (showingCookies || showingTerms) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+  }, [showingCookies, showingTerms])
 
   return (
     <footer
