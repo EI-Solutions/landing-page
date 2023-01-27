@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
+import CookieModal from '../Modal/CookieModal';
 
 
 const Footer = () => {
@@ -50,8 +51,8 @@ const Footer = () => {
       <p className='text-center p-5'>
         {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
       </p>
-      <Modal content='Cookies' setShowing={setShowingCookies} modalCardClasses='translate-y-0 opacity-100' showing={showingCookies} />
-      <Modal content='Terms' setShowing={setShowingTerms} modalCardClasses='translate-y-0 opacity-100' showing={showingTerms} />
+      <CookieModal setShowing={setShowingCookies} showing={showingCookies} />
+      <Modal content='Terms' setShowing={setShowingTerms} showing={showingTerms} />
     </footer>
   );
 };
