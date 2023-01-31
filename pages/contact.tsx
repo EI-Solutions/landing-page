@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 
 const Contact: NextPage = () => {
   return (
-    <BasePage subPageName="contact">
+    <BasePage subPageName="contact" transparentNavBar={false}>
       <>
         <ContactForm />
       </>

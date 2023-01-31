@@ -48,21 +48,28 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
         )}
       </button>
       <div
-        className={`z-10 lg:hidden fixed transition-all duration-300 ${drawerOpen ? 'w-full' : 'w-0 scale-0'
-          }`}
+        className={`z-10 lg:hidden fixed transition-all duration-300 ${
+          drawerOpen ? 'w-full' : 'w-0 scale-0'
+        }`}
       >
         <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
       </div>
       <div
-        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${atTop ? isTransparent ? 'bg-transparent' : 'bg-ei-dark-green' : 'bg-white'
-          }`}
+        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${
+          atTop
+            ? isTransparent
+              ? 'bg-transparent'
+              : 'bg-ei-dark-green'
+            : 'bg-white'
+        }`}
       >
         <Link href="/">
           <Image src={atTop ? whiteLogo : greenLogo} alt="Ei Solutions logo" />
         </Link>
         <div
-          className={`text-xl font-bold ${atTop ? 'text-white' : 'text-ei-green'
-            }`}
+          className={`text-xl font-bold ${
+            atTop ? 'text-white' : 'text-ei-green'
+          }`}
         >
           <Link href="/about" className="px-5 mx-4">
             {t('about')}

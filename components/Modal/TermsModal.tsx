@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
+/*
 import Modal from './Modal';
 import styles from './Modal.module.css';
-
 interface TermModalProps {
   showing: boolean;
   setShowing: Dispatch<SetStateAction<boolean>>;
@@ -310,3 +310,4 @@ const TermsModal = ({ showing, setShowing }: TermModalProps) => {
 };
 
 export default TermsModal;
+ */

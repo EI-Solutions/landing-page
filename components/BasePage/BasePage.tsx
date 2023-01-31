@@ -9,7 +9,11 @@ interface BasePageProps {
   transparentNavBar: boolean;
 }
 
-const BasePage = ({ children, subPageName, transparentNavBar }: BasePageProps) => {
+const BasePage = ({
+  children,
+  subPageName,
+  transparentNavBar,
+}: BasePageProps) => {
   const t = useTranslations('Head');
   return (
     <>

@@ -4,11 +4,7 @@ import linkedin from '/static/icons/linkedin.svg';
 import ContactInformation from './ContactInformation';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
-import CookieModal from '../Modal/CookieModal';
-import TermsModal from '../Modal/TermsModal';
-
 const Footer = () => {
   const t = useTranslations('Footer');
   const [showingTerms, setShowingTerms] = useState(false);
@@ -45,32 +41,12 @@ const Footer = () => {
             <p className="my-2">
               <Link href="/about">{t('about')}</Link>
             </p>
-            <p className="my-2">
-              <button
-                onClick={() => {
-                  setShowingCookies(true);
-                }}
-              >
-                {t('cookies')}
-              </button>
-            </p>
-            <p className="my-2">
-              <button
-                onClick={() => {
-                  setShowingTerms(true);
-                }}
-              >
-                {t('terms')}
-              </button>
-            </p>
           </div>
         </div>
       </div>
       <p className="text-center p-5">
         {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
       </p>
-      <CookieModal setShowing={setShowingCookies} showing={showingCookies} />
-      <TermsModal setShowing={setShowingTerms} showing={showingTerms} />
     </footer>
   );
 };

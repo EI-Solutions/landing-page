@@ -5,6 +5,7 @@ import dnvLogo from '/static/customer-logos/dnv-logo.png';
 import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png';
 import baneNorLogo from '/static/customer-logos/banenor-logo.png';
 import LinkedImageList from '../Customers/LinkedImageList';
+import Link from 'next/link';
 
 const HeroBanner = () => {
   const t = useTranslations('HeroBanner');
@@ -58,12 +59,9 @@ const HeroBanner = () => {
             >
               {t('application')}
             </a>
-            <a
-              href="/contact"
-              className="bg-ei-green p-5 w-full m-5"
-            >
+            <Link href="/contact" className="bg-ei-green p-5 w-full m-5">
               {t('demo')}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">

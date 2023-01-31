@@ -1,7 +1,9 @@
-import { Dispatch, SetStateAction } from 'react';
-import Modal from './Modal';
-import styles from './Modal.module.css';
-
+ import { Dispatch, SetStateAction } from 'react';
+ 
+ /*
+ import Modal from './Modal';
+ import styles from './Modal.module.css';
+ 
 interface CookieModalProps {
   showing: boolean;
   setShowing: Dispatch<SetStateAction<boolean>>;
@@ -215,3 +217,4 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
 };
 
 export default CookieModal;
+ */
