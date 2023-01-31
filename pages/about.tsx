@@ -34,7 +34,7 @@ const About: NextPage = () => {
   ];
 
   return (
-    <BasePage subPageName="about">
+    <BasePage subPageName="about" transparentNavBar>
       <>
         <AboutInfo />
         <Team />
