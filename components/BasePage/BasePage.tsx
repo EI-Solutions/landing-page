@@ -6,16 +6,17 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 interface BasePageProps {
   children: JSX.Element;
   subPageName: string;
+  transparentNavBar: boolean;
 }
 
-const BasePage = ({ children, subPageName }: BasePageProps) => {
+const BasePage = ({ children, subPageName, transparentNavBar }: BasePageProps) => {
   const t = useTranslations('Head');
   return (
     <>
       <Head>
         <title>{`Ei Solutions – ${t(subPageName)}`}</title>
       </Head>
-      <NavigationBar />
+      <NavigationBar isTransparent={transparentNavBar} />
       {children}
       <Footer />
     </>

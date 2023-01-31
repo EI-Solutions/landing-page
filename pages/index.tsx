@@ -5,7 +5,7 @@ import HeroBanner from '../components/HeroBanner/HeroBanner';
 
 const Home: NextPage = () => {
   return (
-    <BasePage subPageName="home">
+    <BasePage subPageName="home" transparentNavBar>
       <>
         <HeroBanner />
         <SalesPoints />
