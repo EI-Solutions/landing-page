@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl"
 import { ChangeEvent, FocusEvent, FormEvent, useState } from "react";
 import FormInput from "./FormInput"
+import emailjs from "@emailjs/browser"
 
 interface FieldData {
     [key: string]: string;
@@ -57,7 +58,7 @@ const ContactForm = () => {
             return;
         }
 
-        // TODO: Send mail to ei solutions and sender and clear form
+        emailjs.send('service_eo3z2h6', 'template_qu8ghxp', formData, 'fKyPHu0d9EbF-dJVa')
     }
 
     const handleBlur = (event: FocusEvent<HTMLInputElement> & FocusEvent<HTMLTextAreaElement>) => {
