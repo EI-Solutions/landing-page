@@ -7,20 +7,20 @@ import { useTranslations } from 'next-intl';
 import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
 import CookieModal from '../Modal/CookieModal';
-
+import TermsModal from '../Modal/TermsModal';
 
 const Footer = () => {
   const t = useTranslations('Footer');
-  const [showingTerms, setShowingTerms] = useState(false)
-  const [showingCookies, setShowingCookies] = useState(false)
+  const [showingTerms, setShowingTerms] = useState(false);
+  const [showingCookies, setShowingCookies] = useState(false);
 
   useEffect(() => {
     if (showingCookies || showingTerms) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ""
+      document.body.style.overflow = '';
     }
-  }, [showingCookies, showingTerms])
+  }, [showingCookies, showingTerms]);
 
   return (
     <footer
@@ -41,18 +41,36 @@ const Footer = () => {
           <a href="https://www.linkedin.com/company/ei-solutions-as/">
             <Image src={linkedin} alt="Linked In icon" className="m-3 w-10" />
           </a>
-          <div className='text-ei-green font-bold p-5'>
-            <p className='my-2'><Link href="/about">{t('about')}</Link></p>
-            <p className='my-2'><button onClick={() => { setShowingCookies(true) }}>{t('cookies')}</button></p>
-            <p className='my-2'><button onClick={() => { setShowingTerms(true) }}>{t('terms')}</button></p>
+          <div className="text-ei-green font-bold p-5">
+            <p className="my-2">
+              <Link href="/about">{t('about')}</Link>
+            </p>
+            <p className="my-2">
+              <button
+                onClick={() => {
+                  setShowingCookies(true);
+                }}
+              >
+                {t('cookies')}
+              </button>
+            </p>
+            <p className="my-2">
+              <button
+                onClick={() => {
+                  setShowingTerms(true);
+                }}
+              >
+                {t('terms')}
+              </button>
+            </p>
           </div>
         </div>
       </div>
-      <p className='text-center p-5'>
+      <p className="text-center p-5">
         {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
       </p>
       <CookieModal setShowing={setShowingCookies} showing={showingCookies} />
-      <Modal content='Terms' setShowing={setShowingTerms} showing={showingTerms} />
+      <TermsModal setShowing={setShowingTerms} showing={showingTerms} />
     </footer>
   );
 };

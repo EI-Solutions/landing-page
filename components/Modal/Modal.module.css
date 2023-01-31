@@ -34,13 +34,13 @@
 }
 
 .modal h5 {
-  font-size: .83em;
+  font-size: 0.83em;
   margin-top: 1.67em;
   margin-bottom: 1.67em;
 }
 
 .modal h6 {
-  font-size: .67em;
+  font-size: 0.67em;
   margin-top: 2.33em;
   margin-bottom: 2.33em;
 }
@@ -65,12 +65,12 @@
 
 .modal ul {
   display: block;
-list-style-type: disc;
-margin-top: 1em;
-margin-bottom: 1 em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
 }
 
 .modal a:link {
@@ -84,5 +84,5 @@ padding-left: 40px;
 }
 
 .modal li {
-  display: list-item;	
+  display: list-item;
 }
