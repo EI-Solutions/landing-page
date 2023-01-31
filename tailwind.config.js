@@ -27,12 +27,9 @@ module.exports = {
           '40%': { transform: 'translateX(5%)' },
           '60%': { transform: 'translateX(-2.5%)' },
           '80%': { transform: 'translateX(2.5%)' },
-        }
+        },
       },
     },
   },
-  plugins: [
-    require('tailwindcss'),
-    require('@tailwindcss/forms'),
-  ]
-}
+  plugins: [require('tailwindcss'), require('@tailwindcss/forms')],
+};

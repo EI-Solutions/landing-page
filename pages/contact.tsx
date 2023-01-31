@@ -1,30 +1,30 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 
-import BasePage from '../components/BasePage/BasePage'
-import ContactForm from '../components/ContactForm/ContactForm'
+import BasePage from '../components/BasePage/BasePage';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const Contact: NextPage = () => {
-    return (
-        <BasePage subPageName='contact'>
-            <>
-                <ContactForm />
-            </>
-        </BasePage>
-    )
-}
+  return (
+    <BasePage subPageName="contact">
+      <>
+        <ContactForm />
+      </>
+    </BasePage>
+  );
+};
 
-export default Contact
+export default Contact;
 
 interface Props {
-    locale: string
+  locale: string;
 }
 
 export function getStaticProps({ locale }: Props) {
-    return {
-        props: {
-            messages: {
-                ...require(`/messages/${locale}.json`),
-            },
-        },
-    }
+  return {
+    props: {
+      messages: {
+        ...require(`/messages/${locale}.json`),
+      },
+    },
+  };
 }

@@ -46,7 +46,9 @@
     "message": "Melding",
     "submit": "Send",
     "requiredError": "Feltet er påkrevd",
-    "emailError": "Denne e-posten er ikke gyldig"
+    "emailError": "Denne e-posten er ikke gyldig",
+    "submitSuccessMessage": "Takk for din melding! Vi svarer så fort som mulig.",
+    "submitErrorMessage": "Noe gikk galt. Send gjerne en e-post til gustav@eisolutions.no"
   },
   "ContactInformation": {
     "country": "Norge"
@@ -67,6 +69,7 @@
   "Head": {
     "home": "Hjem",
     "about": "Om oss",
+    "contact": "Kontakt",
     "notFound": "Ikke funnet"
   },
   "HeroBanner": {
