@@ -59,7 +59,7 @@ const HeroBanner = () => {
               {t('application')}
             </a>
             <a
-              href="mailto:contact@eisolutions.no"
+              href="/contact"
               className="bg-ei-green p-5 w-full m-5"
             >
               {t('demo')}

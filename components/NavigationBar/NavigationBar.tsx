@@ -66,22 +66,11 @@ const NavigationBar = () => {
           <Link href="/about" className="px-5 mx-4">
             {t('about')}
           </Link>
-          <button
-            onClick={() =>
-              window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth',
-              })
-            }
-            className="px-5 mx-4"
+          <Link
+            href="/contact"
+            className="bg-ei-green text-base p-3 px-8 mx-10 rounded-md text-white font-bold"
           >
             {t('contact')}
-          </button>
-          <Link
-            href="mailto:contact@eisolutions.no"
-            className="bg-ei-green text-base p-3 px-8 mx-10 rounded-md text-black font-bold"
-          >
-            {t('demo')}
           </Link>
           <LocaleSelector setDrawerOpen={changeDrawerPosition} />
         </div>
