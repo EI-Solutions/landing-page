@@ -32,6 +32,10 @@
       "description": ""
     }
   },
+  "Cookies": {
+    "title": "Cookie Preferences",
+    "content": ""
+  },
   "ContactInformation": {
     "country": "Norway"
   },
@@ -88,6 +92,10 @@
       "1": "Suppliers, tenents and governments are pressured to buy or offer sustainable services. That means increased expenses for non-compliant companies and projects.",
       "2": "BREEAM-NOR manuals are tailored to the EU-taxonomy. Data-driven analysis frees resources to increase profits from sustainable projects."
     }
+  },
+  "Terms": {
+    "title": "Terms and Conditions",
+    "content": "We value your privacy"
   },
   "Team": {
     "title": "Meet our <green>interdisciplinary</green> and <green>competent</green> team!",

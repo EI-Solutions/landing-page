@@ -4,9 +4,23 @@ import linkedin from '/static/icons/linkedin.svg';
 import ContactInformation from './ContactInformation';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import Modal from '../Modal/Modal';
+import { useState, useEffect } from 'react';
+import CookieModal from '../Modal/CookieModal';
+import TermsModal from '../Modal/TermsModal';
 
 const Footer = () => {
   const t = useTranslations('Footer');
+  const [showingTerms, setShowingTerms] = useState(false);
+  const [showingCookies, setShowingCookies] = useState(false);
+
+  useEffect(() => {
+    if (showingCookies || showingTerms) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [showingCookies, showingTerms]);
 
   return (
     <footer
@@ -32,10 +46,22 @@ const Footer = () => {
               <Link href="/about">{t('about')}</Link>
             </p>
             <p className="my-2">
-              <Link href="/cookies">{t('cookies')}</Link>
+              <button
+                onClick={() => {
+                  setShowingCookies(true);
+                }}
+              >
+                {t('cookies')}
+              </button>
             </p>
             <p className="my-2">
-              <Link href="/terms-and-conditions">{t('terms')}</Link>
+              <button
+                onClick={() => {
+                  setShowingTerms(true);
+                }}
+              >
+                {t('terms')}
+              </button>
             </p>
           </div>
         </div>
@@ -43,6 +69,8 @@ const Footer = () => {
       <p className="text-center p-5">
         {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
       </p>
+      <CookieModal setShowing={setShowingCookies} showing={showingCookies} />
+      <TermsModal setShowing={setShowingTerms} showing={showingTerms} />
     </footer>
   );
 };
