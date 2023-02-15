@@ -30,7 +30,7 @@ const SalesPoints = () => {
   return (
     <>
       <div className="bg-ei-dark-green p-10 lg:p-20">
-        <div className='container  flex flex-col lg:flex-row'>
+        <div className="container  flex flex-col lg:flex-row">
           <div className="lg:basis-4/5">
             <b className="text-3xl">{t0('title')}</b>
             <p className="text-md mt-3">{t0('description')}</p>
@@ -59,10 +59,8 @@ const SalesPoints = () => {
       </div>
       <div className="bg-gradient-radial from-ei-dark-green to-ei-green">
         <div style={{ backgroundImage: 'url(/grain.svg)' }}>
-          <div className='container'>
-            <div
-              className="w-full h-full flex flex-col lg:flex-row p-10 lg:p-20"
-            >
+          <div className="container">
+            <div className="w-full h-full flex flex-col lg:flex-row p-10 lg:p-20">
               <div>
                 <Image src={desktopPage} alt="Laptop" />
               </div>

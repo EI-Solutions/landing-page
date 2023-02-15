@@ -152,8 +152,9 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className={`bg-ei-green text-white px-5 p-2 m-2 rounded-lg ${submitError ? 'animate-wiggle bg-red-400' : ''
-                }`}
+              className={`bg-ei-green text-white px-5 p-2 m-2 rounded-lg ${
+                submitError ? 'animate-wiggle bg-red-400' : ''
+              }`}
             >
               {t('submit')}
             </button>
