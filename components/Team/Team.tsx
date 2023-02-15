@@ -30,7 +30,7 @@ const Team = () => {
     {
       image: null,
       name: 'Eik Hvattum Røgeberg',
-      role: 'Frontend Lead & Co-founder',
+      role: 'Frontend Developer & Co-founder',
       email: 'eik@eisolutions.no',
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
