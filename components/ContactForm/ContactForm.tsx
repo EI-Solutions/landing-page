@@ -101,7 +101,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" pt-20 p-5">
+    <div className=" pt-20 p-5 container">
       <div className="flex flex-col lg:flex-row p-10">
         <div className="lg:basis-1/2 text-black p-5">
           <p className="text-6xl font-bold text-ei-green">{t('title')}</p>
@@ -152,9 +152,8 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className={`bg-ei-green text-white px-5 p-2 m-2 rounded-lg ${
-                submitError ? 'animate-wiggle bg-red-400' : ''
-              }`}
+              className={`bg-ei-green text-white px-5 p-2 m-2 rounded-lg ${submitError ? 'animate-wiggle bg-red-400' : ''
+                }`}
             >
               {t('submit')}
             </button>

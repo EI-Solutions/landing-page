@@ -29,7 +29,7 @@ const SalesPoints = () => {
 
   return (
     <>
-      <div className="bg-ei-dark-green p-10 lg:p-20 flex flex-col lg:flex-row">
+      <div className="container bg-ei-dark-green p-10 lg:p-20 flex flex-col lg:flex-row">
         <div className="lg:basis-4/5">
           <b className="text-3xl">{t0('title')}</b>
           <p className="text-md mt-3">{t0('description')}</p>
@@ -57,7 +57,7 @@ const SalesPoints = () => {
       </div>
       <div
         className="
-                bg-gradient-radial from-ei-dark-green to-ei-green 
+                container bg-gradient-radial from-ei-dark-green to-ei-green 
             "
       >
         <div

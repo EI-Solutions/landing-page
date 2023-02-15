@@ -20,11 +20,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="
-                px-20
-                pt-10
-                bg-gradient-to-r from-ei-black-green to-ei-dark-green
-            "
+      className="container px-20 pt-10 bg-gradient-to-r from-ei-black-green to-ei-dark-green"
     >
       <div className="pb-10 flex justify-center lg:justify-start">
         <Link href="/">

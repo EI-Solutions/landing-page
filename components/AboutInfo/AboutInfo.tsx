@@ -7,7 +7,7 @@ const AboutInfo = () => {
     <>
       <div
         className="
-                bg-gradient-to-r from-ei-black-green to-ei-dark-green p-5 pt-32 flex place-content-center
+                container bg-gradient-to-r from-ei-black-green to-ei-dark-green p-5 pt-32 flex place-content-center
                 "
       >
         <div className="text-center w-4/5 lg:w-2/5">

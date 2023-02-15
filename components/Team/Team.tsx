@@ -62,7 +62,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="p-10 md:p-20">
+    <div className="p-10 md:p-20 container">
       <div className="md:w-2/5">
         <span className="font-bold text-4xl text-ei-dark-green">
           {t.rich('title', {

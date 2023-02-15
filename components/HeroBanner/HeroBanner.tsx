@@ -46,9 +46,9 @@ const HeroBanner = () => {
         playsInline
         loop
         muted
-        className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 object-cover blur-none`}
+        className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 w-full object-cover blur-none`}
       ></video>
-      <div className="bg-cover min-h-screen  flex align-middle">
+      <div className="bg-cover min-h-screen container flex align-middle">
         <div className="lg:w-1/2 py-5 lg:p-20">
           <p className="text-2xl lg:text-5xl m-5">{t('title')}</p>
           <p className="m-5">{t('description')}</p>

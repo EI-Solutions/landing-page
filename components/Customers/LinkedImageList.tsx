@@ -12,7 +12,7 @@ interface LinkedImages {
 
 const LinkedImageList = ({ images }: LinkedImages) => {
   return (
-    <div className="align-middle grid grid-flow-col auto-cols-fr justify-between pb-2 px-4 lg:px-10 w-full">
+    <div className="container align-middle grid grid-flow-col auto-cols-fr justify-between pb-2 px-4 lg:px-10 w-full">
       {images.map((image) => (
         <div key={image.alt} className="flex justify-center">
           <a href={image.link}>
