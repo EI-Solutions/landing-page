@@ -5,6 +5,9 @@ import ContactInformation from './ContactInformation';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
+import TermsModal from '../Modal/TermsModal';
+import CookieModal from '../Modal/CookieModal';
+
 const Footer = () => {
   const t = useTranslations('Footer');
   const [showingTerms, setShowingTerms] = useState(false);
@@ -36,6 +39,27 @@ const Footer = () => {
               <p className="my-2">
                 <Link href="/about">{t('about')}</Link>
               </p>
+              <p className="my-2">
+                <Link href="/contact">{t('contact')}</Link>
+              </p>
+              <p className="my-2">
+                <button
+                  onClick={() => {
+                    setShowingCookies(true);
+                  }}
+                >
+                  {t('cookies')}
+                </button>
+              </p>
+              <p className="my-2">
+                <button
+                  onClick={() => {
+                    setShowingTerms(true);
+                  }}
+                >
+                  {t('terms')}
+                </button>
+              </p>
             </div>
           </div>
         </div>
@@ -43,6 +67,8 @@ const Footer = () => {
           {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
         </p>
       </div>
+      <TermsModal setShowing={setShowingTerms} showing={showingTerms} />
+      <CookieModal setShowing={setShowingCookies} showing={showingCookies} />
     </footer>
   );
 };
