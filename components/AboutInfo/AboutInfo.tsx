@@ -7,13 +7,15 @@ const AboutInfo = () => {
     <>
       <div
         className="
-                container bg-gradient-to-r from-ei-black-green to-ei-dark-green p-5 pt-32 flex place-content-center
+                bg-gradient-to-r from-ei-black-green to-ei-dark-green p-5 pt-32
                 "
       >
-        <div className="text-center w-4/5 lg:w-2/5">
-          <b className="text-5xl text-ei-green">{t('title')}</b>
-          <p className="mt-8">{t('description1')}</p>
-          <p className="mt-8">{t('description2')}</p>
+        <div className='container'>
+          <div className="text-center w-4/5 lg:w-2/5 container">
+            <b className="text-5xl text-ei-green">{t('title')}</b>
+            <p className="mt-8">{t('description1')}</p>
+            <p className="mt-8">{t('description2')}</p>
+          </div>
         </div>
       </div>
       <AboutColorWave />

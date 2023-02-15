@@ -29,61 +29,62 @@ const SalesPoints = () => {
 
   return (
     <>
-      <div className="container bg-ei-dark-green p-10 lg:p-20 flex flex-col lg:flex-row">
-        <div className="lg:basis-4/5">
-          <b className="text-3xl">{t0('title')}</b>
-          <p className="text-md mt-3">{t0('description')}</p>
-          <ul className="text-sm mt-10">
-            {iconListItems.map((item, i) => (
-              <li key={i}>
-                <div className="flex-row flex py-4">
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    className="flex-none w-12"
-                  />
-                  <div className="ml-5 lg:ml-10 lg:mr-40">
-                    <b>{t0(`${i}.title`)}</b>
-                    <p>{t0(`${i}.description`)}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <Image src={laptopPages} alt="Laptop" />
-        </div>
-      </div>
-      <div
-        className="
-                container bg-gradient-radial from-ei-dark-green to-ei-green 
-            "
-      >
-        <div
-          style={{ backgroundImage: 'url(/grain.svg)' }}
-          className="w-full h-full flex flex-col lg:flex-row p-10 lg:p-20 "
-        >
-          <div>
-            <Image src={desktopPage} alt="Laptop" />
-          </div>
-          <div className="lg:basis-3/5 lg:px-20">
-            <b className="text-3xl">{t1('title')}</b>
-            <p className="text-md mt-10">{t1('description')}</p>
+      <div className="bg-ei-dark-green p-10 lg:p-20">
+        <div className='container  flex flex-col lg:flex-row'>
+          <div className="lg:basis-4/5">
+            <b className="text-3xl">{t0('title')}</b>
+            <p className="text-md mt-3">{t0('description')}</p>
             <ul className="text-sm mt-10">
-              {[0, 1, 2].map((i) => (
+              {iconListItems.map((item, i) => (
                 <li key={i}>
                   <div className="flex-row flex py-4">
-                    <div className="aspect-square flex-none">
-                      <Image src={check} alt="Checkmark" />
-                    </div>
-                    <div className="ml-5 lg:ml-10">
-                      <p>{t1(`${i}`)}</p>
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      className="flex-none w-12"
+                    />
+                    <div className="ml-5 lg:ml-10 lg:mr-40">
+                      <b>{t0(`${i}.title`)}</b>
+                      <p>{t0(`${i}.description`)}</p>
                     </div>
                   </div>
                 </li>
               ))}
             </ul>
+          </div>
+          <div>
+            <Image src={laptopPages} alt="Laptop" />
+          </div>
+        </div>
+      </div>
+      <div className="bg-gradient-radial from-ei-dark-green to-ei-green">
+        <div style={{ backgroundImage: 'url(/grain.svg)' }}>
+          <div className='container'>
+            <div
+              className="w-full h-full flex flex-col lg:flex-row p-10 lg:p-20"
+            >
+              <div>
+                <Image src={desktopPage} alt="Laptop" />
+              </div>
+              <div className="lg:basis-3/5 lg:px-20">
+                <b className="text-3xl">{t1('title')}</b>
+                <p className="text-md mt-10">{t1('description')}</p>
+                <ul className="text-sm mt-10">
+                  {[0, 1, 2].map((i) => (
+                    <li key={i}>
+                      <div className="flex-row flex py-4">
+                        <div className="aspect-square flex-none">
+                          <Image src={check} alt="Checkmark" />
+                        </div>
+                        <div className="ml-5 lg:ml-10">
+                          <p>{t1(`${i}`)}</p>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

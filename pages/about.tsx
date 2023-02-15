@@ -40,10 +40,12 @@ const About: NextPage = () => {
         <Team />
         <div className='w-fi'>
           <div
-          className="bg-ei-green py-32 container"
-          style={{ backgroundImage: 'url(/grain.svg)' }}
-        >
-          <LinkedImageList images={partners} />
+            className="bg-ei-green py-64"
+            style={{ backgroundImage: 'url(/grain.svg)' }}
+          >
+            <div className='container'>
+              <LinkedImageList images={partners} />
+            </div>
           </div>
         </div>
       </>

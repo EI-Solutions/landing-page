@@ -53,9 +53,8 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
       >
         <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
       </div>
-      <div className='container'>
         <div
-          className={`container max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed justify-between p-5 ${atTop
+          className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row w-full fixed justify-between p-5 ${atTop
               ? isTransparent
                 ? 'bg-transparent'
                 : 'bg-ei-dark-green'
@@ -80,7 +79,6 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
             </Link>
             <LocaleSelector setDrawerOpen={changeDrawerPosition} />
           </div>
-        </div>
       </div>
     </>
   );
