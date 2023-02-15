@@ -1,6 +1,6 @@
- import { Dispatch, SetStateAction } from 'react';
- 
- /*
+import { Dispatch, SetStateAction } from 'react';
+
+/*
  import Modal from './Modal';
  import styles from './Modal.module.css';
  

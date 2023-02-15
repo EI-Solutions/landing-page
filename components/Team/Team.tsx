@@ -62,7 +62,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="p-10 md:p-20">
+    <div className="p-10 md:p-20 container">
       <div className="md:w-2/5">
         <span className="font-bold text-4xl text-ei-dark-green">
           {t.rich('title', {
@@ -75,7 +75,7 @@ const Team = () => {
       </p>
       <div className="place-items-stretch grid md:grid-cols-3 grid-cols-1">
         {team.map((member) => (
-          <div key={member.name} className="p-4 justify-center">
+          <div key={member.name} className="p-12 justify-center">
             <div className="w-min-content">
               <Image
                 src={member.image || defaultImage}
@@ -83,7 +83,7 @@ const Team = () => {
                 className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
               />
             </div>
-            <div className="p-1 flex max-sm:flex-col md:flex-col lg:flex-row justify-between">
+            <div className="pt-3 flex max-sm:flex-col md:flex-col lg:flex-row justify-between">
               <div className="text-ei-dark-green">
                 <b>{member.name}</b>
                 <p>{member.role}</p>

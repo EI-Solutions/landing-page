@@ -55,7 +55,7 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
         <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
       </div>
       <div
-        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row fixed w-full justify-between p-5 ${
+        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row w-full fixed justify-between p-5 ${
           atTop
             ? isTransparent
               ? 'bg-transparent'
