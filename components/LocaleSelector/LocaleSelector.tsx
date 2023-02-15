@@ -13,14 +13,17 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const selectableLocales = [...locales!]
-  selectableLocales.splice(selectableLocales.indexOf(activeLocale!), 1)
+  const selectableLocales = [...locales!];
+  selectableLocales.splice(selectableLocales.indexOf(activeLocale!), 1);
 
   return (
     <div className="inline-flex flex-col relative">
-      <button onClick={(_) => {
-        setDropdownOpen(!dropdownOpen);
-      }} className="mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center text-black bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100">
+      <button
+        onClick={(_) => {
+          setDropdownOpen(!dropdownOpen);
+        }}
+        className="mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center text-black bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"
+      >
         <Image
           className="rounded-full mx-1"
           src={`/static/locale-switcher/${activeLocale}.svg`}
@@ -31,13 +34,13 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
         {activeLocale} <Image src={arrow} alt="Arrow icon" />
       </button>
       <div
-        className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${dropdownOpen ? 'block' : 'hidden'}`}
+        className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${
+          dropdownOpen ? 'block' : 'hidden'
+        }`}
       >
-        <ul
-          className="py-2 text-sm text-gray-700 dark:text-gray-200 "
-        >
+        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 ">
           {selectableLocales?.map((locale) => (
-            <li>
+            <li key={locale}>
               <button
                 onClick={(_) => {
                   setDrawerOpen(false);
