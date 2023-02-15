@@ -21,8 +21,8 @@ const ContactInformation = () => {
       icon: email,
       alt: 'Email icon',
       value: (
-        <a href="mailto:contact@eisolutions.no" className="underline">
-          contact@eisolutions.no
+        <a href="mailto:gustav@eisolutions.no" className="underline">
+          gustav@eisolutions.no
         </a>
       ),
     },
