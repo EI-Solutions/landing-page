@@ -83,6 +83,9 @@
     "contact": "Contact",
     "demo": "Request Demo"
   },
+  "Partners": {
+    "title": "Our Partners"
+  },
   "SalesPoints": {
     "0": {
       "title": "Data-driven insight and automation so you can prioritize the urgent measures",

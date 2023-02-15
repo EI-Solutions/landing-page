@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import LinkedImageList from '../Customers/LinkedImageList';
 
 import logo2030 from '/static/partner-logos/2030.png';
@@ -5,6 +6,8 @@ import climateAccelerator from '/static/partner-logos/climate-accelerator.png';
 import innovasjonNorge from '/static/partner-logos/innovasjon-norge.png';
 import ntnu from '/static/partner-logos/ntnu.png';
 const Partners = () => {
+  const t = useTranslations('Partners');
+
   const partners = [
     {
       image: innovasjonNorge,
@@ -30,10 +33,11 @@ const Partners = () => {
 
   return (
     <div
-      className="bg-ei-green py-64"
+      className="bg-ei-green py-48"
       style={{ backgroundImage: 'url(/grain.svg)' }}
     >
       <div className="container">
+        <div className="font-bold text-4xl pb-20">{t('title')}</div>
         <LinkedImageList images={partners} />
       </div>
     </div>

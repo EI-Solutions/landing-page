@@ -83,6 +83,9 @@
     "contact": "Kontakt",
     "demo": "Forespør demo"
   },
+  "Partners": {
+    "title": "Våre samarbeidspartnere"
+  },
   "SalesPoints": {
     "0": {
       "title": "Data-drevet innsikt og automatisering så du kan prioritere tiltakene som haster",
