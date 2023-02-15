@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl';
-import ageraLogo from '/static/customer-logos/agera-logo.png';
-import asplanViakLogo from '/static/customer-logos/asplanviak-logo.png';
-import dnvLogo from '/static/customer-logos/dnv-logo.png';
-import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.png';
-import baneNorLogo from '/static/customer-logos/banenor-logo.png';
+import ageraLogo from '/static/customer-logos/agera-logo.svg';
+import asplanViakLogo from '/static/customer-logos/asplanviak-logo.svg';
+import dnvLogo from '/static/customer-logos/dnv-logo.svg';
+import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.svg';
+import baneNorLogo from '/static/customer-logos/banenor-logo.svg';
 import LinkedImageList from '../Customers/LinkedImageList';
 import Link from 'next/link';
 
