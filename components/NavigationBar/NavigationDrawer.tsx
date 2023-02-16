@@ -24,8 +24,7 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
         >
           {t('about')}
         </Link>
-        <Link
-          className="text-xl py-5" href={'/contact'}>
+        <Link className="text-xl py-5" href={'/contact'}>
           {t('contact')}
         </Link>
         <a

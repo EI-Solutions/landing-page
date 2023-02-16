@@ -1,6 +1,8 @@
-import * as React from "react"
+import * as React from 'react';
 
-const SelectorArrow = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+const SelectorArrow = (
+  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) => (
   <svg
     fill="#fff"
     viewBox="0 0 20 20"
@@ -13,6 +15,6 @@ const SelectorArrow = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEle
       clipRule="evenodd"
     />
   </svg>
-)
+);
 
-export default SelectorArrow
+export default SelectorArrow;

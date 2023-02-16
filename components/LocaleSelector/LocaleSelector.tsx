@@ -26,7 +26,9 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
         onMouseLeave={(_) => {
           setDropdownOpen(false);
         }}
-        className={`${atTop ? 'text-white hover:bg-ei-darker-green' : 'text-black hover:bg-gray-200'} mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center bg-transparent rounded-md`}
+        className={`${
+          atTop ? 'text-white' : 'text-black'
+        } mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center bg-transparent rounded-md justify-center`}
       >
         <Image
           className="rounded-full mx-1"
@@ -37,38 +39,39 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
         />
         {activeLocale}
         <SelectorArrow width={20} fill={`${atTop ? 'white' : 'black'}`} />
-      <div
-        className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${dropdownOpen ? 'block' : 'hidden'
+        <div
+          className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${
+            dropdownOpen ? 'block' : 'hidden'
           }`}
-      >
-        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 ">
-          {selectableLocales?.map((locale) => (
-            <li key={locale}>
-              <button
-                onClick={(_) => {
-                  setDrawerOpen(false);
-                  router.push(router.asPath, router.asPath, {
-                    locale: locale,
-                  });
-                  setDropdownOpen(false);
-                }}
-                className="uppercase w-full inline-flex px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                <div className="inline-flex items-center text-black">
-                  <Image
-                    className="rounded-full mx-1"
-                    src={`/static/locale-switcher/${locale}.svg`}
-                    alt={`${locale} flag`}
-                    width={16}
-                    height={16}
-                  />
-                  {locale}
-                </div>
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+        >
+          <ul className="py-2 text-sm text-gray-700">
+            {selectableLocales?.map((locale) => (
+              <li key={locale} className="w-full">
+                <button
+                  onClick={(_) => {
+                    setDrawerOpen(false);
+                    router.push(router.asPath, router.asPath, {
+                      locale: locale,
+                    });
+                    setDropdownOpen(false);
+                  }}
+                  className="uppercase inline-flex px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  <div className="inline-flex text-black">
+                    <Image
+                      className="rounded-full mx-1"
+                      src={`/static/locale-switcher/${locale}.svg`}
+                      alt={`${locale} flag`}
+                      width={16}
+                      height={16}
+                    />
+                    {locale}
+                  </div>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </button>
     </div>
   );
