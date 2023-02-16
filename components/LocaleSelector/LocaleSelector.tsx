@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction, useState } from 'react';
-import arrow from '/static/locale-switcher/arrow.svg';
+import SelectorArrow from './SelectorArrow';
 
 interface DrawerProps {
   setDrawerOpen: Dispatch<SetStateAction<boolean>>;
+  atTop: boolean;
 }
 
-const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
+const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
   const router = useRouter();
   const { locales, locale: activeLocale } = router;
 
@@ -19,10 +20,13 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
   return (
     <div className="inline-flex flex-col relative">
       <button
-        onClick={(_) => {
-          setDropdownOpen(!dropdownOpen);
+        onMouseEnter={(_) => {
+          setDropdownOpen(true);
         }}
-        className="mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center text-black bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"
+        onMouseLeave={(_) => {
+          setDropdownOpen(false);
+        }}
+        className={`${atTop ? 'text-white hover:bg-ei-darker-green' : 'text-black hover:bg-gray-200'} mx-10 uppercase inline-flex items-center p-3 text-sm font-large text-center bg-transparent rounded-md`}
       >
         <Image
           className="rounded-full mx-1"
@@ -31,12 +35,11 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
           width={16}
           height={16}
         />
-        {activeLocale} <Image src={arrow} alt="Arrow icon" />
-      </button>
+        {activeLocale}
+        <SelectorArrow width={20} fill={`${atTop ? 'white' : 'black'}`} />
       <div
-        className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${
-          dropdownOpen ? 'block' : 'hidden'
-        }`}
+        className={`bg-white divide-y divide-gray-100 rounded-lg shadow absolute top-10 w-fit ${dropdownOpen ? 'block' : 'hidden'
+          }`}
       >
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 ">
           {selectableLocales?.map((locale) => (
@@ -66,6 +69,7 @@ const LocaleSelector = ({ setDrawerOpen }: DrawerProps) => {
           ))}
         </ul>
       </div>
+      </button>
     </div>
   );
 };
