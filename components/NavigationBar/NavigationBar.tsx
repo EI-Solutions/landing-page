@@ -9,6 +9,7 @@ import menuIcon from '/static/icons/menu_icon.svg';
 import crossIcon from '/static/icons/cross.svg';
 import { useTranslations } from 'next-intl';
 import LocaleSelector from '../LocaleSelector/LocaleSelector';
+import { useRouter } from 'next/router';
 
 interface NavigationBarProps {
   isTransparent: boolean;
@@ -35,6 +36,8 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
     return;
   }, [drawerOpen]);
 
+  const router = useRouter();
+
   return (
     <>
       <button
@@ -55,7 +58,7 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
         <NavigationDrawer setDrawerOpen={changeDrawerPosition} />
       </div>
       <div
-        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row w-full fixed justify-between p-5 ${
+        className={`max-lg:hidden transition-all duration-300 z-10 flex flex-row w-full fixed justify-around py-5 ${
           atTop
             ? isTransparent
               ? 'bg-transparent'
@@ -72,12 +75,19 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
           }`}
         >
           <LocaleSelector setDrawerOpen={changeDrawerPosition} atTop={atTop} />
-          <Link href="/about" className="px-5 mx-4">
+          <Link
+            href="/about"
+            className={`p-2 mx-4 ${
+              router.pathname === '/about' ? 'border-b-4 border-ei-green' : ''
+            }`}
+          >
             {t('about')}
           </Link>
           <Link
             href="/contact"
-            className="bg-ei-green text-base p-3 px-8 mx-10 rounded-md text-white font-bold"
+            className={`p-2 mx-4 ${
+              router.pathname === '/contact' ? 'border-b-4 border-ei-green' : ''
+            }`}
           >
             {t('contact')}
           </Link>

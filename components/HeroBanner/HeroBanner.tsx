@@ -48,9 +48,7 @@ const HeroBanner = () => {
         muted
         className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 w-full object-cover blur-none`}
       ></video>
-      <div
-        className="bg-cover min-h-screen container align-center p-5 lg:py-20 flex flex-col justify-between"
-      >
+      <div className="bg-cover min-h-screen container align-center p-5 lg:py-20 flex flex-col justify-between">
         <div className="xl:w-3/4 py-5 lg:p-10 self-start">
           <div className="text-4xl xl:text-7xl m-5">{t('title')}</div>
           <p className="m-5 xl:text-2xl">{t('description')}</p>
