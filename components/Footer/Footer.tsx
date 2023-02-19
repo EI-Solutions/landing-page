@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div className="justify-between flex lg:flex-row flex-col items-start">
           <ContactInformation />
-          <div className="flex py-5" >
+          <div className="flex py-5">
             <a
               href="https://www.linkedin.com/company/ei-solutions-as/"
               className="self-start mt-5"
