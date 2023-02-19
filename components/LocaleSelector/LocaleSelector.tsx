@@ -21,10 +21,13 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
     <div className="inline-flex flex-col relative">
       <button
         onMouseEnter={(_) => {
-          setDropdownOpen(true);
+          setDropdownOpen(!dropdownOpen);
         }}
         onMouseLeave={(_) => {
           setDropdownOpen(false);
+        }}
+        onClick={(_) => {
+          setDropdownOpen(!dropdownOpen);
         }}
         className={`${
           atTop ? 'text-white' : 'text-black'
