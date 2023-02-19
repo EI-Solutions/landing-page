@@ -37,7 +37,7 @@ const Partners = () => {
       style={{ backgroundImage: 'url(/grain.svg)' }}
     >
       <div className="container">
-        <div className="font-bold text-4xl pb-20">{t('title')}</div>
+        <div className="font-bold text-4xl pb-20 p-5">{t('title')}</div>
         <LinkedImageList images={partners} />
       </div>
     </div>

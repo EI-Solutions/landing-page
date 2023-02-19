@@ -1,9 +1,8 @@
 import { Dispatch, SetStateAction } from 'react';
 
-/*
- import Modal from './Modal';
- import styles from './Modal.module.css';
- 
+import Modal from './Modal';
+import styles from './Modal.module.css';
+
 interface CookieModalProps {
   showing: boolean;
   setShowing: Dispatch<SetStateAction<boolean>>;
@@ -19,15 +18,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
           This Cookies Policy explains what Cookies are and how We use them. You
           should read this policy so You can understand what type of cookies We
           use, or the information We collect using Cookies and how that
-          information is used. This Cookies Policy has been created with the
-          help of the{' '}
-          <a
-            href="https://www.termsfeed.com/cookies-policy-generator/"
-            target="_blank"
-          >
-            TermsFeed Cookies Policy Generator
-          </a>
-          .
+          information is used.
         </p>
         <p>
           Cookies do not typically contain any information that personally
@@ -52,9 +43,10 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
         <p>For the purposes of this Cookies Policy:</p>
         <ul>
           <li>
-            <strong>Company</strong> (referred to as either "the Company", "We",
-            "Us" or "Our" in this Cookies Policy) refers to Ei Solutions AS, Sem
-            Sælands vei 1, 7034 Trondheim.
+            <strong>Company</strong> (referred to as either &quot;the
+            Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
+            this Cookies Policy) refers to Ei Solutions AS, Sem Sælands vei 1,
+            7034 Trondheim.
           </li>
           <li>
             <strong>Cookies</strong> means small files that are placed on Your
@@ -66,7 +58,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
             <strong>Website</strong> refers to Ei Solutions, accessible from{' '}
             <a
               href="https://www.eisolutions.no/"
-              rel="external nofollow noopener"
+              rel="external nofollow noopener noreferrer"
               target="_blank"
             >
               https://www.eisolutions.no/
@@ -81,10 +73,10 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
         <h1>The use of the Cookies</h1>
         <h2>Type of Cookies We Use</h2>
         <p>
-          Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
-          remain on your personal computer or mobile device when You go offline,
-          while Session Cookies are deleted as soon as You close your web
-          browser.
+          Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
+          Persistent Cookies remain on your personal computer or mobile device
+          when You go offline, while Session Cookies are deleted as soon as You
+          close your web browser.
         </p>
         <p>
           We use both session and persistent Cookies for the purposes set out
@@ -134,8 +126,9 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
           function properly.
         </p>
         <p>
-          If You'd like to delete Cookies or instruct your web browser to delete
-          or refuse Cookies, please visit the help pages of your web browser.
+          If You&apos;d like to delete Cookies or instruct your web browser to
+          delete or refuse Cookies, please visit the help pages of your web
+          browser.
         </p>
         <ul>
           <li>
@@ -143,7 +136,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
               For the Chrome web browser, please visit this page from Google:{' '}
               <a
                 href="https://support.google.com/accounts/answer/32050"
-                rel="external nofollow noopener"
+                rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
                 https://support.google.com/accounts/answer/32050
@@ -156,7 +149,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
               Microsoft:{' '}
               <a
                 href="http://support.microsoft.com/kb/278835"
-                rel="external nofollow noopener"
+                rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
                 http://support.microsoft.com/kb/278835
@@ -168,7 +161,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
               For the Firefox web browser, please visit this page from Mozilla:{' '}
               <a
                 href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
-                rel="external nofollow noopener"
+                rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
                 https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored
@@ -180,7 +173,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
               For the Safari web browser, please visit this page from Apple:{' '}
               <a
                 href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-                rel="external nofollow noopener"
+                rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
                 https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac
@@ -189,13 +182,17 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
           </li>
         </ul>
         <p>
-          For any other web browser, please visit your web browser's official
-          web pages.
+          For any other web browser, please visit your web browser&apos;s
+          official web pages.
         </p>
         <h2>More Information about Cookies</h2>
         <p>
           You can learn more about cookies here:{' '}
-          <a href="https://www.termsfeed.com/blog/cookies/" target="_blank">
+          <a
+            href="https://www.termsfeed.com/blog/cookies/"
+            target="_blank"
+            rel="noreferrer"
+          >
             All About Cookies by TermsFeed
           </a>
           .
@@ -217,4 +214,3 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
 };
 
 export default CookieModal;
- */
