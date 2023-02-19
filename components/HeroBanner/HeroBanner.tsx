@@ -49,10 +49,9 @@ const HeroBanner = () => {
         className={`fixed -z-10 min-h-screen bg-ei-darker-green/75 w-full object-cover blur-none`}
       ></video>
       <div
-        className="bg-cover max-h-screen container align-middle p-5 lg:p-20"
-        style={{ wordBreak: 'break-word' }}
+        className="bg-cover min-h-screen container align-center p-5 lg:p-20 flex flex-col justify-between"
       >
-        <div className="xl:w-1/2 py-5 lg:p-10">
+        <div className="xl:w-2/3 py-5 lg:p-10 self-start">
           <div className="text-4xl xl:text-5xl m-5">{t('title')}</div>
           <p className="m-5">{t('description')}</p>
           <div className="sm:flex-row flex-col flex text-lg text-center pt-10 max-lg:m-10">
@@ -67,7 +66,7 @@ const HeroBanner = () => {
             </Link>
           </div>
         </div>
-        <div className="inset-x-0 bottom-0">
+        <div className="">
           <LinkedImageList images={customers} />
         </div>
       </div>

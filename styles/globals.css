@@ -28,3 +28,7 @@ a:hover {
   transition: filter 300ms;
   filter: brightness(80%);
 }
+
+* {
+  word-break: break-word;
+}
