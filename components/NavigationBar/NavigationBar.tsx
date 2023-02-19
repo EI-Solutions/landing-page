@@ -71,6 +71,7 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
             atTop ? 'text-white' : 'text-ei-green'
           }`}
         >
+          <LocaleSelector setDrawerOpen={changeDrawerPosition} atTop={atTop} />
           <Link href="/about" className="px-5 mx-4">
             {t('about')}
           </Link>
@@ -80,7 +81,6 @@ const NavigationBar = ({ isTransparent }: NavigationBarProps) => {
           >
             {t('contact')}
           </Link>
-          <LocaleSelector setDrawerOpen={changeDrawerPosition} />
         </div>
       </div>
     </>

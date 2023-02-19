@@ -24,25 +24,16 @@ const NavigationDrawer = ({ setDrawerOpen }: DrawerProps) => {
         >
           {t('about')}
         </Link>
-        <button
-          onClick={() => {
-            setDrawerOpen(false);
-            window.scrollTo({
-              top: document.body.scrollHeight,
-              behavior: 'smooth',
-            });
-          }}
-          className="text-xl py-5"
-        >
+        <Link className="text-xl py-5" href={'/contact'}>
           {t('contact')}
-        </button>
+        </Link>
         <a
           href="mailto:gustav@eisolutions.no"
           className="bg-ei-green p-3 px-8 rounded-md text-black text-1xl font-bold"
         >
           {t('demo')}
         </a>
-        <LocaleSelector setDrawerOpen={setDrawerOpen} />
+        <LocaleSelector setDrawerOpen={setDrawerOpen} atTop={true} />
       </div>
     </div>
   );
