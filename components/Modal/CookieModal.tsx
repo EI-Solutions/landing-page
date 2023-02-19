@@ -18,16 +18,7 @@ const CookieModal = ({ showing, setShowing }: CookieModalProps) => {
           This Cookies Policy explains what Cookies are and how We use them. You
           should read this policy so You can understand what type of cookies We
           use, or the information We collect using Cookies and how that
-          information is used. This Cookies Policy has been created with the
-          help of the{' '}
-          <a
-            href="https://www.termsfeed.com/cookies-policy-generator/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            TermsFeed Cookies Policy Generator
-          </a>
-          .
+          information is used.
         </p>
         <p>
           Cookies do not typically contain any information that personally

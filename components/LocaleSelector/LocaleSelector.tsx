@@ -45,9 +45,9 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
           }`}
         >
           <ul className="py-2 text-sm text-gray-700">
-            {selectableLocales?.map((locale) => (
-              <li key={locale} className="w-full">
-                <button
+            {selectableLocales?.map((locale, index) => (
+              <li key={index} className="w-full">
+                <div
                   onClick={(_) => {
                     setDrawerOpen(false);
                     router.push(router.asPath, router.asPath, {
@@ -67,7 +67,7 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
                     />
                     {locale}
                   </div>
-                </button>
+                </div>
               </li>
             ))}
           </ul>

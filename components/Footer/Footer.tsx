@@ -22,20 +22,23 @@ const Footer = () => {
   }, [showingCookies, showingTerms]);
 
   return (
-    <footer className="px-20 pt-10 bg-gradient-to-r from-ei-black-green to-ei-dark-green">
+    <footer className="p-10 lg:p-20 bg-gradient-to-r from-ei-black-green to-ei-dark-green">
       <div className="container">
         <div className="pb-10 flex justify-center lg:justify-start">
           <Link href="/">
             <Image src={eisolutionsLogo} alt="Ei Solutions logo" />
           </Link>
         </div>
-        <div className="justify-between flex lg:flex-row flex-col">
+        <div className="justify-between flex lg:flex-row flex-col items-start">
           <ContactInformation />
-          <div className="flex">
-            <a href="https://www.linkedin.com/company/ei-solutions-as/">
+          <div className="flex py-5" >
+            <a
+              href="https://www.linkedin.com/company/ei-solutions-as/"
+              className="self-start mt-5"
+            >
               <Image src={linkedin} alt="Linked In icon" className="m-3 w-10" />
             </a>
-            <div className="text-ei-green font-bold p-5">
+            <div className="text-ei-green font-bold m-5">
               <p className="my-2">
                 <Link href="/about">{t('about')}</Link>
               </p>
@@ -47,6 +50,7 @@ const Footer = () => {
                   onClick={() => {
                     setShowingCookies(true);
                   }}
+                  className="text-left"
                 >
                   {t('cookies')}
                 </button>
@@ -56,6 +60,7 @@ const Footer = () => {
                   onClick={() => {
                     setShowingTerms(true);
                   }}
+                  className="text-left"
                 >
                   {t('terms')}
                 </button>
@@ -63,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center p-5">
+        <p className="text-center pt-20">
           {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
         </p>
       </div>
