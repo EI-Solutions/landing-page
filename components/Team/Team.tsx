@@ -2,6 +2,8 @@ import gustav from '/static/team/gustav.jpg';
 import thomas from '/static/team/thomas.jpg';
 import carl from '/static/team/carl.jpg';
 import alba from '/static/team/alba.jpg';
+import jenni from '/static/team/jenni.jpg';
+import eik from '/static/team/eik.jpg';
 import defaultImage from '/static/team/default-member-image.svg';
 import linkedin from '/static/icons/linkedin.svg';
 import Image from 'next/image';
@@ -20,7 +22,7 @@ const Team = () => {
       linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
     },
     {
-      image: null,
+      image: jenni,
       name: 'Jenni Skaara',
       role: 'Product Manager',
       email: 'jenni@eisolutions.no',
@@ -28,7 +30,7 @@ const Team = () => {
       linkedIn: 'https://www.linkedin.com/in/jenni-susanne-skaara-027626158/',
     },
     {
-      image: null,
+      image: eik,
       name: 'Eik Hvattum Røgeberg',
       role: 'Frontend Developer & Co-founder',
       email: 'eik@eisolutions.no',
@@ -75,11 +77,13 @@ const Team = () => {
       </p>
       <div className="place-items-stretch grid md:grid-cols-3 grid-cols-1">
         {team.map((member) => (
-          <div key={member.name} className="p-12 justify-center">
+          <div key={member.name} className="p-2 lg:p-12 justify-center">
             <div className="w-min-content">
               <Image
                 src={member.image || defaultImage}
                 alt={member.name}
+                width={1000}
+                height={1000}
                 className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
               />
             </div>
