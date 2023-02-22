@@ -38,9 +38,9 @@ const ContactForm = () => {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 
-    setErrorData({});
+    let error = '';
     for (const key in formData) {
-      const error = currentError(key, formData[key]);
+      error = currentError(key, formData[key]);
       if (error) {
         setErrorData((prevErrorData) => {
           return {
@@ -54,7 +54,8 @@ const ContactForm = () => {
       errorData.firstName ||
       errorData.lastName ||
       errorData.email ||
-      errorData.message
+      errorData.message ||
+      error
     ) {
       setSubmitError(true);
       setTimeout(() => {
@@ -62,7 +63,6 @@ const ContactForm = () => {
       }, 300);
       return;
     }
-
     emailjs
       .send(
         'service_eo3z2h6',
@@ -101,8 +101,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" pt-20 p-5 container">
-      <div className="flex flex-col lg:flex-row p-10">
+    <div className="pt-20 p-5 container">
+      <div className="flex flex-col lg:flex-row sm:p-10">
         <div className="lg:basis-1/2 text-black p-5">
           <p className="text-6xl font-bold text-ei-green">{t('title')}</p>
           <div className="text-black text-2xl">
@@ -115,10 +115,10 @@ const ContactForm = () => {
             })}
           </div>
         </div>
-        <div className="p-10 lg:basis-1/2 bg-ei-dark-green">
+        <div className="p-5 sm:p-10 lg:basis-1/2 w-full bg-ei-dark-green">
           <div className="text-xl font-bold p-5">{t('request')}</div>
           <form onSubmit={handleSubmit}>
-            <span className="flex flex-row">
+            <span className="flex flex-col lg:flex-row">
               <FormInput
                 label={t('first')}
                 error={errorData.firstName}

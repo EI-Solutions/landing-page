@@ -23,7 +23,7 @@ const FormInput = ({
 }: FormInputProps) => {
   const InputElement = isMultiline ? 'textarea' : 'input';
   return (
-    <span className="flex flex-col p-2">
+    <span className="flex flex-col p-2 grow">
       <label htmlFor={name} className="text-subtitle-gray">
         {label}:
       </label>
