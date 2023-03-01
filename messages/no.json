@@ -75,7 +75,7 @@
   },
   "HeroBanner": {
     "title": "Automatisk bærekraftsvurdering av eiendom i henhold til EU-taksonomien",
-    "description": "Med få tastetrykk hjelper vi eiendomselskaper med å sjekke, dokumentere og rapportere på samsvar med EU-taksonomien.",
+    "description": "Vi hjelper eiendomselskaper med å sjekke, dokumentere og rapportere på samsvar med EU-taksonomien slik at de kan oppnå grønn finansiering.",
     "application": "Til applikasjon",
     "demo": "Forespør demo"
   },
@@ -93,7 +93,7 @@
       "description": "Ved help av romlig analyse av data og integrasjoner med tredjeparter automatiserer vi de unødvendige oppgavene og gir deg innsikt og anbefalinger om eiendommen.",
       "0": {
         "title": "Automatisk innsikt",
-        "description": "Automatisk innsikt og dokumentasjon på samsvar med DNSH og Betydlig bidrag."
+        "description": "Automatisk innsikt og dokumentasjon på samsvar med DNSH og Betydelig bidrag kriterier."
       },
       "1": {
         "title": "Systematisk gjennomgang",
@@ -107,9 +107,9 @@
     "1": {
       "title": "Hvorfor samsvare med  EU-taksonomien?",
       "description": "",
-      "0": "Finansinstitusjoner gir rimeligere betingelser for aktører som viser til bærekraftige forretningsaktiviteter i samsvar med taksonomien.",
-      "1": "Leverandører, leietakere og myndigheter får press om å kjøpe, eller by på bærekraftige tjenester. Det betyr prisøkning for aktører som ikke tilbyr bærekraftig eiendommer, eller prosjekter.",
-      "2": "BREEAM-NOR manualene tilpasses EU-taksonomien. Data-drevne analyser frigjør ressurser til å virkelig øke miljøgevinsten i prosjekter."
+      "0": "Finansinstitusjoner gir rimeligere betingelser for aktører som viser til bærekraftige aktiviteter.",
+      "1": "Investorer, leverandører, kunder og myndigheter er presset til å kjøpe og levere bærekraftige tjenester.",
+      "2": "BREEAM-NOR manualene tilpasses EU-taksonomien. Data-drevne analyser frigjør ressurser til å realisere de store miljøgevinstene."
     }
   },
   "Terms": {

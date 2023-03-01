@@ -16,7 +16,7 @@ const Team = () => {
     {
       image: gustav,
       name: 'Gustav Haaland',
-      role: 'CEO & Co-founder',
+      role: 'CEO',
       email: 'gustav@eisolutions.no',
       phone: '+47 416 67 212',
       linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
@@ -32,7 +32,7 @@ const Team = () => {
     {
       image: eik,
       name: 'Eik Hvattum Røgeberg',
-      role: 'Frontend Developer & Co-founder',
+      role: 'Frontend Developer',
       email: 'eik@eisolutions.no',
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/eik-hvattum-rogeberg/',
@@ -40,7 +40,7 @@ const Team = () => {
     {
       image: carl,
       name: 'Carl Gützkow',
-      role: 'Backend Developer & Co-founder',
+      role: 'Backend Developer',
       email: 'carl@eisolutions.no',
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
