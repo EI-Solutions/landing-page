@@ -35,7 +35,7 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
       >
         <Image
           className="rounded-full mx-1"
-          src={`/static/locale-switcher/${activeLocale}.svg`}
+          src={require(`/static/locale-switcher/${activeLocale}.svg`)}
           alt={`${activeLocale} flag`}
           width={16}
           height={16}
@@ -63,7 +63,7 @@ const LocaleSelector = ({ setDrawerOpen, atTop }: DrawerProps) => {
                   <div className="inline-flex text-black">
                     <Image
                       className="rounded-full mx-1"
-                      src={`/static/locale-switcher/${locale}.svg`}
+                      src={require(`/static/locale-switcher/${locale}.svg`)}
                       alt={`${locale} flag`}
                       width={16}
                       height={16}
