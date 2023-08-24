@@ -52,13 +52,7 @@ const HeroBanner = () => {
         <div className="xl:w-3/4 py-5 lg:p-10 self-start">
           <div className="text-4xl xl:text-7xl m-5">{t('title')}</div>
           <p className="m-5 xl:text-2xl">{t('description')}</p>
-          <div className="sm:flex-row flex-col flex text-lg text-center pt-10 max-lg:m-10">
-            <a
-              href="https://app.eisolutions.no"
-              className="bg-ei-dark-green p-5 w-full m-5"
-            >
-              {t('application')}
-            </a>
+          <div className="sm:flex-row flex-col flex text-lg text-center pt-10 max-lg:m-10 w-1/2">
             <Link href="/contact" className="bg-ei-green p-5 w-full m-5">
               {t('demo')}
             </Link>

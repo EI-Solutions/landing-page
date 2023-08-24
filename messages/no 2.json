@@ -61,7 +61,6 @@
   },
   "Footer": {
     "about": "Om oss",
-    "contact": "Kontakt",
     "cookies": "Preferanser for informasjonskapsler",
     "terms": "Vilkår for bruk",
     "rights1": "Opphavsrett",
@@ -82,9 +81,6 @@
     "about": "Om oss",
     "contact": "Kontakt",
     "demo": "Forespør demo"
-  },
-  "Partners": {
-    "title": "Våre samarbeidspartnere"
   },
   "SalesPoints": {
     "0": {

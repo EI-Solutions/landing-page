@@ -5,7 +5,6 @@ import alba from '/static/team/alba.jpg';
 import marit from '/static/team/Marit.jpg';
 import mathias from '/static/team/mathias.jpg';
 import defaultImage from '/static/team/default-member-image.svg';
-import linkedin from '/static/icons/linkedin.svg';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -16,55 +15,43 @@ const Team = () => {
     {
       image: gustav,
       name: 'Gustav Haaland',
-      role: 'CEO',
-      email: 'gustav@eisolutions.no',
-      phone: '+47 416 67 212',
       linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
+      role: 'CEO',
     },
     {
       image: marit,
       name: 'Marit Bjerkreim',
-      email: '',
-      phone: '',
       linkedIn: 'https://www.linkedin.com/in/maritbjerkreim/',
       role: 'CCO',
     },
     {
       image: mathias,
       name: 'Mathias Wahl',
-      email: '',
-      phone: '',
       linkedIn: 'https://www.linkedin.com/in/mathias-wahl/',
       role: 'CTO',
     },
     {
       image: carl,
       name: 'Carl Gützkow',
-      role: 'Full-stack Developer',
-      email: '',
-      phone: '',
       linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
+      role: 'Backend Developer',
     },
     {
       image: thomas,
       name: 'Thomas Svendal',
-      role: 'Full-stack Developer',
-      email: '',
-      phone: '',
       linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
+      role: 'Backend Developer',
     },
     {
       image: alba,
       name: 'Alba Marie Nesvik Arnesen',
-      role: 'UX/UI Designer',
-      email: '',
-      phone: '',
       linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
+      role: 'UX Designer',
     },
   ];
 
   return (
-    <div className="p-10 md:p-20 container">
+    <div className="p-10 md:p-20">
       <div className="md:w-2/5">
         <span className="font-bold text-4xl text-ei-dark-green">
           {t.rich('title', {
@@ -75,39 +62,22 @@ const Team = () => {
       <p className="text-ei-dark-green py-5 md:w-3/5">
         <i>{t('description')}</i>
       </p>
-      <div className="place-items-stretch grid md:grid-cols-3 grid-cols-1">
+      <div className="place-items-start grid md:grid-cols-3 grid-cols-1">
         {team.map((member) => (
-          <div key={member.name} className="p-2 lg:p-12 justify-center">
-            <div className="w-min-content">
-              <Image
-                src={member.image || defaultImage}
-                alt={member.name}
-                width={1000}
-                height={1000}
-                className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
-              />
-            </div>
-            <div className="pt-3 flex max-sm:flex-col md:flex-col lg:flex-row justify-between">
-              <div className="text-ei-dark-green">
+          <div key={member.name} className="p-4 justify-center flex">
+            <a href={member.linkedIn}>
+              <div className="w-min-content">
+                <Image
+                  src={member.image || defaultImage}
+                  alt={member.name}
+                  className={`rounded-md object-cover aspect-square bg-ei-dark-green`}
+                />
+              </div>
+              <div className="p-1 text-ei-dark-green">
                 <b>{member.name}</b>
                 <p>{member.role}</p>
-                <p>
-                  <a className="underline" href={`mailto:${member.email}`}>
-                    {member.email}
-                  </a>
-                </p>
-                <p>
-                  <a className="underline" href={`tlf:${member.phone}`}>
-                    {member.phone}
-                  </a>
-                </p>
               </div>
-              <div>
-                <a href={member.linkedIn}>
-                  <Image src={linkedin} alt="Linked In icon" className="m-3 " />
-                </a>
-              </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>
