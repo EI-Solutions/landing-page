@@ -15,11 +15,6 @@ const Partners = () => {
       link: 'https://www.innovasjonnorge.no/',
     },
     {
-      image: climateAccelerator,
-      alt: 'EU ClimAccelerator',
-      link: 'https://climaccelerator.climate-kic.org/',
-    },
-    {
       image: logo2030,
       alt: '2030 Startup Lab',
       link: 'https://www.20tretti.no/',
