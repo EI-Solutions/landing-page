@@ -74,7 +74,7 @@
   },
   "HeroBanner": {
     "title": "Håndter bærekraftrisiko i fast eiendom på en enklere måte",
-    "description": "Våre løsninger gjør det lett å komme i mål med vanskelige prosesser knyttet til EUs taksonomi.",
+    "description": "Våre løsninger gjør det lett å komme i mål med tidkrevende oppgaver knyttet til EUs taksonomi.",
     "demo": "Forespør demo"
   },
   "NavigationBar": {
@@ -84,27 +84,27 @@
   },
   "SalesPoints": {
     "0": {
-      "title": "Data-drevet innsikt og automatisering så du kan prioritere tiltakene som haster",
-      "description": "Ved help av romlig analyse av data og integrasjoner med tredjeparter automatiserer vi de unødvendige oppgavene og gir deg innsikt og anbefalinger om eiendommen.",
+      "title": "Spar tid og kostnader med automatisk kartlegging og oppfølging.",
+      "description": "Vi har samlet dataen du trenger til å kartlegge fysisk klimarisiko og overgangsrisiko. Å gjøre denne jobben alene er kompleks og tar lang tid, derfor har vi gjort det for deg - alt du trenger er en adresse.",
       "0": {
-        "title": "Automatisk innsikt",
-        "description": "Automatisk innsikt og dokumentasjon på samsvar med DNSH og Betydelig bidrag kriterier."
+        "title": "Automatisk kartlegging",
+        "description": "Skriv inn adressen og finn ut hvilke forhold eiendommene er utsatt for."
       },
       "1": {
-        "title": "Systematisk gjennomgang",
-        "description": "Standaridsert og systematisert programvare gjør det enkelt å komme i mål med taksonomien."
+        "title": "Digitalisert oppfølging",
+        "description": "Verktøyene guider deg gjennom resterende steg og digitaliserer oppfølging og rapportering."
       },
       "2": {
         "title": "Anbefalte tiltak",
-        "description": "Få anbefalinger til å komme i mål med miljømål basert på klima- og energidata ved din eiendom."
+        "description": "Få anbefalte tiltak til hvordan du kan jobbe systematisk for å tilpasse eiendommene i porteføljen din."
       }
     },
     "1": {
-      "title": "Hvorfor samsvare med  EU-taksonomien?",
-      "description": "",
-      "0": "Finansinstitusjoner gir rimeligere betingelser for aktører som viser til bærekraftige aktiviteter.",
-      "1": "Investorer, leverandører, kunder og myndigheter er presset til å kjøpe og levere bærekraftige tjenester.",
-      "2": "BREEAM-NOR manualene tilpasses EU-taksonomien. Data-drevne analyser frigjør ressurser til å realisere de store miljøgevinstene."
+      "title": "Få stålkontroll på klimarisiko og taksonomien.",
+      "description": "Idag sier ekspertene at man må komme igang med å kartlegge og følge opp porteføljen mot taksonomien - vi gjør jobben enklere",
+      "0": "Ei Solutions har erfaring fra hundrevis av kartlegginger, inkludert tredjepartsverifisering fra DNV.",
+      "1": "Kundene våre bruker grunnlaget til å vise sentrale interessenter at man håndterer bærekraftrisiko tilstrekkelig.",
+      "2": "Verktøyene våre utvikles i tett samarbeid med ledende eiendomselskaper."
     }
   },
   "Terms": {

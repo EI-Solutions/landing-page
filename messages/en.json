@@ -75,7 +75,7 @@
   },
   "HeroBanner": {
     "title": "A simpler way to deal with climate risk for real estate",
-    "description": "Our solutions makes it easy to overcome the complexity in dealing with the EU-taxonomy.",
+    "description": "Our solutions reduces time and cost spent on dealing with the EU-taxonomy.",
     "demo": "Request Demo"
   },
   "NavigationBar": {
@@ -88,27 +88,27 @@
   },
   "SalesPoints": {
     "0": {
-      "title": "Data-driven insight and automation so you can prioritize the urgent measures",
-      "description": "With spacial analysis of data and integrations with third-party services, we automate the unneccasary tasks and give you the insight and recommendations about the property.",
+      "title": "Save time and costs with automatic mapping and follow-up.",
+      "description": "We have gathered the data you need to assess physical climate risk and transition risk. Doing this job on your own is complex and time-consuming, so we've done it for you - all you need is an address.",
       "0": {
         "title": "Automatic Insight",
-        "description": "Automatic insight and documentation on compliancy with DNSH and Substantial Contribution goals."
+        "description": "Enter the address and find out which risks the properties are exposed to."
       },
       "1": {
-        "title": "Streamlined Workflow",
-        "description": "Standardized and systematic application makes it easy to achieve proper taxonomy reporting"
+        "title": "Digitalized follow-up",
+        "description": "The tools guide you through the remaining steps and digitize follow-up and reporting."
       },
       "2": {
         "title": "Recommended Measures",
-        "description": "Easy to understand application and easy to understand reports with all the information needed."
+        "description": "Get recommendations on how you can work systematically to reduce climate risk in your portfolio."
       }
     },
     "1": {
-      "title": "Why comply with the EU-taxonomy?",
-      "description": "",
-      "0": "Financial institutions grant favorable terms for those who report on compliancy with the taxonomy.",
-      "1": "Suppliers, tenents and governments are pressured to buy or offer sustainable services. That means increased expenses for non-compliant companies and projects.",
-      "2": "BREEAM-NOR manuals are tailored to the EU-taxonomy. Data-driven analysis frees resources to increase profits from sustainable projects."
+      "title": "Gain full control over financial climate risk and the taxonomy.",
+      "description": "Today, experts say that it's crucial to start assessing and monitoring the portfolio against the taxonomy - we make the job easier.",
+      "0": "EI Solutions has experience from hundreds of assessments, including third-party verification by DNV.",
+      "1": "Our customers use the foundation to demonstrate to key stakeholders that they are managing sustainability risks adequately.",
+      "2": "Our tools are developed in close collaboration with leading real estate companies."
     }
   },
   "Terms": {
