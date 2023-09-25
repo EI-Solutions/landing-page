@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import ageraLogo from '/static/customer-logos/agera-logo.svg';
-import asplanViakLogo from '/static/customer-logos/asplanviak-logo.svg';
+import newsecLogo from '/static/customer-logos/newsec-logo.svg';
 import dnvLogo from '/static/customer-logos/dnv-logo.svg';
 import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.svg';
 import baneNorLogo from '/static/customer-logos/banenor-logo.svg';
@@ -12,19 +12,9 @@ const HeroBanner = () => {
 
   const customers = [
     {
-      image: ageraLogo,
-      alt: 'Agera Eiendom',
-      link: 'https://www.ageraeiendom.no/',
-    },
-    {
-      image: asplanViakLogo,
-      alt: 'Asplan Viak',
-      link: 'https://www.asplanviak.no/',
-    },
-    {
-      image: dnvLogo,
-      alt: 'DNV',
-      link: 'https://www.dnv.no/',
+      image: newsecLogo,
+      alt: 'Newsec',
+      link: 'https://www.newsec.no/',
     },
     {
       image: mollerEiendomLogo,
@@ -35,6 +25,16 @@ const HeroBanner = () => {
       image: baneNorLogo,
       alt: 'Bane Nor Eiendom',
       link: 'https://www.banenor.no/',
+    },
+    {
+      image: ageraLogo,
+      alt: 'Agera Eiendom',
+      link: 'https://www.ageraeiendom.no/',
+    },
+    {
+      image: dnvLogo,
+      alt: 'DNV',
+      link: 'https://www.dnv.no/',
     },
   ];
 
