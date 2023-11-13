@@ -82,6 +82,9 @@
     "contact": "Kontakt",
     "demo": "Forespør demo"
   },
+  "Partners": {
+    "title": "Våre partnere"
+  },
   "SalesPoints": {
     "0": {
       "title": "Spar tid og kostnader med automatisk kartlegging og oppfølging.",
