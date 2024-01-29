@@ -18,7 +18,7 @@ const Team = () => {
       name: 'Gustav Haaland',
       role: 'CEO',
       email: 'gustav@eisolutions.no',
-      phone: '+47 416 67 212',
+      phone: '+47 416 72 212',
       linkedIn: 'https://www.linkedin.com/in/gustav-haaland/',
     },
     {
