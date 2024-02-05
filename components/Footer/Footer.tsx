@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center pt-20">
-          {t('rights1')} © 2022, Ei Solutions AS. {t('rights2')}
+          {t('rights1')} © 2024, Ei Solutions AS. {t('rights2')}
         </p>
       </div>
       <TermsModal setShowing={setShowingTerms} showing={showingTerms} />
