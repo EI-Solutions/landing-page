@@ -12,8 +12,8 @@ const ContactInformation = () => {
       alt: 'Map marker icon',
       value: (
         <div>
-          <p>St. Olavs Gate 21</p>
-          <p>0165 Oslo, {t('country')}</p>
+          <p>Sørkedalsveien 8</p>
+          <p>0369 Oslo, {t('country')}</p>
         </div>
       ),
     },
