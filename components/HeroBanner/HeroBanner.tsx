@@ -2,8 +2,13 @@ import { useTranslations } from 'next-intl';
 import ageraLogo from '/static/customer-logos/agera-logo.svg';
 import newsecLogo from '/static/customer-logos/newsec-logo.svg';
 import dnvLogo from '/static/customer-logos/dnv-logo.svg';
-import mollerEiendomLogo from '/static/customer-logos/mollereiendom-logo.svg';
 import baneNorLogo from '/static/customer-logos/banenor-logo.svg';
+import reitanLogo from '/static/customer-logos/reitan-logo.svg';
+import ecDahlsLogo from '/static/customer-logos/ecdahls-logo.svg';
+import relogLogo from '/static/customer-logos/relog-logo.svg';
+import vfeLogo from '/static/customer-logos/vfe-logo.svg';
+import doraLogo from '/static/customer-logos/dora-logo.svg';
+import chralLogo from '/static/customer-logos/chral.svg';
 import LinkedImageList from '../Customers/LinkedImageList';
 import Link from 'next/link';
 
@@ -17,9 +22,34 @@ const HeroBanner = () => {
       link: 'https://www.newsec.no/',
     },
     {
-      image: mollerEiendomLogo,
-      alt: 'Møller Eiendom',
-      link: 'https://mollereiendom.no/',
+      image: reitanLogo,
+      alt: 'Reitan',
+      link: 'https://reitan.no/no/selskap/171/reitan-eiendom',
+    },
+    {
+      image: ecDahlsLogo,
+      alt: 'EC Dahls Eiendom',
+      link: 'https://ecde.no/',
+    },
+    {
+      image: relogLogo,
+      alt: 'Relog',
+      link: 'https://www.relog.no/',
+    },
+    {
+      image: vfeLogo,
+      alt: 'VestenFjeldske Eiendom',
+      link: 'https://www.newsec.no/',
+    },
+    {
+      image: doraLogo,
+      alt: 'Dora',
+      link: 'https://dora.no/',
+    },
+    {
+      image: chralLogo,
+      alt: 'Christiania Areal',
+      link: 'https://reitan.no/no/selskap/171/reitan-eiendom',
     },
     {
       image: baneNorLogo,
@@ -58,7 +88,7 @@ const HeroBanner = () => {
             </Link>
           </div>
         </div>
-        <div className="container">
+        <div className="container mx-32">
           <LinkedImageList images={customers} />
         </div>
       </div>
