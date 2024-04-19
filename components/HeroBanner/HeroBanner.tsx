@@ -8,7 +8,7 @@ import ecDahlsLogo from '/static/customer-logos/ecdahls-logo.svg';
 import relogLogo from '/static/customer-logos/relog-logo.svg';
 import vfeLogo from '/static/customer-logos/vfe-logo.svg';
 import doraLogo from '/static/customer-logos/dora-logo.svg';
-import chralLogo from '/static/customer-logos/chral.svg';
+import chralLogo from '/static/customer-logos/chral-logo.svg';
 import LinkedImageList from '../Customers/LinkedImageList';
 import Link from 'next/link';
 
