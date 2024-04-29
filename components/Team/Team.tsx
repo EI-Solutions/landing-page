@@ -43,7 +43,7 @@ const Team = () => {
     {
       image: carl,
       name: 'Carl Gützkow',
-      role: 'Full-stack Developer',
+      role: 'Fullstack Developer',
       email: '',
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/carl-g%C3%BCtzkow-3555511a4/',
@@ -51,7 +51,7 @@ const Team = () => {
     {
       image: thomas,
       name: 'Thomas Svendal',
-      role: 'Full-stack Developer',
+      role: 'Fullstack Developer',
       email: '',
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/thomas-svendal/',
