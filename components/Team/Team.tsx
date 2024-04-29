@@ -4,6 +4,9 @@ import carl from '/static/team/carl.jpg';
 import alba from '/static/team/alba.jpg';
 import marit from '/static/team/Marit.jpg';
 import mathias from '/static/team/mathias.jpg';
+import szymon from '/static/team/szymon.jpg';
+import alexandre from '/static/team/alexandre.jpg';
+import celina from '/static/team/celina.jpg';
 import defaultImage from '/static/team/default-member-image.svg';
 import linkedin from '/static/icons/linkedin.svg';
 import Image from 'next/image';
@@ -61,6 +64,24 @@ const Team = () => {
       phone: '',
       linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
     },
+    {
+      image: szymon,
+      name: 'Szymon Mazur',
+      linkedIn: 'https://www.linkedin.com/in/szymon-mazur-07554b15b/',
+      role: 'UX/UI Designer',
+    },
+    {
+      image: alexandre,
+      name: 'Alexandre Didion',
+      linkedIn: 'https://www.linkedin.com/in/alexandredidion/',
+      role: 'Fullstack Developer',
+    },
+    {
+      image: celina,
+      name: 'Celina Berhane Sørtveit',
+      linkedIn: 'https://www.linkedin.com/in/celinabs/',
+      role: 'Frontend Developer',
+    },
   ];
 
   return (
@@ -75,9 +96,9 @@ const Team = () => {
       <p className="text-ei-dark-green py-5 md:w-3/5">
         <i>{t('description')}</i>
       </p>
-      <div className="place-items-stretch grid md:grid-cols-3 grid-cols-1">
+      <div className="place-items-stretch grid md:grid-cols-5 grid-cols-1">
         {team.map((member) => (
-          <div key={member.name} className="p-2 lg:p-12 justify-center">
+          <div key={member.name} className="p-2 lg:p-8 justify-center">
             <div className="w-min-content">
               <Image
                 src={member.image || defaultImage}
@@ -92,21 +113,21 @@ const Team = () => {
                 <b>{member.name}</b>
                 <p>{member.role}</p>
                 <p>
-                  <a className="underline" href={`mailto:${member.email}`}>
+                  <a className="underline hover:text-ei-green" href={`mailto:${member.email}`}>
                     {member.email}
                   </a>
                 </p>
                 <p>
-                  <a className="underline" href={`tlf:${member.phone}`}>
+                  <a className="underline hover:text-ei-green" href={`tlf:${member.phone}`}>
                     {member.phone}
                   </a>
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <a href={member.linkedIn}>
-                  <Image src={linkedin} alt="Linked In icon" className="m-3 " />
+                  <Image src={linkedin} alt="Linked In icon" className="text-xs" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

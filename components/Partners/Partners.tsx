@@ -2,6 +2,9 @@ import { useTranslations } from 'next-intl';
 import LinkedImageList from '../Customers/LinkedImageList';
 
 import logo2030 from '/static/partner-logos/2030.png';
+import styx from '/static/partner-logos/styx.png';
+import trk from '/static/partner-logos/trkgroup.png';
+import pws from '/static/partner-logos/pwseiendom.png';
 import climateAccelerator from '/static/partner-logos/climate-accelerator.png';
 import innovasjonNorge from '/static/partner-logos/innovasjon-norge.png';
 import ntnu from '/static/partner-logos/ntnu.png';
@@ -10,6 +13,21 @@ const Partners = () => {
 
   const partners = [
     {
+      image: styx,
+      alt: 'Styx Urban Investments',
+      link: 'https://www.styx.city/',
+    },
+    {
+      image: pws,
+      alt: 'PWS Eiendom',
+      link: 'https://pwseiendom.no/',
+    },
+    {
+      image: trk,
+      alt: 'TRK Group',
+      link: 'https://www.trkgroup.no/',
+    },
+    {
       image: innovasjonNorge,
       alt: 'Innovasjon Norge',
       link: 'https://www.innovasjonnorge.no/',
@@ -17,7 +35,7 @@ const Partners = () => {
     {
       image: logo2030,
       alt: '2030 Startup Lab',
-      link: 'https://www.20tretti.no/',
+      link: 'https://www.2030startuplab.com/',
     },
     {
       image: ntnu,
@@ -33,7 +51,7 @@ const Partners = () => {
     >
       <div className="container">
         <div className="font-bold text-4xl pb-20 p-5">{t('title')}</div>
-        <LinkedImageList images={partners} />
+        <LinkedImageList images={partners} columns={6} />
       </div>
     </div>
   );

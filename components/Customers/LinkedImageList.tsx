@@ -6,13 +6,14 @@ interface LinkedImageProps {
   link: string;
 }
 
-interface LinkedImages {
+type LinkedImages = {
   images: LinkedImageProps[];
+  columns?: 5 | 6;
 }
 
-const LinkedImageList = ({ images }: LinkedImages) => {
+const LinkedImageList = ({ images, columns = 5 }: LinkedImages) => {
   return (
-    <div className="grid grid-cols-5 gap-12">
+    <div className={`grid gap-12 ${columns === 5 ? "grid-cols-5" : "grid-cols-6"}`}>
       {images.map((image) => (
         <div key={image.alt} className="flex justify-center basis-1/3">
           <a href={image.link} target='blank' referrerPolicy="no-referrer">

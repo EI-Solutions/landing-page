@@ -4,6 +4,9 @@ import carl from '/static/team/carl.jpg';
 import alba from '/static/team/alba.jpg';
 import marit from '/static/team/Marit.jpg';
 import mathias from '/static/team/mathias.jpg';
+import szymon from '/static/team/szymon.jpg';
+import alexandre from '/static/team/alexandre.jpg';
+import celina from '/static/team/celina.jpg';
 import defaultImage from '/static/team/default-member-image.svg';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -47,6 +50,24 @@ const Team = () => {
       name: 'Alba Marie Nesvik Arnesen',
       linkedIn: 'https://www.linkedin.com/in/alba-arnesen-3a179b254/',
       role: 'UX Designer',
+    },
+    {
+      image: szymon,
+      name: 'Szymon Mazur',
+      linkedIn: 'https://www.linkedin.com/in/szymon-mazur-07554b15b/',
+      role: 'UX/UI Designer',
+    },
+    {
+      image: alexandre,
+      name: 'Alexandre Didion',
+      linkedIn: 'https://www.linkedin.com/in/alexandredidion/',
+      role: 'Fullstack Developer',
+    },
+    {
+      image: celina,
+      name: 'Celina Berhane Sørtveit',
+      linkedIn: 'https://www.linkedin.com/in/celinabs/',
+      role: 'Frontend Developer',
     },
   ];
 
