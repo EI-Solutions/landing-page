@@ -39,7 +39,7 @@ const HeroBanner = () => {
     {
       image: vfeLogo,
       alt: 'VestenFjeldske Eiendom',
-      link: 'https://www.newsec.no/',
+      link: 'https://www.vfeiendom.no/',
     },
     {
       image: doraLogo,
