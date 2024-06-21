@@ -1,8 +1,8 @@
 {
   "AboutInfo": {
     "title": "Om oss",
-    "description1": "Ei Solutions er et teknologiselelskap som tilbyr EU-taksonomi tjenester til eiendomssektoren. Selskapet er startet i Trondheim 2021 basert på forskningsprosjekter ved NTNUs Institutt for bygg- og miljøteknikk.",
-    "description2": "Målet er å hjelpe eiendomsbransjen til å bli mer bærekraftig og høste de økonomiske gevinstene det innebærer. Teamet består av ambisiøse mennesker med lidenskap for bærekraft, teknologi og eiendom."
+    "description1": "Velkommen til Ei Solutions! Vi er et ambisiøst teknologiselskap fra Trondheim, grunnlagt i 2021 med røtter i ny forskning ved NTNUs Institutt for bygg- og miljøteknikk. Vår misjon? Å revolusjonere håndteringen av bærekraftrisiko for eiendomsselskaper.",
+    "description2": "Hos Ei Solutions kombinerer vi teknisk ekspertise med en lidenskap for bærekraft. Våre løsninger hjelper deg med å møte de stadig økende kravene fra EUs bærekraftskrav, samtidig som vi skaper verdi og trygghet for din virksomhet. Bli med oss på reisen mot en grønnere fremtid!"
   },
   "ApplicationSteps": {
     "title": "Our steps",
@@ -104,7 +104,7 @@
       }
     },
     "1": {
-      "title": "Få stålkontroll på klimarisiko og taksonomien.",
+      "title": "Få stålkontroll på risikoen i porteføljen.",
       "description": "Idag sier ekspertene at man må komme igang med å kartlegge og følge opp porteføljen mot taksonomien - vi gjør jobben enklere.",
       "0": "Ei Solutions har erfaring fra hundrevis av kartlegginger, inkludert tredjepartsverifisering fra DNV.",
       "1": "Kundene våre bruker grunnlaget til å vise sentrale interessenter at man håndterer bærekraftrisiko tilstrekkelig.",

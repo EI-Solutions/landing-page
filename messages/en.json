@@ -1,8 +1,8 @@
 {
   "AboutInfo": {
     "title": "About Us",
-    "description1": "Ei Solutions is a tech company which offers EU-taxonomy services for the real estate sector. The company was founded 2021 in Trondheim out of research projects at NTNU's Department of Civil and Environmental Engineering.",
-    "description2": "The goal is to help the real estate industry to become more sustainable and to obtain the financial benefits it entails. The team consists of ambitious people with passion for sustainability, technology and real estate."
+    "description1": "Welcome to Ei Solutions! We are an ambitious technology company from Trondheim, founded in 2021 with roots in new research at NTNU's Department of Civil and Environmental Engineering. Our mission? To revolutionize the management of sustainability risks for real estate companies.",
+    "description2": "At Ei Solutions, we combine technical expertise with a passion for sustainability. Our solutions help you meet the ever-increasing demands of the EU's sustainability regulations, while also creating value and security for your business. Join us on the journey towards a greener future!"
   },
   "ApplicationSteps": {
     "title": "Our steps",
@@ -88,7 +88,7 @@
   },
   "SalesPoints": {
     "0": {
-      "title": "Save time and costs with automatic mapping and follow-up.",
+      "title": "Save time and costs with automated mapping and monitoring.",
       "description": "We have gathered the data you need to assess physical climate risk and transition risk. Doing this job on your own is complex and time-consuming, so we've done it for you - all you need is an address.",
       "0": {
         "title": "Automatic Insight",
@@ -104,7 +104,7 @@
       }
     },
     "1": {
-      "title": "Gain full control over financial climate risk and the taxonomy.",
+      "title": "Get full control over the risks in your portfolio.",
       "description": "Today, experts say that it's crucial to start assessing and monitoring the portfolio against the taxonomy - we make the job easier.",
       "0": "EI Solutions has experience from hundreds of assessments, including third-party verification by DNV.",
       "1": "Our customers use the foundation to demonstrate to key stakeholders that they are managing sustainability risks adequately.",
