@@ -30,7 +30,7 @@ const Team = () => {
       email: 'marit@eisolutions.no',
       phone: '+47 974 76 070',
       linkedIn: 'https://www.linkedin.com/in/maritbjerkreim/',
-      role: 'Arbeidende styreleder',
+      role: 'CFO',
     },
     {
       image: mathias,
